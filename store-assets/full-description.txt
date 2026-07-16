@@ -1,0 +1,18 @@
+Paxio is a simple, focused parental control app that helps you set healthy screen time habits for your kids — without spying on them.
+
+SCREEN TIME
+Set a daily time limit per child, see live usage progress, and get notified as they approach their limit. Add a bedtime schedule or a one-off sleep timer for nap time or homework.
+
+APP BLOCKING
+Choose exactly which apps your child can and can't use. Blocking is enforced in real time — no need to uninstall apps you don't want them using.
+
+CONTENT FILTERING
+Block entire categories of websites (adult content, gambling, and more) using an on-device filter. Filtering happens locally on the device — Paxio never sends your child's browsing activity anywhere.
+
+BUILT FOR PARENTS
+- PIN-protected settings so only you can make changes
+- Uninstall protection, so your child can't just remove the app
+- Profile and PIN sync to your account, so switching phones doesn't mean starting over
+
+PRIVACY FIRST
+Screen time and app-blocking data stay on the device. Content filtering never leaves the device either. See our full privacy policy for details on exactly what's collected and why.

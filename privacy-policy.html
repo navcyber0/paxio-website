@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paxio — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#F5F7F6; color:#1A1A1A; margin:0; padding:0; line-height:1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { color:#14806B; font-size:1.6rem; }
+  h2 { color:#0F6E56; font-size:1.15rem; margin-top:2.2rem; }
+  .updated { color:#5B6B67; font-size:0.9rem; }
+  table { width:100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid #E0E6E4; font-size:0.95rem; vertical-align:top; }
+  th { color:#5B6B67; font-weight:600; }
+  a { color:#14806B; }
+  .back { display:inline-block; margin-bottom:24px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Back</a>
+    <h1>Paxio Privacy Policy</h1>
+    <p class="updated">Last updated: July 2026</p>
+
+    <p>Paxio ("we," "us," "the app") is a parental control app that helps a parent manage a
+    child's Android device — screen time, app blocking, and content filtering. This policy
+    explains what data Paxio collects, why, and where it goes. Paxio is installed and configured
+    by a parent or guardian; it does not create a separate account for the child.</p>
+
+    <h2>Data we collect</h2>
+    <table>
+      <tr><th>Data</th><th>Purpose</th><th>Where it's stored</th></tr>
+      <tr>
+        <td>Parent email address (Google or email sign-in)</td>
+        <td>Identify the parent account and let it sign in on a new device</td>
+        <td>Firebase Authentication (Google)</td>
+      </tr>
+      <tr>
+        <td>Child profile (name, age, avatar, daily screen-time limit)</td>
+        <td>Personalize the dashboard; survive an app reinstall</td>
+        <td>Firebase Firestore (Google), tied to the parent's account</td>
+      </tr>
+      <tr>
+        <td>Parent PIN</td>
+        <td>Protect settings from being changed by the child</td>
+        <td>Stored only as a salted PBKDF2 hash — never in plaintext — in Firestore and locally</td>
+      </tr>
+      <tr>
+        <td>App usage duration, per app</td>
+        <td>Show screen-time progress and enforce daily limits</td>
+        <td>Local database on the device only — never uploaded</td>
+      </tr>
+      <tr>
+        <td>List of blocked/allowed apps</td>
+        <td>Enforce app blocking</td>
+        <td>Local database on the device only — never uploaded</td>
+      </tr>
+      <tr>
+        <td>DNS requests (site names looked up), while content filtering is on</td>
+        <td>Block sites matching the categories a parent selected</td>
+        <td>Processed entirely on-device by a local VPN connection; never sent anywhere, not even to Paxio</td>
+      </tr>
+      <tr>
+        <td>Foreground app package name</td>
+        <td>Detect when a blocked app is opened, via Android's Accessibility API</td>
+        <td>Read in memory on-device only; not stored or transmitted</td>
+      </tr>
+      <tr>
+        <td>Crash and diagnostic reports</td>
+        <td>Find and fix bugs</td>
+        <td>Firebase Crashlytics (Google)</td>
+      </tr>
+    </table>
+
+    <h2>What we don't collect</h2>
+    <p>Paxio does not collect location data, does not read screen content, keystrokes, messages,
+    photos, or browsing history, and does not use advertising or third-party analytics SDKs.</p>
+
+    <h2>Data sharing</h2>
+    <p>We don't sell data or share it with advertisers. The data listed above is processed by
+    Google/Firebase solely to provide sign-in, profile sync, and crash reporting for Paxio, under
+    Google's own privacy terms.</p>
+
+    <h2>Data retention & deletion</h2>
+    <p>Child profile and PIN data are kept until the parent deletes the child profile or the
+    parent account. Local, on-device data (usage stats, app-block lists) is removed when Paxio is
+    uninstalled. To request deletion of your account data, contact us at the address below.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Paxio is intended to be installed and configured by a parent or guardian. The child does
+    not create an account, sign in, or provide information directly to Paxio — all settings are
+    controlled by the parent.</p>
+
+    <h2>Permissions Paxio requests</h2>
+    <p>Accessibility Service, Usage Access, Device Admin, and VPN are all requested with an
+    in-app explanation before use, and are used only for the purposes described above (app
+    blocking, screen-time tracking, uninstall protection, and content filtering, respectively).</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data can be sent to
+    <a href="mailto:nav.cyber0@gmail.com">nav.cyber0@gmail.com</a>.</p>
+  </div>
+</body>
+</html>
