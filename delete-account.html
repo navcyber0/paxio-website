@@ -26,20 +26,21 @@
     <h1>Delete Your Paxio Account</h1>
     <p class="updated">Last updated: July 2026</p>
 
-    <p>This page explains how to request deletion of your Paxio parent account and the data
-    associated with it.</p>
+    <p>This page explains how to delete your Paxio parent account and the data associated with
+    it. Account deletion is self-service, directly in the app — there is no support-ticket or
+    email-request process for this.</p>
 
-    <h2>How to request deletion</h2>
+    <h2>Delete your account in the app</h2>
     <ol>
-      <li>Send an email to <strong>support@paxio.in</strong> from the email address associated
-      with your Paxio account.</li>
-      <li>Use the subject line <strong>"Delete my Paxio account"</strong>.</li>
-      <li>Include the email address you sign in with, so we can locate your account.</li>
+      <li>Open Paxio and enter your parent PIN.</li>
+      <li>Go to the <strong>Settings</strong> tab.</li>
+      <li>Scroll to the <strong>Danger Zone</strong> section and tap <strong>Delete Account</strong>.</li>
+      <li>Review the warning and tap <strong>Delete</strong> to confirm.</li>
     </ol>
-    <a class="btn" href="mailto:support@paxio.in?subject=Delete%20my%20Paxio%20account">Email support@paxio.in</a>
-
-    <p>We process deletion requests within <strong>7 days</strong> and will confirm by email once
-    complete.</p>
+    <p>Deletion happens immediately — your account, child profiles, and cloud data are removed
+    right away, no waiting period. If Paxio asks you to sign in again first, this is a Google
+    security requirement for account deletion (it only appears if you haven't signed in
+    recently); sign back in and repeat the steps above.</p>
 
     <h2>What gets deleted</h2>
     <table>
@@ -56,14 +57,18 @@
         <td>Parent PIN (stored only as a salted hash)</td>
         <td>Permanently deleted from Firestore</td>
       </tr>
+      <tr>
+        <td>Screen-time usage history, app-blocking lists, content-filter rules
+        (stored locally on the device)</td>
+        <td>Permanently cleared from the device when you delete in-app; also removed if you
+        uninstall the app</td>
+      </tr>
     </table>
 
     <h2>What is not affected</h2>
-    <p>Screen-time usage history and app-blocking lists are stored only locally on the device
-    itself, never uploaded to our servers — deleting your account does not touch this data.
-    Uninstalling the app from the device removes it. Anonymized crash/diagnostic reports already
-    sent to Firebase Crashlytics prior to your deletion request may be retained by Google under
-    their own standard retention period, as they are not linked back to your account identity.</p>
+    <p>Anonymized crash/diagnostic reports already sent to Firebase Crashlytics prior to your
+    deletion request may be retained by Google under their own standard retention period, as
+    they are not linked back to your account identity.</p>
 
     <h2>Contact</h2>
     <p>Questions about account deletion can be sent to
