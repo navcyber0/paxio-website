@@ -21,10 +21,10 @@
     <div class="nav-links">
       <a href="#overview">Overview</a>
       <a href="#features">Features</a>
+      <a href="#dashboard">Dashboard</a>
       <a href="#benefits">Benefits</a>
       <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Privacy</a>
-      <a class="nav-cta" href="#download">Get Paxio</a>
+      <a class="nav-cta" href="#download">Get notified</a>
     </div>
   </div>
 </nav>
@@ -32,31 +32,36 @@
 <header class="hero" id="overview">
   <div class="hero-inner">
     <div>
-      <span class="eyebrow">🕊️ For families, not for spying</span>
-      <h1>Screen time your kids will actually understand — not fight about.</h1>
+      <span class="eyebrow">For families, not for spying</span>
+      <h1>Screen time your kids understand — not fight about.</h1>
       <p class="lead">
-        Paxio is a parental control app for Android that helps you set daily screen time
-        limits, block distracting apps, and filter content — all from one simple dashboard.
-        It's built as a partnership with your kids, not a punishment, and it never collects
-        their browsing history.
+        Set daily limits, block distracting apps, and filter content — all from one simple
+        dashboard. Built as a partnership with your kids, never as spyware.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#download">Get Paxio</a>
+        <a class="btn btn-primary" href="#download">Get notified at launch</a>
         <a class="btn btn-ghost" href="#features">See how it works</a>
       </div>
       <div class="hero-badges">
-        <span>🔒 On-device content filtering</span>
-        <span>🚫 No ads, no trackers</span>
-        <span>👨‍👩‍👧 Built for parents</span>
+        <span>On-device filtering</span><span>No ads, no trackers</span><span>Built for parents</span>
       </div>
     </div>
     <div class="hero-visual">
       <div class="phone-mock">
         <div class="phone-mock-screen">
-          <img src="store-assets/play-store-icon-512.png" alt="">
           <strong>Today's screen time</strong>
-          <div class="bar"><i></i></div>
-          <small>1h 24m of 2h limit used</small>
+          <div class="ring" id="heroRing">
+            <div class="ring-track"></div>
+            <div class="ring-face">
+              <span class="value" id="heroRingValue">0m</span>
+              <span class="label">of 2h limit</span>
+            </div>
+          </div>
+          <div class="hero-chip-row">
+            <div class="hero-chip ok">Instagram<span>28m</span></div>
+            <div class="hero-chip blocked">TikTok<span>blocked</span></div>
+            <div class="hero-chip info">YouTube<span>41m</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -64,58 +69,64 @@
 </header>
 
 <section id="features">
-  <div class="container">
+  <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">Features</span>
-      <h2>Everything you need, nothing you don't</h2>
-      <p>Paxio focuses on the handful of controls that actually change day-to-day habits — no bloated dashboard, no confusing settings.</p>
+      <h2>Everything that changes daily habits</h2>
+      <p>No bloated dashboard. Just the handful of controls that actually work.</p>
     </div>
     <div class="features-grid">
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: var(--teal-light); color: var(--teal-dark);">⏱️</div>
+        <div class="feature-icon icon-limits"></div>
         <h3>Screen Time Limits</h3>
-        <p>Set a daily limit per child and watch live usage progress throughout the day. Get notified as they approach it.</p>
+        <p>Set a daily limit per child, watch live usage progress, and get notified as they approach it.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: #FFE9D6; color: var(--orange);">🌙</div>
-        <h3>Bedtime & Sleep Timer</h3>
-        <p>Schedule a recurring bedtime lock, or start a one-off sleep timer for nap time, homework, or dinner.</p>
+        <div class="feature-icon icon-bedtime" style="animation-delay:0.3s"></div>
+        <h3>Bedtime &amp; Sleep Timer</h3>
+        <p>Schedule a recurring bedtime lock, or start a one-off timer for homework or dinner.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: #FDE2E2; color: var(--coral);">🚫</div>
+        <div class="feature-icon icon-appblock" style="animation-delay:0.6s"></div>
         <h3>App Blocking</h3>
-        <p>Choose exactly which apps your child can and can't use — enforced in real time, no need to uninstall anything.</p>
+        <p>Choose exactly which apps your child can use — enforced in real time, nothing to uninstall.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: #E7ECFC; color: var(--blue);">🌐</div>
+        <div class="feature-icon icon-filter" style="animation-delay:0.9s">
+          <span></span><span></span><span></span>
+        </div>
         <h3>Content Filtering</h3>
-        <p>Block entire categories of websites using an on-device filter. Filtering happens locally — browsing activity never leaves the device.</p>
+        <p>Block entire categories of sites with an on-device filter. Browsing activity never leaves the device.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: var(--teal-light); color: var(--teal-dark);">🔑</div>
+        <div class="feature-icon icon-pin" style="animation-delay:1.2s">
+          <span></span><span></span><span></span><span></span>
+        </div>
         <h3>PIN-Protected Settings</h3>
-        <p>Every setting is locked behind a parent PIN, so changes only happen when you make them.</p>
+        <p>Every setting sits behind a parent PIN, so changes only happen when you make them.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: #EFE6FB; color: var(--purple);">🛡️</div>
+        <div class="feature-icon icon-uninstall" style="animation-delay:1.5s"></div>
         <h3>Uninstall Protection</h3>
-        <p>Device admin protection adds a real barrier before Paxio can be removed from the device.</p>
+        <p>Device admin protection adds a real barrier before Paxio can be removed.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: #FFE9D6; color: var(--orange);">☁️</div>
+        <div class="feature-icon icon-sync" style="animation-delay:1.8s"></div>
         <h3>Profile Sync</h3>
-        <p>Child profiles and your PIN sync securely to your account, so switching phones doesn't mean starting over.</p>
+        <p>Child profiles and your PIN sync securely, so switching phones isn't starting over.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon" style="background: #FDE2E2; color: var(--coral);">📊</div>
+        <div class="feature-icon icon-usage" style="animation-delay:2.1s">
+          <span></span><span></span><span></span>
+        </div>
         <h3>Real Usage Data</h3>
         <p>Screen time is sourced from Android's own usage tracking — real data, not estimates.</p>
       </div>
@@ -124,61 +135,122 @@
   </div>
 </section>
 
+<section id="dashboard" class="dashboard-section">
+  <div class="container reveal" data-reveal id="dashboardReveal">
+    <div class="section-head">
+      <span class="tag">Dashboard</span>
+      <h2>Your weekly overview, at a glance</h2>
+      <p>Real numbers pulled straight from the device — updated the moment usage changes.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="dashboard-card dashboard-chart">
+        <span>Screen time this week</span>
+        <div class="chart-bars" id="chartBars">
+          <div class="chart-col"><div class="chart-bar" data-target="35"></div><span>Mon</span></div>
+          <div class="chart-col"><div class="chart-bar" data-target="58"></div><span>Tue</span></div>
+          <div class="chart-col"><div class="chart-bar" data-target="42"></div><span>Wed</span></div>
+          <div class="chart-col"><div class="chart-bar" data-target="70"></div><span>Thu</span></div>
+          <div class="chart-col"><div class="chart-bar" data-target="50"></div><span>Fri</span></div>
+          <div class="chart-col"><div class="chart-bar" data-target="65"></div><span>Sat</span></div>
+          <div class="chart-col"><div class="chart-bar" data-target="80"></div><span>Sun</span></div>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><span>Avg. daily time</span><div class="stat-value" data-stat="avg" data-target="102">0m</div></div>
+        <div class="stat-card"><span>Apps blocked</span><div class="stat-value" data-stat="blocked" data-target="14">0</div></div>
+        <div class="stat-card"><span>Sites filtered</span><div class="stat-value" data-stat="filtered" data-target="6">0</div></div>
+        <div class="stat-card"><span>Days under limit</span><div class="stat-value" data-stat="days" data-target="5">0/7</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container reveal" data-reveal>
+    <div class="section-head">
+      <span class="tag">In action</span>
+      <h2>See Paxio on the device</h2>
+      <p>Three screens your family will actually use, every day.</p>
+    </div>
+
+    <div class="mockups-grid">
+
+      <div class="mockup-card">
+        <span class="mockup-title">Screen Time</span>
+        <div class="ring ring-sm">
+          <div class="ring-track" id="mockRingTrack"></div>
+          <div class="ring-face">
+            <span class="value" id="mockRingValue">0m</span>
+            <span class="label">used today</span>
+          </div>
+        </div>
+        <span class="caption">Live, on-device tracking</span>
+      </div>
+
+      <div class="mockup-card" style="align-items:stretch">
+        <span class="mockup-title">App Blocking</span>
+        <div class="block-rows" id="blockRows">
+          <div class="block-row"><span>Instagram</span><div class="toggle off"></div></div>
+          <div class="block-row"><span>TikTok</span><div class="toggle on"></div></div>
+          <div class="block-row"><span>YouTube Kids</span><div class="toggle on"></div></div>
+        </div>
+      </div>
+
+      <div class="mockup-card">
+        <span class="mockup-title">Bedtime Timer</span>
+        <div class="ring ring-sm ring-timer">
+          <div class="ring-track" id="timerRingTrack"></div>
+          <div class="ring-face">
+            <span class="value" id="timerRingValue">5:00</span>
+            <span class="label">until lock</span>
+          </div>
+        </div>
+        <span class="caption">Recurring, every night</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section class="benefits" id="benefits">
-  <div class="container">
+  <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">Benefits</span>
       <h2>Why families choose Paxio</h2>
-      <p>Less arguing about screen time, more confidence that your kids are safe online — without turning into surveillance.</p>
+      <p>Less arguing about screen time, more confidence your kids are safe online.</p>
     </div>
     <div class="benefits-grid">
 
       <div class="benefit-row">
-        <div class="benefit-icon">🤝</div>
-        <div>
-          <h3>A partnership, not a punishment</h3>
-          <p>Paxio is designed to help build healthy digital habits together — clear limits your kids can see and understand, not a black box.</p>
-        </div>
+        <div class="benefit-icon c-teal"><i></i></div>
+        <div><h3>A partnership, not a punishment</h3><p>Clear limits your kids can see and understand, not a black box.</p></div>
       </div>
 
       <div class="benefit-row">
-        <div class="benefit-icon">🔐</div>
-        <div>
-          <h3>Privacy-first by design</h3>
-          <p>Content filtering and app blocking run entirely on the device. We don't collect browsing history, and there are no ad or analytics SDKs beyond crash reporting.</p>
-        </div>
+        <div class="benefit-icon c-blue"><i></i></div>
+        <div><h3>Privacy-first by design</h3><p>Filtering and blocking run entirely on the device — no browsing history collected.</p></div>
       </div>
 
       <div class="benefit-row">
-        <div class="benefit-icon">⚡</div>
-        <div>
-          <h3>Set up in minutes</h3>
-          <p>A short guided setup walks through each permission with a plain-language explanation of why it's needed — no digging through Android settings alone.</p>
-        </div>
+        <div class="benefit-icon c-orange"><i></i></div>
+        <div><h3>Set up in minutes</h3><p>A short guided setup explains each permission in plain language.</p></div>
       </div>
 
       <div class="benefit-row">
-        <div class="benefit-icon">🧘</div>
-        <div>
-          <h3>Peace of mind</h3>
-          <p>Uninstall protection and a parent PIN mean the controls you set actually stick, even if your child tries to remove them.</p>
-        </div>
+        <div class="benefit-icon c-purple"><i></i></div>
+        <div><h3>Peace of mind</h3><p>Uninstall protection and a parent PIN mean the controls actually stick.</p></div>
       </div>
 
       <div class="benefit-row">
-        <div class="benefit-icon">📱</div>
-        <div>
-          <h3>Works across devices</h3>
-          <p>Profiles and PIN sync to your account, so setting up a new or replacement phone takes seconds, not a full reconfiguration.</p>
-        </div>
+        <div class="benefit-icon c-coral"><i></i></div>
+        <div><h3>Works across devices</h3><p>Profiles and PIN sync to your account, so a new phone takes seconds.</p></div>
       </div>
 
       <div class="benefit-row">
-        <div class="benefit-icon">🎯</div>
-        <div>
-          <h3>Focused, not bloated</h3>
-          <p>No confusing dashboards or features you'll never use — just the screen time, app, and content controls that matter day to day.</p>
-        </div>
+        <div class="benefit-icon c-teal2"><i></i></div>
+        <div><h3>Focused, not bloated</h3><p>Just the screen time, app, and content controls that matter day to day.</p></div>
       </div>
 
     </div>
@@ -186,7 +258,7 @@
 </section>
 
 <section id="download">
-  <div class="container">
+  <div class="container reveal" data-reveal>
     <div class="cta-banner">
       <h2>Ready to build better screen time habits together?</h2>
       <p>Paxio is coming soon to Google Play.</p>
@@ -217,6 +289,106 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  // Reveal-on-scroll for sections
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        if (e.target.id === 'dashboardReveal') animateDashboard();
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.25 });
+  revealEls.forEach(function (el) { io.observe(el); });
+
+  function setRing(trackEl, color, deg) {
+    trackEl.style.background = 'conic-gradient(' + color + ' ' + deg + 'deg, var(--border) 0deg)';
+  }
+
+  function fmtMin(m) {
+    var h = Math.floor(m / 60), mm = m % 60;
+    return h > 0 ? (h + 'h ' + mm + 'm') : (mm + 'm');
+  }
+
+  // Animate hero + mockup screen-time rings together
+  (function animateHero() {
+    var duration = 1400, start = null, targetMin = 84, targetPct = 62;
+    var heroValue = document.getElementById('heroRingValue');
+    var heroTrack = document.querySelector('#heroRing .ring-track');
+    var mockValue = document.getElementById('mockRingValue');
+    var mockTrack = document.getElementById('mockRingTrack');
+
+    function step(t) {
+      if (!start) start = t;
+      var p = Math.min(1, (t - start) / duration);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var min = Math.round(targetMin * eased);
+      var pct = Math.round(targetPct * eased);
+      heroValue.textContent = fmtMin(min);
+      mockValue.textContent = fmtMin(min);
+      setRing(heroTrack, '#12B886', pct * 3.6);
+      setRing(mockTrack, '#12B886', pct * 3.6);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    setTimeout(function () { requestAnimationFrame(step); }, 300);
+  })();
+
+  function animateDashboard() {
+    var duration = 1200, start = null;
+    var bars = document.querySelectorAll('#chartBars .chart-bar');
+    var stats = document.querySelectorAll('.stat-value');
+
+    function step(t) {
+      if (!start) start = t;
+      var p = Math.min(1, (t - start) / duration);
+      var eased = 1 - Math.pow(1 - p, 3);
+      bars.forEach(function (bar, i) {
+        var target = parseFloat(bar.dataset.target);
+        bar.style.height = Math.round(target * eased) + '%';
+        bar.style.transitionDelay = (i * 0.05) + 's';
+      });
+      stats.forEach(function (stat) {
+        var target = parseFloat(stat.dataset.target);
+        var v = Math.round(target * eased);
+        if (stat.dataset.stat === 'avg') stat.textContent = fmtMin(v);
+        else if (stat.dataset.stat === 'days') stat.textContent = v + '/7';
+        else stat.textContent = v;
+      });
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // App-blocking row highlight cycle
+  (function cycleBlockRows() {
+    var rows = document.querySelectorAll('#blockRows .block-row');
+    var i = 0;
+    setInterval(function () {
+      rows.forEach(function (r) { r.classList.remove('active'); });
+      rows[i].classList.add('active');
+      i = (i + 1) % rows.length;
+    }, 2200);
+  })();
+
+  // Bedtime countdown timer ring
+  (function runTimer() {
+    var total = 300, left = total;
+    var valueEl = document.getElementById('timerRingValue');
+    var trackEl = document.getElementById('timerRingTrack');
+    setInterval(function () {
+      left = left <= 0 ? total : left - 1;
+      var min = Math.floor(left / 60);
+      var sec = String(left % 60).padStart(2, '0');
+      valueEl.textContent = min + ':' + sec;
+      setRing(trackEl, '#4C7CF0', (left / total) * 360);
+    }, 1000);
+  })();
+})();
+</script>
 
 </body>
 </html>
