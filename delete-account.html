@@ -4,75 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paxio — Delete Your Account</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#F5F7F6; color:#1A1A1A; margin:0; padding:0; line-height:1.6; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
-  h1 { color:#14806B; font-size:1.6rem; }
-  h2 { color:#0F6E56; font-size:1.15rem; margin-top:2.2rem; }
-  .updated { color:#5B6B67; font-size:0.9rem; }
-  table { width:100%; border-collapse: collapse; margin: 12px 0; }
-  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid #E0E6E4; font-size:0.95rem; vertical-align:top; }
-  th { color:#5B6B67; font-weight:600; }
-  a { color:#14806B; }
-  .back { display:inline-block; margin-bottom:24px; }
-  ol { padding-left: 20px; }
-  ol li { margin-bottom: 10px; }
-  .btn { display:inline-block; background:#14806B; color:#fff !important; padding:12px 22px; border-radius:999px; text-decoration:none; font-weight:600; margin-top:8px; }
-</style>
+<meta name="description" content="How to delete your Paxio parent account and associated data.">
+<link rel="icon" type="image/png" href="store-assets/play-store-icon-512.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <a class="back" href="index.html">&larr; Back</a>
-    <h1>Delete Your Paxio Account</h1>
-    <p class="updated">Last updated: July 2026</p>
 
-    <p>This page explains how to delete your Paxio parent account and the data associated with
-    it. Account deletion is self-service, directly in the app — there is no support-ticket or
-    email-request process for this.</p>
+<nav class="nav">
+  <div class="nav-row">
+    <a class="brand" href="index.html">
+      <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+      Paxio
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <div class="nav-links">
+      <a href="index.html#overview">Overview</a>
+      <a href="index.html#features">Features</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a class="nav-cta" href="index.html#download">Get notified</a>
+    </div>
+  </div>
+</nav>
 
-    <h2>Delete your account in the app</h2>
-    <ol>
-      <li>Open Paxio and enter your parent PIN.</li>
-      <li>Go to the <strong>Settings</strong> tab.</li>
-      <li>Scroll to the <strong>Danger Zone</strong> section and tap <strong>Delete Account</strong>.</li>
-      <li>Review the warning and tap <strong>Delete</strong> to confirm.</li>
-    </ol>
-    <p>Deletion happens immediately — your account, child profiles, and cloud data are removed
-    right away, no waiting period. If Paxio asks you to sign in again first, this is a Google
-    security requirement for account deletion (it only appears if you haven't signed in
-    recently); sign back in and repeat the steps above.</p>
+<div class="legal">
+  <a class="back" href="index.html">&larr; Back</a>
+  <span class="tag">Account</span>
+  <h1>Delete Your Paxio Account</h1>
+  <p class="updated">Last updated: July 2026</p>
 
-    <h2>What gets deleted</h2>
+  <p>This page explains how to delete your Paxio parent account and the data associated with it.
+  Account deletion is self-service, directly in the app — there is no support-ticket or
+  email-request process for this.</p>
+
+  <h2>Delete your account in the app</h2>
+  <ol>
+    <li>Open Paxio and enter your parent PIN.</li>
+    <li>Go to the <strong>Settings</strong> tab.</li>
+    <li>Scroll to the <strong>Danger Zone</strong> section and tap <strong>Delete Account</strong>.</li>
+    <li>Review the warning and tap <strong>Delete</strong> to confirm.</li>
+  </ol>
+  <p>Deletion happens immediately — your account, child profiles, and cloud data are removed
+  right away, no waiting period. If Paxio asks you to sign in again first, this is a Google
+  security requirement for account deletion (it only appears if you haven't signed in recently);
+  sign back in and repeat the steps above.</p>
+
+  <h2>What gets deleted</h2>
+  <div class="legal-table-wrap">
     <table>
       <tr><th>Data</th><th>Outcome</th></tr>
-      <tr>
-        <td>Parent account (email, authentication record)</td>
-        <td>Permanently deleted from Firebase Authentication</td>
-      </tr>
-      <tr>
-        <td>Child profile(s) (name, age, avatar, daily limit, bedtime settings)</td>
-        <td>Permanently deleted from Firestore</td>
-      </tr>
-      <tr>
-        <td>Parent PIN (stored only as a salted hash)</td>
-        <td>Permanently deleted from Firestore</td>
-      </tr>
-      <tr>
-        <td>Screen-time usage history, app-blocking lists, content-filter rules
-        (stored locally on the device)</td>
-        <td>Permanently cleared from the device when you delete in-app; also removed if you
-        uninstall the app</td>
-      </tr>
+      <tr><td>Parent account (email, authentication record)</td><td>Permanently deleted from Firebase Authentication</td></tr>
+      <tr><td>Child profile(s) (name, age, avatar, daily limit, bedtime settings)</td><td>Permanently deleted from Firestore</td></tr>
+      <tr><td>Parent PIN (stored only as a salted hash)</td><td>Permanently deleted from Firestore</td></tr>
+      <tr><td>Screen-time usage history, app-blocking lists, content-filter rules (stored locally on the device)</td><td>Permanently cleared from the device when you delete in-app; also removed if you uninstall the app</td></tr>
     </table>
-
-    <h2>What is not affected</h2>
-    <p>Anonymized crash/diagnostic reports already sent to Firebase Crashlytics prior to your
-    deletion request may be retained by Google under their own standard retention period, as
-    they are not linked back to your account identity.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about account deletion can be sent to
-    <a href="mailto:support@paxio.in">support@paxio.in</a>.</p>
   </div>
+
+  <h2>What is not affected</h2>
+  <p>Anonymized crash/diagnostic reports already sent to Firebase Crashlytics prior to your
+  deletion request may be retained by Google under their own standard retention period, as they
+  are not linked back to your account identity.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about account deletion: <a href="mailto:support@paxio.in">support@paxio.in</a>.</p>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a class="footer-brand" href="index.html">
+        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+        Paxio
+      </a>
+      <div class="footer-links">
+        <a href="index.html#overview">Overview</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#benefits">Benefits</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Paxio. All rights reserved.</span>
+      <span>support@paxio.in</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

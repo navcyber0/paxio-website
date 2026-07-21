@@ -647,3 +647,8 @@ footer {
 .legal-table-wrap th, .legal-table-wrap td { text-align: left; padding: 12px 14px; vertical-align: top; border-bottom: 1px solid var(--border); }
 .legal-table-wrap tr:last-child td { border-bottom: none; }
 .legal-table-wrap th { color: var(--ink-soft); font-weight: 600; }
+
+.legal ol { padding-left: 20px; color: #3A423E; }
+@media (prefers-color-scheme: dark) { .legal ol { color: var(--ink-soft); } }
+.legal ol li { margin-bottom: 10px; }
+.legal ol li strong { color: var(--ink); }
