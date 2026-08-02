@@ -32,7 +32,7 @@
   <a class="back" href="index.html">&larr; Back</a>
   <span class="tag">Privacy</span>
   <h1>Paxio Privacy Policy</h1>
-  <p class="updated">Last updated: July 2026</p>
+  <p class="updated">Last updated: August 2026</p>
 
   <p>Paxio ("we," "us," "the app") is a parental control app that helps a parent manage a child's
   Android device — screen time, app blocking, and content filtering. This policy explains what
@@ -46,17 +46,25 @@
       <tr><td>Parent email (Google or email sign-in)</td><td>Identify the parent account; sign in on a new device</td><td>Firebase Authentication (Google)</td></tr>
       <tr><td>Child profile (name, age, avatar, daily limit)</td><td>Personalize the dashboard; survive a reinstall</td><td>Firebase Firestore (Google), tied to the parent account</td></tr>
       <tr><td>Parent PIN</td><td>Protect settings from being changed by the child</td><td>Salted PBKDF2 hash only — never plaintext</td></tr>
-      <tr><td>App usage duration, per app</td><td>Show progress; enforce daily limits</td><td>Local device database only — never uploaded</td></tr>
-      <tr><td>Blocked/allowed app list</td><td>Enforce app blocking</td><td>Local device database only — never uploaded</td></tr>
-      <tr><td>DNS requests, while filtering is on</td><td>Block sites matching selected categories</td><td>Processed on-device via local VPN; never sent anywhere</td></tr>
+      <tr><td>App usage duration, per app</td><td>Show progress; enforce daily limits; let a parent see this from a separate device</td><td>Local device database, and synced to Firebase Firestore (Google) so it's visible from the parent's own device — never shared beyond that</td></tr>
+      <tr><td>Blocked/allowed app list, blocked-site visits, blocked-app attempts</td><td>Enforce app blocking and content filtering; let a parent review this history from a separate device</td><td>Local device database, and synced to Firebase Firestore (Google) — never shared beyond that</td></tr>
+      <tr><td>DNS requests, while filtering is on</td><td>Block sites matching selected categories</td><td>Processed on-device via local VPN; never sent anywhere. Only the resulting decision (a site was blocked, and which category) is synced, not full browsing activity</td></tr>
       <tr><td>Foreground app package name</td><td>Detect when a blocked app opens</td><td>Read in memory on-device only</td></tr>
+      <tr><td>App install/uninstall events (package name only)</td><td>Power the optional "app installed/uninstalled" email alert, if a parent turns it on</td><td>Local device, and synced to Firebase Firestore (Google)</td></tr>
       <tr><td>Crash &amp; diagnostic reports</td><td>Find and fix bugs</td><td>Firebase Crashlytics (Google)</td></tr>
     </table>
   </div>
 
   <h2>What we don't collect</h2>
   <p>Paxio does not collect location data, does not read screen content, keystrokes, messages,
-  photos, or browsing history, and does not use advertising or third-party analytics SDKs.</p>
+  photos, or full browsing history (only whether a specific site visit was blocked, and its
+  category), and does not use advertising or third-party analytics SDKs.</p>
+
+  <h2>AI-generated insights (not currently active)</h2>
+  <p>Paxio has an AI Insights feature planned for a future paid tier — it isn't available to any
+  user today, so no automated analysis of usage data currently takes place. If and when this
+  feature launches, this policy will be updated first to describe exactly what it processes and
+  where, before it's enabled for any account.</p>
 
   <h2>Data sharing</h2>
   <p>We don't sell data or share it with advertisers. Data above is processed by Google/Firebase
@@ -65,8 +73,11 @@
 
   <h2>Data retention &amp; deletion</h2>
   <p>Child profile and PIN data are kept until the parent deletes the child profile or account.
-  Local, on-device data is removed when Paxio is uninstalled. To request deletion, contact us
-  below.</p>
+  Usage history, blocked-site visits, and blocked-app attempts are automatically deleted after
+  30 days, both locally and in Firestore. Local, on-device data is also removed when Paxio is
+  uninstalled. A parent can delete a single child's data, or their whole account, at any time
+  directly in the app — see <a href="delete-data.html">Delete Your Data</a> and
+  <a href="delete-account.html">Delete Your Account</a> for exactly what's removed.</p>
 
   <h2>Children's privacy</h2>
   <p>Paxio is installed and configured by a parent or guardian. The child does not create an

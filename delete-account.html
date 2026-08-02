@@ -32,7 +32,7 @@
   <a class="back" href="index.html">&larr; Back</a>
   <span class="tag">Account</span>
   <h1>Delete Your Paxio Account</h1>
-  <p class="updated">Last updated: July 2026</p>
+  <p class="updated">Last updated: August 2026</p>
 
   <p>This page explains how to delete your Paxio parent account and the data associated with it.
   Account deletion is self-service, directly in the app — there is no support-ticket or
@@ -57,7 +57,7 @@
       <tr><td>Parent account (email, authentication record)</td><td>Permanently deleted from Firebase Authentication</td></tr>
       <tr><td>Child profile(s) (name, age, avatar, daily limit, bedtime settings)</td><td>Permanently deleted from Firestore</td></tr>
       <tr><td>Parent PIN (stored only as a salted hash)</td><td>Permanently deleted from Firestore</td></tr>
-      <tr><td>Screen-time usage history, app-blocking lists, content-filter rules (stored locally on the device)</td><td>Permanently cleared from the device when you delete in-app; also removed if you uninstall the app</td></tr>
+      <tr><td>Screen-time usage history, app-blocking lists, content-filter rules, per-app time limits, blocked-site visits, blocked-app attempts, and install/uninstall events, for every child on the account</td><td>Permanently deleted from both the local on-device database and Firestore, immediately</td></tr>
     </table>
   </div>
 
