@@ -3,10 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paxio — Screen Time, App Blocking & Content Filtering for Families</title>
-<meta name="description" content="Paxio helps parents set healthy screen time habits — screen time limits, app blocking, and privacy-first content filtering for Android, without spying on your kids.">
+<title>Paxio — Parental Control App for Screen Time, App Blocking & Content Filtering</title>
+<meta name="description" content="Paxio is a parental control app for Android that sets screen time limits, blocks distracting apps, filters content, and enforces bedtime — privacy-first, without spying on your kids.">
+<meta name="keywords" content="parental control app, screen time app, app blocker for kids, content filtering app, family screen time tracker, Android parental controls, kids screen time limit, bedtime app lock">
+<link rel="canonical" href="https://paxio.in/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Paxio — Parental Control App for Screen Time, App Blocking & Content Filtering">
+<meta property="og:description" content="Set daily screen time limits, block distracting apps, and filter content — all from one simple dashboard. A partnership with your kids, never spyware.">
+<meta property="og:url" content="https://paxio.in/">
+<meta property="og:image" content="https://paxio.in/store-assets/feature-graphic-1024x500.png">
+<meta property="og:site_name" content="Paxio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paxio — Parental Control App for Screen Time & App Blocking">
+<meta name="twitter:description" content="Screen time limits, app blocking, and privacy-first content filtering for Android families.">
+<meta name="twitter:image" content="https://paxio.in/store-assets/feature-graphic-1024x500.png">
 <link rel="icon" type="image/png" href="store-assets/play-store-icon-512.png">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Paxio",
+  "applicationCategory": "ParentalControlApplication",
+  "operatingSystem": "Android",
+  "description": "Paxio is a parental control app for Android that sets screen time limits, blocks distracting apps, filters content, and enforces bedtime schedules.",
+  "url": "https://paxio.in/",
+  "image": "https://paxio.in/store-assets/feature-graphic-1024x500.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is Paxio free to use?", "acceptedAnswer": { "@type": "Answer", "text": "Paxio's core screen time limits, app blocking, and content filtering are free. Paxio Plus adds more children, a full year of history, and per-app limits." } },
+    { "@type": "Question", "name": "Can my child uninstall or bypass Paxio?", "acceptedAnswer": { "@type": "Answer", "text": "Device admin protection adds a confirmation step before Paxio can be removed, and every setting sits behind a parent PIN." } },
+    { "@type": "Question", "name": "How does the bedtime and sleep timer work?", "acceptedAnswer": { "@type": "Answer", "text": "Set a recurring schedule for school nights, or start a one-off timer for homework or dinner — the device locks until it ends, with an option for the parent to override." } },
+    { "@type": "Question", "name": "Can I manage more than one child?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — each child gets their own profile with its own limits, blocked apps, and filtering settings, and profiles sync across devices with your account." } },
+    { "@type": "Question", "name": "Which Android permissions does Paxio need?", "acceptedAnswer": { "@type": "Answer", "text": "Accessibility Service, Usage Access, Device Admin, and VPN — each explained in-app before use, for app blocking, screen-time tracking, uninstall protection, and content filtering." } },
+    { "@type": "Question", "name": "Is Paxio available for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Paxio is built for Android today. There's no iOS version yet." } }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -23,6 +62,7 @@
       <a href="#features">Features</a>
       <a href="#dashboard">Dashboard</a>
       <a href="#benefits">Benefits</a>
+      <a href="#faq">FAQ</a>
       <a href="contact.html">Contact</a>
       <a class="nav-cta" href="#download">Get notified</a>
     </div>
@@ -38,6 +78,9 @@
         Set daily limits, block distracting apps, and filter content — all from one simple
         dashboard. Built as a partnership with your kids, never as spyware.
       </p>
+      <p class="lead-sub">
+        A privacy-first parental control app for Android — screen time limits, app blocking, bedtime schedules, and content filtering, all enforced on-device.
+      </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#download">Get notified at launch</a>
         <a class="btn btn-ghost" href="#features">See how it works</a>
@@ -47,22 +90,8 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="phone-mock">
-        <div class="phone-mock-screen">
-          <strong>Today's screen time</strong>
-          <div class="ring" id="heroRing">
-            <div class="ring-track"></div>
-            <div class="ring-face">
-              <span class="value" id="heroRingValue">0m</span>
-              <span class="label">of 2h limit</span>
-            </div>
-          </div>
-          <div class="hero-chip-row">
-            <div class="hero-chip ok">Instagram<span>28m</span></div>
-            <div class="hero-chip blocked">TikTok<span>blocked</span></div>
-            <div class="hero-chip info">YouTube<span>41m</span></div>
-          </div>
-        </div>
+      <div class="hero-shot-frame">
+        <img src="screens/overview.png" alt="Paxio parent Overview screen — screen-time ring, trend stats and quick shortcuts">
       </div>
     </div>
   </div>
@@ -75,61 +104,46 @@
       <h2>Everything that changes daily habits</h2>
       <p>No bloated dashboard. Just the handful of controls that actually work.</p>
     </div>
-    <div class="features-grid">
+    <div class="features-list">
 
-      <div class="feature-card">
+      <div class="feature-row">
         <div class="feature-icon icon-limits"></div>
-        <h3>Screen Time Limits</h3>
-        <p>Set a daily limit per child, watch live usage progress, and get notified as they approach it.</p>
+        <div><h3>Screen Time Limits</h3><p>Set a daily limit per child, watch live usage progress, and get notified as they approach it.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-bedtime" style="animation-delay:0.3s"></div>
-        <h3>Bedtime &amp; Sleep Timer</h3>
-        <p>Schedule a recurring bedtime lock, or start a one-off timer for homework or dinner.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-appblock"></div>
+        <div><h3>App Blocking</h3><p>Choose exactly which apps your child can use — enforced in real time, nothing to uninstall.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-appblock" style="animation-delay:0.6s"></div>
-        <h3>App Blocking</h3>
-        <p>Choose exactly which apps your child can use — enforced in real time, nothing to uninstall.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-filter"><span></span><span></span><span></span></div>
+        <div><h3>Content Filtering</h3><p>Block entire categories of sites with an on-device filter. Browsing activity never leaves the device.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-filter" style="animation-delay:0.9s">
-          <span></span><span></span><span></span>
-        </div>
-        <h3>Content Filtering</h3>
-        <p>Block entire categories of sites with an on-device filter. Browsing activity never leaves the device.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-bedtime"></div>
+        <div><h3>Bedtime &amp; Sleep Timer</h3><p>Schedule a recurring bedtime lock, or start a one-off timer for homework or dinner.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-pin" style="animation-delay:1.2s">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <h3>PIN-Protected Settings</h3>
-        <p>Every setting sits behind a parent PIN, so changes only happen when you make them.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-pin"><span></span><span></span><span></span><span></span></div>
+        <div><h3>PIN-Protected Settings</h3><p>Every setting sits behind a parent PIN, so changes only happen when you make them.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-uninstall" style="animation-delay:1.5s"></div>
-        <h3>Uninstall Protection</h3>
-        <p>Device admin protection adds a confirmation step before Paxio can be removed — a real
-        speed bump against casual removal, not a hard technical block.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-usage"><span></span><span></span><span></span></div>
+        <div><h3>Real Usage Data</h3><p>Screen time is sourced from Android's own usage tracking — real data, not estimates.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-sync" style="animation-delay:1.8s"></div>
-        <h3>Profile Sync</h3>
-        <p>Child profiles and your PIN sync securely, so switching phones isn't starting over.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-uninstall"></div>
+        <div><h3>Uninstall Protection</h3><p>Device admin protection adds a confirmation step before Paxio can be removed.</p></div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon icon-usage" style="animation-delay:2.1s">
-          <span></span><span></span><span></span>
-        </div>
-        <h3>Real Usage Data</h3>
-        <p>Screen time is sourced from Android's own usage tracking — real data, not estimates.</p>
+      <div class="feature-row">
+        <div class="feature-icon icon-sync"></div>
+        <div><h3>Profile Sync</h3><p>Child profiles and your PIN sync securely, so switching phones isn't starting over.</p></div>
       </div>
 
     </div>
@@ -160,57 +174,38 @@
 
       <div class="stat-grid">
         <div class="stat-card"><span>Avg. daily time</span><div class="stat-value" data-stat="avg" data-target="102">0m</div></div>
+        <div class="stat-card"><span>Avg. session length</span><div class="stat-value" data-stat="session" data-target="11">0m</div></div>
         <div class="stat-card"><span>Apps blocked</span><div class="stat-value" data-stat="blocked" data-target="14">0</div></div>
         <div class="stat-card"><span>Sites filtered</span><div class="stat-value" data-stat="filtered" data-target="6">0</div></div>
         <div class="stat-card"><span>Days under limit</span><div class="stat-value" data-stat="days" data-target="5">0/7</div></div>
+        <div class="stat-card"><span>Extra-time requests</span><div class="stat-value" data-stat="requests" data-target="9">0</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="app-screens">
   <div class="container reveal" data-reveal>
     <div class="section-head">
-      <span class="tag">In action</span>
-      <h2>See Paxio on the device</h2>
-      <p>Three screens your family will actually use, every day.</p>
+      <span class="tag">Real screens</span>
+      <h2>Straight from the app</h2>
+      <p>Week-over-week trends, one-tap shortcuts, and category labels on every app in the usage list.</p>
     </div>
-
-    <div class="mockups-grid">
-
-      <div class="mockup-card">
-        <span class="mockup-title">Screen Time</span>
-        <div class="ring ring-sm">
-          <div class="ring-track" id="mockRingTrack"></div>
-          <div class="ring-face">
-            <span class="value" id="mockRingValue">0m</span>
-            <span class="label">used today</span>
-          </div>
-        </div>
-        <span class="caption">Live, on-device tracking</span>
+    <div class="screen-tour">
+      <div class="screen-tour-tabs" id="screenTabs">
+        <button class="screen-tab active" data-i="0">Overview</button>
+        <button class="screen-tab" data-i="1">Control</button>
+        <button class="screen-tab" data-i="2">Reports</button>
+        <button class="screen-tab" data-i="3">Settings</button>
       </div>
-
-      <div class="mockup-card" style="align-items:stretch">
-        <span class="mockup-title">App Blocking</span>
-        <div class="block-rows" id="blockRows">
-          <div class="block-row"><span>Instagram</span><div class="toggle off"></div></div>
-          <div class="block-row"><span>TikTok</span><div class="toggle on"></div></div>
-          <div class="block-row"><span>YouTube Kids</span><div class="toggle on"></div></div>
+      <div class="screen-tour-body">
+        <button class="screen-tour-arrow prev" id="screenPrev" aria-label="Previous screen">&#8249;</button>
+        <div class="screen-tour-frame">
+          <img id="screenTourImg" src="screens/overview.png" alt="Paxio parent Overview screen showing screen-time trend stats and quick shortcuts">
         </div>
+        <button class="screen-tour-arrow next" id="screenNext" aria-label="Next screen">&#8250;</button>
       </div>
-
-      <div class="mockup-card">
-        <span class="mockup-title">Bedtime Timer</span>
-        <div class="ring ring-sm ring-timer">
-          <div class="ring-track" id="timerRingTrack"></div>
-          <div class="ring-face">
-            <span class="value" id="timerRingValue">5:00</span>
-            <span class="label">until lock</span>
-          </div>
-        </div>
-        <span class="caption">Recurring, every night</span>
-      </div>
-
+      <p class="screen-tour-caption" id="screenCaption">Trend stats for screen time, average session, and over-limit days, plus one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter.</p>
     </div>
   </div>
 </section>
@@ -230,18 +225,8 @@
       </div>
 
       <div class="benefit-row">
-        <div class="benefit-icon c-blue"><i></i></div>
-        <div><h3>Privacy-first by design</h3><p>Filtering and blocking run entirely on the device — no browsing history collected.</p></div>
-      </div>
-
-      <div class="benefit-row">
         <div class="benefit-icon c-orange"><i></i></div>
         <div><h3>Set up in minutes</h3><p>A short guided setup explains each permission in plain language.</p></div>
-      </div>
-
-      <div class="benefit-row">
-        <div class="benefit-icon c-purple"><i></i></div>
-        <div><h3>Peace of mind</h3><p>Uninstall protection and a parent PIN mean the controls actually stick.</p></div>
       </div>
 
       <div class="benefit-row">
@@ -254,6 +239,42 @@
         <div><h3>Focused, not bloated</h3><p>Just the screen time, app, and content controls that matter day to day.</p></div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container reveal" data-reveal>
+    <div class="section-head">
+      <span class="tag">FAQ</span>
+      <h2>Common questions about Paxio</h2>
+      <p>Quick answers about how this parental control app works.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is Paxio free to use?</summary>
+        <p>Paxio's core screen time limits, app blocking, and content filtering are free. Paxio Plus adds more children, a full year of history, and per-app limits.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can my child uninstall or bypass Paxio?</summary>
+        <p>Device admin protection adds a confirmation step before Paxio can be removed, and every setting sits behind a parent PIN.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does the bedtime and sleep timer work?</summary>
+        <p>Set a recurring schedule for school nights, or start a one-off timer for homework or dinner — the device locks until it ends, with an option for the parent to override.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I manage more than one child?</summary>
+        <p>Yes — each child gets their own profile with its own limits, blocked apps, and filtering settings, and profiles sync across devices with your account.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which Android permissions does Paxio need?</summary>
+        <p>Accessibility Service, Usage Access, Device Admin, and VPN — each explained in-app before use, for app blocking, screen-time tracking, uninstall protection, and content filtering.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is Paxio available for iPhone?</summary>
+        <p>Paxio is built for Android today. There's no iOS version yet.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -286,7 +307,6 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Paxio. All rights reserved.</span>
-      <span>support@paxio.in</span>
     </div>
   </div>
 </footer>
@@ -310,33 +330,11 @@
     trackEl.style.background = 'conic-gradient(' + color + ' ' + deg + 'deg, var(--border) 0deg)';
   }
 
+  // Animate mockup screen-time ring
   function fmtMin(m) {
     var h = Math.floor(m / 60), mm = m % 60;
     return h > 0 ? (h + 'h ' + mm + 'm') : (mm + 'm');
   }
-
-  // Animate hero + mockup screen-time rings together
-  (function animateHero() {
-    var duration = 1400, start = null, targetMin = 84, targetPct = 62;
-    var heroValue = document.getElementById('heroRingValue');
-    var heroTrack = document.querySelector('#heroRing .ring-track');
-    var mockValue = document.getElementById('mockRingValue');
-    var mockTrack = document.getElementById('mockRingTrack');
-
-    function step(t) {
-      if (!start) start = t;
-      var p = Math.min(1, (t - start) / duration);
-      var eased = 1 - Math.pow(1 - p, 3);
-      var min = Math.round(targetMin * eased);
-      var pct = Math.round(targetPct * eased);
-      heroValue.textContent = fmtMin(min);
-      mockValue.textContent = fmtMin(min);
-      setRing(heroTrack, '#12B886', pct * 3.6);
-      setRing(mockTrack, '#12B886', pct * 3.6);
-      if (p < 1) requestAnimationFrame(step);
-    }
-    setTimeout(function () { requestAnimationFrame(step); }, 300);
-  })();
 
   function animateDashboard() {
     var duration = 1200, start = null;
@@ -355,7 +353,7 @@
       stats.forEach(function (stat) {
         var target = parseFloat(stat.dataset.target);
         var v = Math.round(target * eased);
-        if (stat.dataset.stat === 'avg') stat.textContent = fmtMin(v);
+        if (stat.dataset.stat === 'avg' || stat.dataset.stat === 'session') stat.textContent = fmtMin(v);
         else if (stat.dataset.stat === 'days') stat.textContent = v + '/7';
         else stat.textContent = v;
       });
@@ -364,29 +362,29 @@
     requestAnimationFrame(step);
   }
 
-  // App-blocking row highlight cycle
-  (function cycleBlockRows() {
-    var rows = document.querySelectorAll('#blockRows .block-row');
+  // App-screens tour
+  (function screenTour() {
+    var screens = [
+      { src: 'screens/overview.png', alt: 'Paxio parent Overview screen showing screen-time trend stats and quick shortcuts', caption: 'Trend stats for screen time, average session, and over-limit days, plus one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter.' },
+      { src: 'screens/control.png', alt: 'Paxio Controls screen listing every active control', caption: 'Screen timer, app blocker, sleep timer, content filtering and internet access, all in one list with live status.' },
+      { src: 'screens/reports.png', alt: 'Paxio Reports screen showing a full week of usage stats', caption: 'The full picture: days inside the limit, latest phone use, blocked attempts, pickups, average session, and requests sent.' },
+      { src: 'screens/settings.png', alt: 'Paxio Settings screen with account, PIN and device options', caption: 'Account, PIN, dark theme and email notifications, kept simple and grouped by how often they\'re used.' }
+    ];
+    var tabs = document.querySelectorAll('#screenTabs .screen-tab');
+    var img = document.getElementById('screenTourImg');
+    var caption = document.getElementById('screenCaption');
+    if (!img) return;
     var i = 0;
-    setInterval(function () {
-      rows.forEach(function (r) { r.classList.remove('active'); });
-      rows[i].classList.add('active');
-      i = (i + 1) % rows.length;
-    }, 2200);
-  })();
-
-  // Bedtime countdown timer ring
-  (function runTimer() {
-    var total = 300, left = total;
-    var valueEl = document.getElementById('timerRingValue');
-    var trackEl = document.getElementById('timerRingTrack');
-    setInterval(function () {
-      left = left <= 0 ? total : left - 1;
-      var min = Math.floor(left / 60);
-      var sec = String(left % 60).padStart(2, '0');
-      valueEl.textContent = min + ':' + sec;
-      setRing(trackEl, '#4C7CF0', (left / total) * 360);
-    }, 1000);
+    function show(idx) {
+      i = (idx + screens.length) % screens.length;
+      img.src = screens[i].src;
+      img.alt = screens[i].alt;
+      caption.textContent = screens[i].caption;
+      tabs.forEach(function (t, ti) { t.classList.toggle('active', ti === i); });
+    }
+    tabs.forEach(function (t) { t.addEventListener('click', function () { show(parseInt(t.dataset.i, 10)); }); });
+    document.getElementById('screenPrev').addEventListener('click', function () { show(i - 1); });
+    document.getElementById('screenNext').addEventListener('click', function () { show(i + 1); });
   })();
 })();
 </script>
