@@ -1,0 +1,44 @@
+<svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A phone showing a short guided setup checklist">
+  <rect x="0" y="0" width="600" height="460" rx="28" fill="#FFE9D9"></rect>
+
+  
+  <g transform="translate(210,90)">
+    <rect x="0" y="0" width="180" height="280" rx="26" fill="#FFFFFF" stroke="#14201A" stroke-width="3"></rect>
+    <rect x="16" y="26" width="148" height="228" rx="10" fill="#F6F3EC"></rect>
+
+    <text x="34" y="56" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#14201A">Quick setup</text>
+
+    
+    <g transform="translate(34,80)">
+      <circle r="11" fill="#12B886"></circle>
+      <path d="M-5 0 l4 4 l7 -8" stroke="#FFFFFF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+      <rect x="24" y="-6" width="96" height="12" rx="6" fill="#DDD6C7"></rect>
+    </g>
+    
+    <g transform="translate(34,116)">
+      <circle r="11" fill="#12B886"></circle>
+      <path d="M-5 0 l4 4 l7 -8" stroke="#FFFFFF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+      <rect x="24" y="-6" width="80" height="12" rx="6" fill="#DDD6C7"></rect>
+    </g>
+    
+    <g transform="translate(34,152)">
+      <circle r="11" fill="none" stroke="#F5A623" stroke-width="3"></circle>
+      <rect x="24" y="-6" width="104" height="12" rx="6" fill="#F5A623" opacity="0.35"></rect>
+    </g>
+    
+    <g transform="translate(34,188)">
+      <circle r="11" fill="none" stroke="#DDD6C7" stroke-width="3"></circle>
+      <rect x="24" y="-6" width="70" height="12" rx="6" fill="#EDE8DB"></rect>
+    </g>
+
+    <rect x="34" y="222" width="112" height="34" rx="17" fill="#12B886"></rect>
+    <text x="90" y="243" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Continue</text>
+  </g>
+
+  
+  <g transform="translate(500,110)">
+    <circle r="30" fill="#FFFFFF" stroke="#F5A623" stroke-width="4"></circle>
+    <line x1="0" y1="0" x2="0" y2="-16" stroke="#F5A623" stroke-width="3.5" stroke-linecap="round"></line>
+    <line x1="0" y1="0" x2="12" y2="6" stroke="#F5A623" stroke-width="3.5" stroke-linecap="round"></line>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A relaxed parent with a phone showing an all-clear checkmark">
+  <rect x="0" y="0" width="600" height="460" rx="28" fill="#DFF4EC"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="260" cy="392" rx="150" ry="16" fill="#C7E9DD"/>
+
+  <!-- relaxed parent figure, leaning back -->
+  <g transform="rotate(-6 260 300)">
+    <rect x="180" y="190" width="150" height="180" rx="50" fill="#12B886"/>
+    <circle cx="255" cy="156" r="54" fill="#12B886"/>
+  </g>
+
+  <!-- phone resting in hand -->
+  <g transform="translate(300,250) rotate(8)">
+    <rect x="0" y="0" width="88" height="146" rx="16" fill="#FFFFFF" stroke="#14201A" stroke-width="3"/>
+    <rect x="12" y="18" width="64" height="94" rx="6" fill="#F6F3EC"/>
+    <circle cx="44" cy="60" r="26" fill="#DFF4EC"/>
+    <path d="M32 60 l9 9 l16 -18" stroke="#12B886" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="44" cy="132" r="5" fill="none" stroke="#14201A" stroke-width="2"/>
+  </g>
+
+  <!-- shield badge, all clear -->
+  <g transform="translate(460,120)">
+    <path d="M0 -34 L34 -22 C34 24 20 56 0 70 C-20 56 -34 24 -34 -22 Z" fill="#8B5CF6"/>
+    <path d="M-12 6 l9 9 l17 -20" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- calm accents -->
+  <circle cx="100" cy="110" r="8" fill="#F5A623" opacity="0.5"/>
+  <circle cx="140" cy="80" r="5" fill="#4C7CF0" opacity="0.5"/>
+  <circle cx="420" cy="330" r="7" fill="#E24C36" opacity="0.3"/>
+</svg>

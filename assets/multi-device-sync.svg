@@ -1,0 +1,41 @@
+<svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A parent&#39;s phone and a child&#39;s phone kept in sync">
+  <rect x="0" y="0" width="600" height="460" rx="28" fill="#E7ECFC"></rect>
+
+  
+  <g transform="translate(100,130)">
+    <rect x="0" y="0" width="130" height="220" rx="24" fill="#FFFFFF" stroke="#14201A" stroke-width="3"></rect>
+    <rect x="14" y="24" width="102" height="150" rx="8" fill="#F6F3EC"></rect>
+    <rect x="28" y="40" width="36" height="36" rx="9" fill="#12B886"></rect>
+    <rect x="28" y="88" width="74" height="8" rx="4" fill="#E7E2D4"></rect>
+    <rect x="28" y="104" width="50" height="8" rx="4" fill="#E7E2D4"></rect>
+    <rect x="28" y="128" width="74" height="30" rx="8" fill="#DFF4EC"></rect>
+    <circle cx="65" cy="196" r="6" fill="none" stroke="#14201A" stroke-width="2"></circle>
+  </g>
+
+  
+  <g transform="translate(370,150)">
+    <rect x="0" y="0" width="130" height="220" rx="24" fill="#FFFFFF" stroke="#14201A" stroke-width="3"></rect>
+    <rect x="14" y="24" width="102" height="150" rx="8" fill="#F6F3EC"></rect>
+    <rect x="28" y="40" width="36" height="36" rx="9" fill="#F5A623"></rect>
+    <rect x="28" y="88" width="74" height="8" rx="4" fill="#E7E2D4"></rect>
+    <rect x="28" y="104" width="50" height="8" rx="4" fill="#E7E2D4"></rect>
+    <rect x="28" y="128" width="74" height="30" rx="8" fill="#FFE9D9"></rect>
+    <circle cx="65" cy="196" r="6" fill="none" stroke="#14201A" stroke-width="2"></circle>
+  </g>
+
+  
+  <g fill="none" stroke="#4C7CF0" stroke-width="4" stroke-linecap="round">
+    <path d="M240 200 C 280 180 300 180 350 200" marker-end="url(#arrow)"></path>
+    <path d="M350 260 C 300 280 280 280 240 260" marker-end="url(#arrow)"></path>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#4C7CF0"></path>
+    </marker>
+  </defs>
+
+  
+  <g transform="translate(300,110)">
+    <path d="M-30 10 a20 20 0 0 1 4 -39 a26 26 0 0 1 50 6 a18 18 0 0 1 -4 33 Z" fill="#FFFFFF" stroke="#4C7CF0" stroke-width="3.5"></path>
+  </g>
+</svg>

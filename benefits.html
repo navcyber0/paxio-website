@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paxio — Delete Your Data</title>
-<meta name="description" content="How to delete a child's profile and data in Paxio without deleting your account.">
-<link rel="canonical" href="https://www.paxio.in/delete-data.html">
+<title>Why Families Choose Paxio</title>
+<meta name="description" content="Paxio is a partnership with your kids, not a punishment: clear limits, a fast setup, cross-device sync, and a focused set of controls.">
+<link rel="canonical" href="https://www.paxio.in/benefits.html">
 <link rel="icon" type="image/png" href="store-assets/play-store-icon-512.png">
 <link rel="stylesheet" href="style.css">
 <!-- Cloudflare Web Analytics -->
@@ -34,7 +34,7 @@
       <div class="nav-dropdown">
         <span class="nav-dropdown-trigger" tabindex="0">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
         <div class="nav-dropdown-panel">
-          <a href="benefits.html">Benefits</a>
+          <a href="benefits.html" class="active">Benefits</a>
           <a href="faq.html">FAQ</a>
         </div>
       </div>
@@ -44,42 +44,42 @@
   </div>
 </nav>
 
-<div class="legal">
-  <a class="back" href="index.html">&larr; Back</a>
-  <span class="tag">Data</span>
-  <h1>Delete Your Data</h1>
-  <p class="updated">Last updated: August 2026</p>
 
-  <p>You can delete a child's profile and its associated data at any time, directly in the app,
-  without deleting your whole Paxio account. If you'd rather delete your entire account instead,
-  see the <a href="delete-account.html">account deletion page</a>.</p>
+<section>
+  <div class="container reveal" data-reveal>
+    <div class="section-head">
+      <span class="tag">Benefits</span>
+      <h2>Why families choose Paxio</h2>
+      <p>Less arguing about screen time, more confidence your kids are safe online.</p>
+    </div>
+    <div class="benefits-grid">
 
-  <h2>How to delete a child's data</h2>
-  <ol>
-    <li>Open Paxio and sign in.</li>
-    <li>On the Dashboard, find the child's profile card.</li>
-    <li>Tap the <strong>⋮</strong> (more options) icon on that card.</li>
-    <li>Tap <strong>"Delete Profile"</strong> and confirm.</li>
-  </ol>
-  <p>This takes effect immediately — no waiting period, no need to contact support.</p>
+      <div class="benefit-row">
+        <div class="benefit-icon c-teal"><i></i></div>
+        <div><h3>A partnership, not a punishment</h3><p>Clear limits your kids can see and understand, not a black box.</p></div>
+      </div>
 
-  <h2>What gets deleted</h2>
-  <div class="legal-table-wrap">
-    <table>
-      <tr><th>Data</th><th>Outcome</th></tr>
-      <tr><td>Child profile (name, age, avatar, daily limit, bedtime settings)</td><td>Permanently deleted from Firestore, immediately</td></tr>
-      <tr><td>That child's app usage history, blocked-app list, content rules, per-app time limits, blocked-site visits, blocked-app attempts, and install/uninstall events</td><td>Permanently deleted from both the local on-device database and Firestore, immediately</td></tr>
-    </table>
+      <div class="benefit-row">
+        <div class="benefit-icon c-orange"><i></i></div>
+        <div><h3>Set up in minutes</h3><p>A short guided setup explains each permission in plain language.</p></div>
+      </div>
+
+      <div class="benefit-row">
+        <div class="benefit-icon c-coral"><i></i></div>
+        <div><h3>Works across devices</h3><p>Profiles and PIN sync to your account, so a new phone takes seconds.</p></div>
+      </div>
+
+      <div class="benefit-row">
+        <div class="benefit-icon c-teal2"><i></i></div>
+        <div><h3>Focused, not bloated</h3><p>Just the screen time, app, and content controls that matter day to day.</p></div>
+      </div>
+
+    </div>
+    <p style="text-align:center;margin-top:40px">
+      <a class="btn btn-primary" href="faq.html">Read the FAQ →</a>
+    </p>
   </div>
-
-  <h2>What is not affected</h2>
-  <p>Your parent account, sign-in, and PIN remain active. Any other child profiles on your account
-  are untouched. If you want to remove your parent account entirely, use the
-  <a href="delete-account.html">account deletion page</a> instead.</p>
-
-  <h2>Contact</h2>
-  <p>Questions: <a href="mailto:support@paxio.in">support@paxio.in</a>.</p>
-</div>
+</section>
 
 <footer>
   <div class="container">
@@ -104,6 +104,16 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.25 });
+  revealEls.forEach(function (el) { io.observe(el); });
+})();
+</script>
 
 </body>
 </html>

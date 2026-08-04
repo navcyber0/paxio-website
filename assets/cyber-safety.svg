@@ -1,0 +1,49 @@
+<svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A phone protected by a shield, deflecting inappropriate content and threats">
+  <rect x="0" y="0" width="600" height="460" rx="28" fill="#EFE6FB"></rect>
+
+  
+  <path d="M300 60 L400 96 C400 210 360 300 300 340 C240 300 200 210 200 96 Z" fill="#8B5CF6" opacity="0.18"></path>
+  <path d="M300 90 L372 118 C372 208 340 278 300 310 C260 278 228 208 228 118 Z" fill="none" stroke="#8B5CF6" stroke-width="4"></path>
+
+  
+  <g transform="translate(248,150)">
+    <rect x="0" y="0" width="104" height="180" rx="20" fill="#FFFFFF" stroke="#14201A" stroke-width="3"></rect>
+    <rect x="16" y="24" width="72" height="112" rx="8" fill="#F6F3EC"></rect>
+    <rect x="32" y="44" width="40" height="40" rx="10" fill="#12B886"></rect>
+    <path d="M44 64 l7 7 l12 -14" stroke="#FFFFFF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+    <rect x="32" y="98" width="40" height="7" rx="3.5" fill="#E7E2D4"></rect>
+    <rect x="32" y="112" width="26" height="7" rx="3.5" fill="#E7E2D4"></rect>
+    <circle cx="52" cy="162" r="6" fill="none" stroke="#14201A" stroke-width="2"></circle>
+  </g>
+
+  
+  <g transform="translate(90,90)">
+    <circle cx="0" cy="0" r="30" fill="#FDE2DE"></circle>
+    <circle cx="0" cy="0" r="10" fill="#E24C36"></circle>
+    <line x1="-16" y1="-10" x2="-26" y2="-18" stroke="#E24C36" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="16" y1="-10" x2="26" y2="-18" stroke="#E24C36" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="-16" y1="10" x2="-26" y2="18" stroke="#E24C36" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="16" y1="10" x2="26" y2="18" stroke="#E24C36" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="-14" y1="-14" x2="14" y2="14" stroke="#E24C36" stroke-width="4" stroke-linecap="round"></line>
+    <line x1="14" y1="-14" x2="-14" y2="14" stroke="#E24C36" stroke-width="4" stroke-linecap="round"></line>
+  </g>
+  <path d="M150 110 C 190 130 210 145 222 158" stroke="#5B6963" stroke-width="2.5" stroke-dasharray="6 8" fill="none"></path>
+
+  
+  <g transform="translate(500,120)">
+    <rect x="-26" y="-26" width="52" height="52" rx="12" fill="#FFE9D9"></rect>
+    <path d="M0 -14 L12 10 L-12 10 Z" fill="none" stroke="#F5A623" stroke-width="3.5" stroke-linejoin="round"></path>
+    <line x1="0" y1="-4" x2="0" y2="3" stroke="#F5A623" stroke-width="3" stroke-linecap="round"></line>
+    <circle cx="0" cy="7" r="1.6" fill="#F5A623"></circle>
+  </g>
+  <path d="M450 140 C 410 155 390 165 378 172" stroke="#5B6963" stroke-width="2.5" stroke-dasharray="6 8" fill="none"></path>
+
+  
+  <g transform="translate(150,340)">
+    <rect x="-28" y="-20" width="56" height="40" rx="8" fill="#E7ECFC"></rect>
+    <line x1="-14" y1="-4" x2="14" y2="-4" stroke="#4C7CF0" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="-14" y1="6" x2="6" y2="6" stroke="#4C7CF0" stroke-width="3" stroke-linecap="round"></line>
+    <line x1="-20" y1="-14" x2="20" y2="14" stroke="#4C7CF0" stroke-width="3.5" stroke-linecap="round"></line>
+  </g>
+  <path d="M195 320 C 215 300 225 285 232 270" stroke="#5B6963" stroke-width="2.5" stroke-dasharray="6 8" fill="none"></path>
+</svg>

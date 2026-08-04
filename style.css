@@ -595,6 +595,22 @@ section { padding: 88px 0; }
 
 @media (max-width: 700px) { .benefits-grid { grid-template-columns: 1fr; } }
 
+.flex-grid { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: center; }
+@media (max-width: 800px) { .flex-grid { grid-template-columns: 1fr; } }
+.flex-shot { display: flex; justify-content: center; }
+.flex-shot-frame {
+  width: min(280px, 100%);
+  background: linear-gradient(160deg, var(--teal), var(--teal-dark));
+  border-radius: 34px;
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
+.flex-shot-frame img { width: 100%; display: block; border-radius: 26px; }
+.flex-modes { display: flex; flex-direction: column; gap: 28px; }
+.flex-mode-row { display: flex; gap: 18px; }
+.flex-mode-row h3 { margin: 0 0 6px; font-size: 1.08rem; font-weight: 700; }
+.flex-mode-row p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
 .benefit-row { display: flex; gap: 18px; }
 
 .benefit-icon {
@@ -786,3 +802,59 @@ footer {
 @media (prefers-color-scheme: dark) { .legal ol { color: var(--ink-soft); } }
 .legal ol li { margin-bottom: 10px; }
 .legal ol li strong { color: var(--ink); }
+
+
+/* ── Mega menu ──────────────────────────────────────────────────────── */
+
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-trigger { display: flex; align-items: center; gap: 5px; cursor: pointer; color: var(--ink-soft); transition: color 0.15s; user-select: none; }
+.nav-dropdown:hover .nav-dropdown-trigger, .nav-dropdown-trigger:focus { color: var(--ink); }
+.nav-dropdown .caret { transition: transform 0.15s; }
+.nav-dropdown:hover .caret { transform: rotate(180deg); }
+.nav-dropdown-panel {
+  position: absolute; top: 100%; left: 50%; transform: translate(-50%, 6px);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 8px; min-width: 210px; box-shadow: var(--shadow);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s;
+  z-index: 20;
+}
+.nav-dropdown:hover .nav-dropdown-panel, .nav-dropdown:focus-within .nav-dropdown-panel {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: translate(-50%, 0);
+}
+.nav-dropdown-panel a { display: block; padding: 10px 12px; border-radius: 10px; font-size: 0.92rem; color: var(--ink-soft); }
+.nav-dropdown-panel a:hover { background: var(--teal-light); color: var(--teal-dark); }
+
+@media (max-width: 760px) {
+  .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
+  .nav-dropdown-trigger { padding: 16px 24px; border-top: 1px solid var(--border); width: 100%; box-sizing: border-box; }
+  .nav-dropdown .caret { display: none; }
+  .nav-dropdown-panel {
+    position: static; transform: none; opacity: 1; visibility: visible; pointer-events: auto;
+    box-shadow: none; border: none; border-radius: 0; padding: 0 0 8px 12px; min-width: 0; background: transparent;
+  }
+  .nav-dropdown-panel a { padding: 10px 24px; }
+}
+
+/* ── Page banner (used by standalone pages like Product Tour) ────────── */
+
+.page-banner { max-width: 1120px; margin: 40px auto 0; padding: 0 28px; }
+.page-banner-frame { width: 100%; height: 340px; border-radius: var(--radius-lg); overflow: hidden; }
+@media (max-width: 700px) { .page-banner-frame { height: 220px; } }
+
+/* ── Home teaser cards ──────────────────────────────────────────────── */
+
+.teaser-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (max-width: 800px) { .teaser-grid { grid-template-columns: 1fr; } }
+.teaser-card {
+  display: flex; flex-direction: column; gap: 14px; padding: 28px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  transition: border-color 0.15s, transform 0.15s; color: inherit;
+}
+.teaser-card:hover { border-color: var(--teal); transform: translateY(-3px); color: inherit; }
+.teaser-card h3 { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.teaser-card p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; flex: 1; }
+.teaser-card .teaser-link { color: var(--teal-dark); font-weight: 600; font-size: 0.9rem; }
+
+.benefits-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (max-width: 800px) { .benefits-strip { grid-template-columns: 1fr; } }
