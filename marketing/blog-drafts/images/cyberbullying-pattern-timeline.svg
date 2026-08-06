@@ -1,0 +1,24 @@
+<svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="260" fill="#F6F3EC"/>
+
+  <text x="400" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#14201A">A pattern over time, not one moment</text>
+
+  <!-- timeline -->
+  <line x1="100" y1="150" x2="700" y2="150" stroke="#E7E2D4" stroke-width="3"/>
+
+  <!-- repeated small events -->
+  <g fill="#8B5CF6">
+    <circle cx="160" cy="150" r="10"/>
+    <circle cx="260" cy="150" r="10"/>
+    <circle cx="330" cy="150" r="10"/>
+    <circle cx="430" cy="150" r="10"/>
+    <circle cx="520" cy="150" r="10"/>
+    <circle cx="610" cy="150" r="10"/>
+  </g>
+
+  <!-- a single unrelated dot to show contrast -->
+  <circle cx="700" cy="150" r="10" fill="#E7E2D4"/>
+
+  <text x="380" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#5B6963">repeated, targeted, ongoing</text>
+  <text x="700" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#5B6963">— vs. a single incident</text>
+</svg>

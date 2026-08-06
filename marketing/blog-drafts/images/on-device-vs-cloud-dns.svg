@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="340" fill="#F6F3EC"/>
+
+  <!-- On-device side -->
+  <text x="180" y="46" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#14201A">On-device</text>
+  <rect x="110" y="70" width="140" height="230" rx="22" fill="#FFFFFF" stroke="#12B886" stroke-width="3"/>
+  <rect x="128" y="98" width="104" height="150" rx="8" fill="#F6F3EC"/>
+  <circle cx="180" cy="180" r="26" fill="#12B886"/>
+  <path d="M168 180 l8 8 l16 -18" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#5B6963">blocklist checked</text>
+  <text x="180" y="244" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#5B6963">right here</text>
+  <circle cx="180" cy="290" r="7" fill="none" stroke="#14201A" stroke-width="2"/>
+
+  <!-- Cloud side -->
+  <text x="620" y="46" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#14201A">Cloud filtering</text>
+  <rect x="550" y="70" width="140" height="230" rx="22" fill="#FFFFFF" stroke="#E24C36" stroke-width="3"/>
+  <rect x="568" y="98" width="104" height="150" rx="8" fill="#F6F3EC"/>
+  <circle cx="620" cy="180" r="26" fill="#8B5CF6"/>
+  <path d="M608 180 l8 8 l16 -18" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="620" cy="290" r="7" fill="none" stroke="#14201A" stroke-width="2"/>
+
+  <!-- cloud icon + arrow -->
+  <path d="M600 10 a16 16 0 0 1 0 -32 a20 20 0 0 1 40 4 a14 14 0 0 1 -3 28 z" fill="#FFFFFF" stroke="#5B6963" stroke-width="2" transform="translate(0,20)"/>
+  <path d="M620 42 C620 30 620 20 620 8" stroke="#E24C36" stroke-width="2.5" stroke-dasharray="5 6" marker-end="url(#arrow2)"/>
+  <defs>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#E24C36"/>
+    </marker>
+  </defs>
+  <text x="620" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#5B6963">request sent out</text>
+  <text x="620" y="244" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#5B6963">to check</text>
+
+  <!-- divider -->
+  <line x1="400" y1="40" x2="400" y2="310" stroke="#E7E2D4" stroke-width="2" stroke-dasharray="4 8"/>
+</svg>

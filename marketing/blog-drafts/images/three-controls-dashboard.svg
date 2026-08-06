@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="380" fill="#F6F3EC"/>
+
+  <!-- Card 1: Time limit ring -->
+  <rect x="40" y="50" width="220" height="280" rx="20" fill="#FFFFFF" stroke="#E7E2D4" stroke-width="2"/>
+  <text x="150" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#14201A">How long</text>
+  <circle cx="150" cy="180" r="60" fill="none" stroke="#E7E2D4" stroke-width="14"/>
+  <circle cx="150" cy="180" r="60" fill="none" stroke="#12B886" stroke-width="14"
+          stroke-dasharray="283" stroke-dashoffset="90" stroke-linecap="round" transform="rotate(-90 150 180)"/>
+  <text x="150" y="186" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#14201A">1h 40m</text>
+  <text x="150" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#5B6963">Daily time limit</text>
+
+  <!-- Card 2: App blocking list -->
+  <rect x="290" y="50" width="220" height="280" rx="20" fill="#FFFFFF" stroke="#E7E2D4" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#14201A">Which apps</text>
+  <g font-family="system-ui, sans-serif" font-size="13">
+    <rect x="316" y="115" width="168" height="36" rx="10" fill="#F6F3EC"/>
+    <circle cx="336" cy="133" r="10" fill="#4C7CF0"/>
+    <text x="356" y="137" fill="#14201A">Homework App</text>
+    <text x="470" y="137" fill="#12B886">✓</text>
+
+    <rect x="316" y="159" width="168" height="36" rx="10" fill="#F6F3EC"/>
+    <circle cx="336" cy="177" r="10" fill="#8B5CF6"/>
+    <text x="356" y="181" fill="#14201A">Game X</text>
+    <text x="470" y="181" fill="#E24C36">✕</text>
+
+    <rect x="316" y="203" width="168" height="36" rx="10" fill="#F6F3EC"/>
+    <circle cx="336" cy="221" r="10" fill="#F5A623"/>
+    <text x="356" y="225" fill="#14201A">Social App</text>
+    <text x="470" y="225" fill="#E24C36">✕</text>
+  </g>
+  <text x="400" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#5B6963">Per-app allow/block</text>
+
+  <!-- Card 3: Content filter categories -->
+  <rect x="540" y="50" width="220" height="280" rx="20" fill="#FFFFFF" stroke="#E7E2D4" stroke-width="2"/>
+  <text x="650" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#14201A">What content</text>
+  <g font-family="system-ui, sans-serif" font-size="13" fill="#14201A">
+    <rect x="566" y="115" width="168" height="30" rx="15" fill="#F6F3EC"/>
+    <text x="580" y="135">Adult content</text>
+    <rect x="700" y="120" width="24" height="20" rx="10" fill="#E24C36"/>
+
+    <rect x="566" y="153" width="168" height="30" rx="15" fill="#F6F3EC"/>
+    <text x="580" y="173">Gambling</text>
+    <rect x="700" y="158" width="24" height="20" rx="10" fill="#E24C36"/>
+
+    <rect x="566" y="191" width="168" height="30" rx="15" fill="#F6F3EC"/>
+    <text x="580" y="211">Educational</text>
+    <rect x="700" y="196" width="24" height="20" rx="10" fill="#12B886"/>
+  </g>
+  <text x="650" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#5B6963">On-device category filter</text>
+</svg>

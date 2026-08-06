@@ -1,0 +1,29 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="380" fill="#F6F3EC"/>
+
+  <!-- 24h arc dial representing the bedtime window -->
+  <g transform="translate(400,200)">
+    <circle r="150" fill="#FFFFFF" stroke="#E7E2D4" stroke-width="3"/>
+    <!-- locked window arc, 9pm(21h) to 7am(7h) = 10h span out of 24h -->
+    <path d="M 0 -150 A 150 150 0 0 1 88.2 121.4" fill="none" stroke="#8B5CF6" stroke-width="26" stroke-linecap="round"/>
+    <!-- tick marks every 3 hours -->
+    <g stroke="#5B6963" stroke-width="2">
+      <line x1="0" y1="-140" x2="0" y2="-150"/>
+      <line x1="121.2" y1="-70" x2="129.9" y2="-75"/>
+      <line x1="121.2" y1="70" x2="129.9" y2="75"/>
+      <line x1="0" y1="140" x2="0" y2="150"/>
+      <line x1="-121.2" y1="70" x2="-129.9" y2="75"/>
+      <line x1="-121.2" y1="-70" x2="-129.9" y2="-75"/>
+    </g>
+    <circle r="8" fill="#14201A"/>
+    <!-- moon icon inside the locked arc region -->
+    <g transform="translate(70,-95)">
+      <path d="M14 0 A14 14 0 1 0 14 28 A11 11 0 0 1 14 0 Z" fill="#8B5CF6"/>
+    </g>
+  </g>
+
+  <text x="400" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#14201A">9:00 PM – 7:00 AM</text>
+  <text x="400" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#5B6963">the locked window, not a single moment</text>
+
+  <text x="400 " y="356" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#5B6963">Recurring bedtime · day-of-week picker · separate one-off timer</text>
+</svg>

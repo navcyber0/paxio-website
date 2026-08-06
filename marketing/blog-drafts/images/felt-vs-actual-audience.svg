@@ -1,0 +1,15 @@
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="320" fill="#F6F3EC"/>
+
+  <text x="400" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#14201A">The felt audience vs. the actual reach</text>
+
+  <!-- inner circle: felt audience -->
+  <circle cx="400" cy="190" r="70" fill="#12B886" fill-opacity="0.18" stroke="#12B886" stroke-width="3"/>
+  <text x="400" y="185" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#14201A" font-weight="600">friends</text>
+  <text x="400" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#5B6963">(the felt audience)</text>
+
+  <!-- outer circle: actual reach -->
+  <circle cx="400" cy="190" r="140" fill="none" stroke="#E24C36" stroke-width="3" stroke-dasharray="6 6"/>
+  <text x="400" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#E24C36" font-weight="600">friends-of-friends, screenshots, shares</text>
+  <text x="400" y="86" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#5B6963">(the actual reachable audience)</text>
+</svg>

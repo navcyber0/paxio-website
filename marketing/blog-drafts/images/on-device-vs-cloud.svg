@@ -1,0 +1,41 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="380" fill="#F6F3EC"/>
+
+  <!-- Left: on-device (Paxio) -->
+  <text x="110" y="50" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#14201A">On-device filtering</text>
+  <rect x="60" y="80" width="160" height="260" rx="24" fill="#FFFFFF" stroke="#12B886" stroke-width="3"/>
+  <rect x="80" y="112" width="120" height="180" rx="8" fill="#F6F3EC"/>
+  <g transform="translate(112,150)">
+    <rect width="56" height="56" rx="14" fill="#12B886"/>
+    <path d="M12 30 l10 10 l22 -26" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="140" cy="330" r="8" fill="none" stroke="#14201A" stroke-width="2"/>
+  <text x="60" y="365" font-family="system-ui, sans-serif" font-size="14" fill="#5B6963">Decision made here.</text>
+  <text x="60" y="382" font-family="system-ui, sans-serif" font-size="14" fill="#5B6963">Nothing sent out.</text>
+
+  <!-- divider -->
+  <line x1="400" y1="40" x2="400" y2="340" stroke="#E7E2D4" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- Right: cloud filtering -->
+  <text x="470" y="50" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#14201A">Cloud filtering</text>
+  <rect x="580" y="80" width="160" height="260" rx="24" fill="#FFFFFF" stroke="#E24C36" stroke-width="3"/>
+  <rect x="600" y="112" width="120" height="180" rx="8" fill="#F6F3EC"/>
+  <g transform="translate(632,150)">
+    <rect width="56" height="56" rx="14" fill="#8B5CF6"/>
+    <path d="M12 30 l10 10 l22 -26" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="660" cy="330" r="8" fill="none" stroke="#14201A" stroke-width="2"/>
+
+  <!-- cloud icon above, with arrow showing traffic leaving -->
+  <g transform="translate(600,10)">
+    <path d="M20 40 a20 20 0 0 1 0 -40 a26 26 0 0 1 50 6 a18 18 0 0 1 -4 34 z" fill="#FFFFFF" stroke="#5B6963" stroke-width="2.5"/>
+  </g>
+  <path d="M660 78 C650 55 640 40 632 22" stroke="#E24C36" stroke-width="2.5" stroke-dasharray="5 6" marker-end="url(#arrow)" fill="none"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#E24C36"/>
+    </marker>
+  </defs>
+  <text x="580" y="365" font-family="system-ui, sans-serif" font-size="14" fill="#5B6963">Every request round-trips</text>
+  <text x="580" y="382" font-family="system-ui, sans-serif" font-size="14" fill="#5B6963">through a third-party server.</text>
+</svg>
