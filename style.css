@@ -793,6 +793,48 @@ footer {
   overflow-x: auto;
   margin: 16px 0;
 }
+
+/* ── Blog ────────────────────────────────────────────────────────────── */
+
+.blog-meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 28px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.blog-meta .dot { opacity: 0.5; }
+
+.blog-hero-img { width: 100%; border-radius: 16px; margin: 8px 0 4px; }
+.photo-credit { display: block; text-align: right; font-size: 0.78rem; color: var(--ink-soft); opacity: 0.75; margin: 0 0 24px; }
+.photo-credit a { color: inherit; }
+
+.legal img { border-radius: 12px; }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.blog-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.blog-card img { width: 100%; height: 170px; object-fit: cover; }
+.blog-card .blog-card-body { padding: 20px 22px 24px; }
+.blog-card .blog-card-tag {
+  display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--teal-dark); background: var(--teal-light);
+  padding: 4px 10px; border-radius: 20px; margin-bottom: 12px;
+}
+.blog-card h3 { margin: 0 0 8px; font-size: 1.08rem; font-weight: 700; line-height: 1.35; }
+.blog-card p { margin: 0 0 12px; color: var(--ink-soft); font-size: 0.92rem; line-height: 1.5; }
+.blog-card .blog-card-meta { font-size: 0.8rem; color: var(--ink-soft); opacity: 0.8; }
 .legal-table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
 .legal-table-wrap th, .legal-table-wrap td { text-align: left; padding: 12px 14px; vertical-align: top; border-bottom: 1px solid var(--border); }
 .legal-table-wrap tr:last-child td { border-bottom: none; }
