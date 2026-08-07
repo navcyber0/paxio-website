@@ -42,16 +42,9 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
+      <a href="../index.html#features">Product</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Product<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
-        <div class="nav-dropdown-panel">
-          <a href="../features.html">Features</a>
-          <a href="../setup.html">Setup &amp; Flexibility</a>
-          <a href="../product-tour.html">Product Tour</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
         <div class="nav-dropdown-panel">
           <a href="../benefits.html">Benefits</a>
           <a href="../faq.html">FAQ</a>
@@ -67,7 +60,7 @@
 <div class="legal">
   <a class="back" href="index.html">&larr; Back to Blog</a>
   <span class="tag">Mobile Security</span>
-  <h1>The app permissions kids grant without thinking — and why the rules just got stricter</h1>
+  <h1>The app permissions kids grant without thinking, and why the rules just got stricter</h1>
   <div class="blog-meta">
     <span>Paxio</span><span class="dot">&middot;</span><span>August 6, 2026</span><span class="dot">&middot;</span><span>~2 min read</span>
   </div>
@@ -75,29 +68,29 @@
   <img class="blog-hero-img" src="images/mobile-permissions-app-icons.jpg" alt="A hand holding a smartphone with a screen full of colorful app icons">
   <span class="photo-credit">Photo by <a href="https://unsplash.com/@glyamin">Georgiy Lyamin</a> on <a href="https://unsplash.com/photos/9aRGteMSg44">Unsplash</a></span>
 
-  <p>Every mobile app install comes with a string of permission prompts — camera, microphone, contacts, location — and most kids tap "allow" the same way they'd click past a loading screen: on the way to something else, not as a real decision. This is a genuinely mobile-specific problem — desktop software doesn't have the same runtime permission model at all — and it's gotten more consequential this year, not less.</p>
+  <p>Every mobile app install comes with a string of permission prompts (camera, microphone, contacts, location), and most kids tap "allow" the same way they'd click past a loading screen: on the way to something else, not as a real decision. This is a genuinely mobile-specific problem, since desktop software doesn't have the same runtime permission model at all, and it's gotten more consequential this year, not less.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>The rules just changed, for real</h2></div>
-  <p>The FTC's amended COPPA Rule became fully enforceable on April 22, 2026 — it now classifies biometric identifiers (like voiceprints and facial data, the kind of thing a microphone or camera permission can enable collecting) as protected personal information, and requires separate, specific consent before a child's data can be shared with advertisers, not just a blanket privacy-policy checkbox. This is a real regulatory tightening, not marketing language — apps handling kids' data now have to work harder to justify what they collect. (<a href="https://www.federalregister.gov/documents/2025/04/22/2025-05904/childrens-online-privacy-protection-rule" target="_blank" rel="noopener">Federal Register, FTC COPPA Rule amendments, published April 22, 2025, in force April 22, 2026</a>)</p>
+  <p>The FTC's amended COPPA Rule became fully enforceable on April 22, 2026. It now classifies biometric identifiers (like voiceprints and facial data, the kind of thing a microphone or camera permission can enable collecting) as protected personal information, and requires separate, specific consent before a child's data can be shared with advertisers, not just a blanket privacy-policy checkbox. This is a real regulatory tightening, not marketing language: apps handling kids' data now have to work harder to justify what they collect. (<a href="https://www.federalregister.gov/documents/2025/04/22/2025-05904/childrens-online-privacy-protection-rule" target="_blank" rel="noopener">Federal Register, FTC COPPA Rule amendments, published April 22, 2025, in force April 22, 2026</a>)</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-teal"><i></i></span><h2>Why the permission prompt itself is the actual decision point</h2></div>
-  <p>Once an app has camera, mic, or location access, there's no further in-app checkpoint — the access is granted continuously, in the background, until someone goes back into device settings and revokes it. Nobody re-approves it each time the app opens. That's what makes the initial prompt the whole decision, not step one of an ongoing one — which is exactly why a kid tapping through it without reading isn't a small thing.</p>
+  <p>Once an app has camera, mic, or location access, there's no further in-app checkpoint: the access is granted continuously, in the background, until someone goes back into device settings and revokes it. Nobody re-approves it each time the app opens. That's what makes the initial prompt the whole decision, not step one of an ongoing one, which is exactly why a kid tapping through it without reading isn't a small thing.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>What to actually check, concretely</h2></div>
   <ul>
     <li><strong>Location</strong>: does this specific app need to know where the device is to do its job? A messaging app doesn't. A maps app does.</li>
     <li><strong>Camera/microphone</strong>: does the app's actual function require recording, or is it a game/utility that has no real use for either?</li>
-    <li><strong>Contacts</strong>: this one's easy to miss — granting it hands over not just your kid's contact list, but potentially their friends' phone numbers and emails too, without those friends ever consenting to anything.</li>
-    <li><strong>"While using the app" vs. "always"</strong>: most phones let you scope a permission to only when the app is open, instead of continuous background access — the safer default for anything that doesn't need to run in the background.</li>
+    <li><strong>Contacts</strong>: this one's easy to miss, since granting it hands over not just your kid's contact list, but potentially their friends' phone numbers and emails too, without those friends ever consenting to anything.</li>
+    <li><strong>"While using the app" vs. "always"</strong>: most phones let you scope a permission to only when the app is open, instead of continuous background access: the safer default for anything that doesn't need to run in the background.</li>
   </ul>
 
   <div class="legal-h2-row"><span class="legal-icon c-purple"><i></i></span><h2>The practical habit</h2></div>
-  <p>Not reviewing every permission on every app forever — that doesn't scale. The higher-leverage habit: check permissions at install time, before the first "allow" tap, for anything camera/mic/location/contacts-related, and do one periodic sweep (phone Settings &rarr; Apps &rarr; Permissions) every few months to catch anything that's crept in since.</p>
+  <p>Not reviewing every permission on every app forever: that doesn't scale. The higher-leverage habit: check permissions at install time, before the first "allow" tap, for anything camera/mic/location/contacts-related, and do one periodic sweep (phone Settings &rarr; Apps &rarr; Permissions) every few months to catch anything that's crept in since.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>Where Paxio fits, and where it doesn't</h2></div>
-  <p>App blocking controls <em>which apps exist on the device at all</em> — the outer layer, and a real lever if a specific app's permission demands are disqualifying on their own. It doesn't reach inside an allowed app to manage its individual OS-level permission grants; that's Android's own Settings, not something a parental control app can override. Worth knowing so you check permissions directly rather than assuming a device control covers it.</p>
+  <p>App blocking controls <em>which apps exist on the device at all</em>: the outer layer, and a real lever if a specific app's permission demands are disqualifying on their own. It doesn't reach inside an allowed app to manage its individual OS-level permission grants; that's Android's own Settings, not something a parental control app can override. Worth knowing so you check permissions directly rather than assuming a device control covers it.</p>
 
-  <p><a href="../index.html">Paxio</a> handles app blocking, content filtering, screen time, and bedtime — free for one child — the permission check above is a five-minute habit worth keeping separately.</p>
+  <p><a href="../index.html">Paxio</a> handles app blocking, content filtering, screen time, and bedtime (free for one child). The permission check above is a five-minute habit worth keeping separately.</p>
 
   <p style="text-align:center;margin-top:40px">
     <a class="btn btn-primary" href="../index.html#download">Try Paxio free &rarr;</a>
@@ -112,9 +105,7 @@
         Paxio
       </a>
       <div class="footer-links">
-        <a href="../features.html">Features</a>
-        <a href="../setup.html">Setup</a>
-        <a href="../product-tour.html">Product Tour</a>
+        <a href="../index.html#features">Product</a>
         <a href="../benefits.html">Benefits</a>
         <a href="../faq.html">FAQ</a>
         <a href="index.html">Blog</a>
@@ -128,6 +119,19 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
+    dd.addEventListener('mouseenter', sync);
+    dd.addEventListener('mouseleave', sync);
+    dd.addEventListener('focusin', sync);
+    dd.addEventListener('focusout', sync);
+  });
+})();
+</script>
 
 </body>
 </html>

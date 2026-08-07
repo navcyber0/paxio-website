@@ -23,16 +23,9 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
+      <a href="index.html#features">Product</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Product<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
-        <div class="nav-dropdown-panel">
-          <a href="features.html">Features</a>
-          <a href="setup.html">Setup &amp; Flexibility</a>
-          <a href="product-tour.html">Product Tour</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
         <div class="nav-dropdown-panel">
           <a href="benefits.html" class="active">Benefits</a>
           <a href="faq.html">FAQ</a>
@@ -50,29 +43,29 @@
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">Benefits</span>
-      <h2>Why families choose Paxio</h2>
+      <h1>Why families choose Paxio</h1>
       <p>Less arguing about screen time, more confidence your kids are safe online.</p>
     </div>
     <div class="benefits-grid">
 
       <div class="benefit-row">
         <div class="benefit-icon c-teal"><i></i></div>
-        <div><h3>A partnership, not a punishment</h3><p>Clear limits your kids can see and understand, not a black box.</p></div>
+        <div><h2>A partnership, not a punishment</h2><p>Clear limits your kids can see and understand, not a black box.</p></div>
       </div>
 
       <div class="benefit-row">
         <div class="benefit-icon c-orange"><i></i></div>
-        <div><h3>Set up in minutes</h3><p>A short guided setup explains each permission in plain language.</p></div>
+        <div><h2>Set up in minutes</h2><p>A short guided setup explains each permission in plain language.</p></div>
       </div>
 
       <div class="benefit-row">
         <div class="benefit-icon c-coral"><i></i></div>
-        <div><h3>Works across devices</h3><p>Profiles and PIN sync to your account, so a new phone takes seconds.</p></div>
+        <div><h2>Works across devices</h2><p>Profiles and PIN sync to your account, so a new phone takes seconds.</p></div>
       </div>
 
       <div class="benefit-row">
         <div class="benefit-icon c-teal2"><i></i></div>
-        <div><h3>Focused, not bloated</h3><p>Just the screen time, app, and content controls that matter day to day.</p></div>
+        <div><h2>Focused, not bloated</h2><p>Just the screen time, app, and content controls that matter day to day.</p></div>
       </div>
 
     </div>
@@ -86,17 +79,15 @@
   <div class="container">
     <div class="footer-grid">
       <a class="footer-brand" href="index.html">
-        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy">
         Paxio
       </a>
       <div class="footer-links">
-        <a href="features.html">Features</a>
-        <a href="setup.html">Setup</a>
-        <a href="product-tour.html">Product Tour</a>
+        <a href="index.html#features">Product</a>
         <a href="benefits.html">Benefits</a>
         <a href="faq.html">FAQ</a>
         <a href="blog/index.html">Blog</a>
-      <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
       </div>
@@ -109,6 +100,14 @@
 
 <script>
 (function () {
+  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
+    dd.addEventListener('mouseenter', sync);
+    dd.addEventListener('mouseleave', sync);
+    dd.addEventListener('focusin', sync);
+    dd.addEventListener('focusout', sync);
+  });
   var revealEls = document.querySelectorAll('[data-reveal]');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });

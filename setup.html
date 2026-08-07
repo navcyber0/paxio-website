@@ -23,16 +23,9 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
+      <a href="index.html#features">Product</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Product<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
-        <div class="nav-dropdown-panel">
-          <a href="features.html">Features</a>
-          <a href="setup.html" class="active">Setup &amp; Flexibility</a>
-          <a href="product-tour.html">Product Tour</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
         <div class="nav-dropdown-panel">
           <a href="benefits.html">Benefits</a>
           <a href="faq.html">FAQ</a>
@@ -50,7 +43,7 @@
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">Set up your way</span>
-      <h2>One phone or two — Paxio adapts</h2>
+      <h1>One phone or two — Paxio adapts</h1>
       <p>Tell Paxio who uses this phone once during setup. Change it anytime from Settings with your PIN.</p>
     </div>
     <div class="flex-grid">
@@ -62,20 +55,20 @@
       <div class="flex-modes">
         <div class="flex-mode-row">
           <div class="benefit-icon c-teal"><i></i></div>
-          <div><h3>Separate phones</h3><p>Install Paxio on your child's phone and manage it remotely from your own — a full dashboard on your side, a calm single screen on theirs.</p></div>
+          <div><h2>Separate phones</h2><p>Install Paxio on your child's phone and manage it remotely from your own — a full dashboard on your side, a calm single screen on theirs.</p></div>
         </div>
         <div class="flex-mode-row">
           <div class="benefit-icon c-coral"><i></i></div>
-          <div><h3>One shared phone</h3><p>Using the same phone as your child? Swap between parent and child view with your PIN, no second device required.</p></div>
+          <div><h2>One shared phone</h2><p>Using the same phone as your child? Swap between parent and child view with your PIN, no second device required.</p></div>
         </div>
         <div class="flex-mode-row">
           <div class="benefit-icon c-teal2"><i></i></div>
-          <div><h3>Just the parent dashboard</h3><p>Set up this phone as parent-only to manage every child's device remotely, with no permissions needed on this one.</p></div>
+          <div><h2>Just the parent dashboard</h2><p>Set up this phone as parent-only to manage every child's device remotely, with no permissions needed on this one.</p></div>
         </div>
       </div>
     </div>
     <p style="text-align:center;margin-top:40px">
-      <a class="btn btn-primary" href="product-tour.html">Take the product tour →</a>
+      <a class="btn btn-primary" href="index.html#tour">Take the product tour →</a>
     </p>
   </div>
 </section>
@@ -84,17 +77,15 @@
   <div class="container">
     <div class="footer-grid">
       <a class="footer-brand" href="index.html">
-        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy">
         Paxio
       </a>
       <div class="footer-links">
-        <a href="features.html">Features</a>
-        <a href="setup.html">Setup</a>
-        <a href="product-tour.html">Product Tour</a>
+        <a href="index.html#features">Product</a>
         <a href="benefits.html">Benefits</a>
         <a href="faq.html">FAQ</a>
         <a href="blog/index.html">Blog</a>
-      <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
       </div>
@@ -107,6 +98,14 @@
 
 <script>
 (function () {
+  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
+    dd.addEventListener('mouseenter', sync);
+    dd.addEventListener('mouseleave', sync);
+    dd.addEventListener('focusin', sync);
+    dd.addEventListener('focusout', sync);
+  });
   var revealEls = document.querySelectorAll('[data-reveal]');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });

@@ -23,16 +23,9 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
+      <a href="index.html#features">Product</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Product<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
-        <div class="nav-dropdown-panel">
-          <a href="features.html" class="active">Features</a>
-          <a href="setup.html">Setup &amp; Flexibility</a>
-          <a href="product-tour.html">Product Tour</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
         <div class="nav-dropdown-panel">
           <a href="benefits.html">Benefits</a>
           <a href="faq.html">FAQ</a>
@@ -50,62 +43,62 @@
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">Features</span>
-      <h2>Everything that changes daily habits</h2>
+      <h1>Everything that changes daily habits</h1>
       <p>No bloated dashboard. Just the handful of controls that actually work.</p>
     </div>
     <div class="features-grid">
 
       <div class="feature-card">
         <div class="feature-icon icon-limits"></div>
-        <h3>Screen Time Limits</h3>
+        <h2>Screen Time Limits</h2>
         <p>Set a daily limit per child, watch live usage progress, and get notified as they approach it.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-appblock" style="animation-delay:0.3s"></div>
-        <h3>App Blocking</h3>
+        <h2>App Blocking</h2>
         <p>Choose exactly which apps your child can use — enforced in real time, nothing to uninstall.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-filter" style="animation-delay:0.6s"><span></span><span></span><span></span></div>
-        <h3>Content Filtering</h3>
+        <h2>Content Filtering</h2>
         <p>Block entire categories of sites with an on-device filter. Browsing activity never leaves the device.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-bedtime" style="animation-delay:0.9s"></div>
-        <h3>Bedtime &amp; Sleep Timer</h3>
+        <h2>Bedtime &amp; Sleep Timer</h2>
         <p>Schedule a recurring bedtime lock, or start a one-off timer for homework or dinner.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-pin" style="animation-delay:1.2s"><span></span><span></span><span></span><span></span></div>
-        <h3>PIN-Protected Settings</h3>
+        <h2>PIN-Protected Settings</h2>
         <p>Every setting sits behind a parent PIN, so changes only happen when you make them.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-usage" style="animation-delay:1.5s"><span></span><span></span><span></span></div>
-        <h3>Real Usage Data</h3>
+        <h2>Real Usage Data</h2>
         <p>Screen time is sourced from Android's own usage tracking — real data, not estimates.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-uninstall" style="animation-delay:1.8s"></div>
-        <h3>Uninstall Protection</h3>
+        <h2>Uninstall Protection</h2>
         <p>Device admin protection adds a confirmation step before Paxio can be removed.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-sync" style="animation-delay:2.1s"></div>
-        <h3>Profile Sync</h3>
+        <h2>Profile Sync</h2>
         <p>Child profiles and your PIN sync securely, so switching phones isn't starting over.</p>
       </div>
 
     </div>
     <p style="text-align:center;margin-top:40px">
-      <a class="btn btn-primary" href="setup.html">See setup options →</a>
+      <a class="btn btn-primary" href="index.html#setup">See setup options →</a>
     </p>
   </div>
 </section>
@@ -114,17 +107,15 @@
   <div class="container">
     <div class="footer-grid">
       <a class="footer-brand" href="index.html">
-        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy">
         Paxio
       </a>
       <div class="footer-links">
-        <a href="features.html">Features</a>
-        <a href="setup.html">Setup</a>
-        <a href="product-tour.html">Product Tour</a>
+        <a href="index.html#features">Product</a>
         <a href="benefits.html">Benefits</a>
         <a href="faq.html">FAQ</a>
         <a href="blog/index.html">Blog</a>
-      <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
       </div>
@@ -137,6 +128,14 @@
 
 <script>
 (function () {
+  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
+    dd.addEventListener('mouseenter', sync);
+    dd.addEventListener('mouseleave', sync);
+    dd.addEventListener('focusin', sync);
+    dd.addEventListener('focusout', sync);
+  });
   var revealEls = document.querySelectorAll('[data-reveal]');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });

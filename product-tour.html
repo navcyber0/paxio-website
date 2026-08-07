@@ -20,16 +20,9 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
+      <a href="index.html#features">Product</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Product<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
-        <div class="nav-dropdown-panel">
-          <a href="features.html">Features</a>
-          <a href="setup.html">Setup &amp; Flexibility</a>
-          <a href="product-tour.html" class="active">Product Tour</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <span class="nav-dropdown-trigger" tabindex="0">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></span>
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
         <div class="nav-dropdown-panel">
           <a href="benefits.html">Benefits</a>
           <a href="faq.html">FAQ</a>
@@ -47,7 +40,7 @@
   <div class="container reveal" data-reveal id="dashboardReveal">
     <div class="section-head">
       <span class="tag">Dashboard</span>
-      <h2>Your weekly overview, at a glance</h2>
+      <h1>Your weekly overview, at a glance</h1>
       <p>Real numbers pulled straight from the device — updated the moment usage changes.</p>
     </div>
 
@@ -94,7 +87,7 @@
       <div class="screen-tour-body">
         <button class="screen-tour-arrow prev" id="screenPrev" aria-label="Previous screen">&#8249;</button>
         <div class="screen-tour-frame">
-          <img id="screenTourImg" src="screens/overview.png" alt="Paxio parent Overview screen showing screen-time trend stats and quick shortcuts">
+          <img id="screenTourImg" src="screens/overview.png" alt="Paxio parent Overview screen showing screen-time trend stats and quick shortcuts" loading="lazy">
         </div>
         <button class="screen-tour-arrow next" id="screenNext" aria-label="Next screen">&#8250;</button>
       </div>
@@ -107,17 +100,15 @@
   <div class="container">
     <div class="footer-grid">
       <a class="footer-brand" href="index.html">
-        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy">
         Paxio
       </a>
       <div class="footer-links">
-        <a href="features.html">Features</a>
-        <a href="setup.html">Setup</a>
-        <a href="product-tour.html">Product Tour</a>
+        <a href="index.html#features">Product</a>
         <a href="benefits.html">Benefits</a>
         <a href="faq.html">FAQ</a>
         <a href="blog/index.html">Blog</a>
-      <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
       </div>
@@ -130,6 +121,14 @@
 
 <script>
 (function () {
+  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+    var trigger = dd.querySelector('.nav-dropdown-trigger');
+    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
+    dd.addEventListener('mouseenter', sync);
+    dd.addEventListener('mouseleave', sync);
+    dd.addEventListener('focusin', sync);
+    dd.addEventListener('focusout', sync);
+  });
   var revealEls = document.querySelectorAll('[data-reveal]');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
