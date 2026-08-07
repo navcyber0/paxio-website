@@ -27,6 +27,12 @@ Drafted posts below are pending human review until marked Published. A live `blo
 |---|---|---|
 | The app permissions kids grant without thinking | `mobile-app-permissions-kids-grant.md` (lead photo `mobile-permissions-app-icons.jpg`, Georgiy Lyamin/Unsplash) | Stat: FTC amended COPPA Rule, in force April 22, 2026 (Federal Register). **Published 2026-08-06** as [`blog/mobile-app-permissions-kids-grant.html`](../../blog/mobile-app-permissions-kids-grant.html) — first live post, commit `9559204` (photo swapped same day, commit `35dde19`). |
 
+## Screen-time track (added 2026-08-07)
+
+| Title | File | Status |
+|---|---|---|
+| Age-appropriate screen time, now that the "two-hour rule" is gone | `age-appropriate-screen-time-milestones.md` (lead photo `age-milestones-family-tablet.jpg`, Alexander Dummer/Unsplash) | ~570 words (~2 min). Stat: AAP policy statement + technical report "Digital Ecosystems, Children, and Adolescents," *Pediatrics* Vol. 157 Issue 2, published 2026-01-20 — retires the 2016 fixed two-hour/day guidance. Converted to live template and added to `blog/index.html` locally on 2026-08-07, **not yet pushed** — pending user review/approval per the new daily-post workflow (build+review locally each day, push only after explicit go-ahead). |
+
 ## Photo sourcing note (added 2026-08-04)
 
 All lead photos are user-selected from Unsplash (free-use license, no attribution legally required, but a small `<span class="photo-credit">` line was added under each as good practice — safe to remove if the live post design doesn't want it). Original SVG illustration files are left in place in `images/` (not deleted) in case any post wants to revert or use them as a secondary/supporting graphic later — only the markdown embed line was changed to point at the new photo.
@@ -36,10 +42,11 @@ Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other 
 ## Next topics to draw from (not yet drafted)
 
 - Healthy digital habits / screen-time psychology, grounded in real research
-- Age-appropriate milestones: what's reasonable to allow at what age
 - AI chatbots and kids: what's actually risky, what isn't
 - (Sensitive, lower priority per positioning) online predators/stranger-contact awareness, sexting/inappropriate-content exposure — handle with the same care as the cyberbullying post if/when picked up
 
 ## Publishing note
 
-A blog listing page and post template now exist on the live site (`blog/index.html` + per-post pages, added 2026-08-06). Two drafts have been converted and published so far: mobile-app-permissions-kids-grant (first post) and bedtime-schedule-what-actually-happens (second post) — see their rows above for commit hashes. Converting a draft into a live page, and pushing it, remains a separate, manual, explicitly user-confirmed step every time — the automated drafting task never does this itself and this file should keep being updated by hand whenever a conversion happens.
+A blog listing page and post template now exist on the live site (`blog/index.html` + per-post pages, added 2026-08-06). Two drafts have been converted and published so far: mobile-app-permissions-kids-grant (first post) and bedtime-schedule-what-actually-happens (second post) — see their rows above for commit hashes.
+
+**Workflow update (2026-08-07):** per the user, converting a draft into the live-template page, updating `blog/index.html`, and downloading Unsplash images are all fine to do locally without asking each time, as long as everything stays inside this repo's `blog/`/`marketing/blog-drafts/` folders and images come from Unsplash (free-license only) unless another source is cleared first. The one remaining gate is `git push` to GitHub — that still needs the user's explicit go-ahead every time, reviewed via the local page first. Intended cadence: one post built+ready per day, pushed after approval.
