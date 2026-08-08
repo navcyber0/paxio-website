@@ -48,13 +48,8 @@
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
       <a href="#features">Product</a>
-      <div class="nav-dropdown">
-        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
-        <div class="nav-dropdown-panel">
-          <a href="benefits.html">Benefits</a>
-          <a href="faq.html">FAQ</a>
-        </div>
-      </div>
+      <a href="why-paxio.html">Why Paxio</a>
+      <a href="pricing.html">Pricing</a>
       <a href="blog/index.html">Blog</a>
       <a href="contact.html">Contact</a>
       <a class="nav-cta" href="#download">Get notified</a>
@@ -75,12 +70,10 @@
         A parental control app for Android that actually shows you what's going on — screen time, apps, and content, all in one place.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#download">Get notified at launch</a>
+        <a class="btn btn-primary" href="#download">Get early access to Pro — free</a>
         <a class="btn btn-ghost" href="#features">See how it works</a>
       </div>
-      <div class="hero-badges">
-        <span>No location tracking, ever</span><span>On-device filtering</span><span>No ads, no trackers</span><span>Built for parents</span>
-      </div>
+      <p class="hero-cta-note">Early testers get Paxio Pro free while spots last.</p>
     </div>
   </div>
 </header>
@@ -279,8 +272,8 @@
   <div class="container reveal" data-reveal>
     <div class="cta-banner">
       <h2>Ready to build better screen time habits together?</h2>
-      <p>Paxio is coming soon to Google Play.</p>
-      <a class="btn btn-ghost" href="contact.html">Get notified at launch</a>
+      <p>Paxio is coming soon to Google Play — sign up early and we'll set you up with Pro, free.</p>
+      <a class="btn btn-ghost" href="contact.html">Get early access to Pro</a>
     </div>
   </div>
 </section>
@@ -294,8 +287,8 @@
       </a>
       <div class="footer-links">
         <a href="#features">Product</a>
-        <a href="benefits.html">Benefits</a>
-        <a href="faq.html">FAQ</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="why-paxio.html">Why Paxio</a>
         <a href="blog/index.html">Blog</a>
         <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -310,14 +303,6 @@
 
 <script>
 (function () {
-  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
-    var trigger = dd.querySelector('.nav-dropdown-trigger');
-    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
-    dd.addEventListener('mouseenter', sync);
-    dd.addEventListener('mouseleave', sync);
-    dd.addEventListener('focusin', sync);
-    dd.addEventListener('focusout', sync);
-  });
   var revealEls = document.querySelectorAll('[data-reveal]');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
@@ -424,5 +409,8 @@
 })();
 </script>
 
+<!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js?token=9ae01d7d-bce4-494e-ab23-d36429b23029"></script>
+<!-- impeccable-live-end -->
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paxio FAQ — Common Questions</title>
-<meta name="description" content="Answers about Paxio: pricing, uninstall protection, bedtime schedules, multiple children, Android permissions, and iOS availability.">
-<link rel="canonical" href="https://www.paxio.in/faq.html">
+<title>Why Paxio — Benefits &amp; FAQ</title>
+<meta name="description" content="Why families choose Paxio, and answers to common questions: pricing, uninstall protection, bedtime schedules, multiple children, Android permissions, and iOS availability.">
+<link rel="canonical" href="https://www.paxio.in/why-paxio.html">
 <link rel="icon" type="image/png" href="store-assets/play-store-icon-512.png">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
@@ -38,7 +38,7 @@
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
       <a href="index.html#features">Product</a>
-      <a href="why-paxio.html">Why Paxio</a>
+      <a href="why-paxio.html" class="active">Why Paxio</a>
       <a href="pricing.html">Pricing</a>
       <a href="blog/index.html">Blog</a>
       <a href="contact.html">Contact</a>
@@ -47,12 +47,49 @@
   </div>
 </nav>
 
+<div class="product-jump-nav" id="jumpNav">
+  <a href="#benefits" class="screen-tab active" data-jump="benefits">Benefits</a>
+  <a href="#faq" class="screen-tab" data-jump="faq">FAQ</a>
+</div>
 
-<section>
+<section id="benefits">
+  <div class="container reveal" data-reveal>
+    <div class="section-head">
+      <span class="tag">Benefits</span>
+      <h1>Why families choose Paxio</h1>
+      <p>Less arguing about screen time, more confidence your kids are safe online.</p>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-row">
+        <div class="benefit-icon c-teal"><i></i></div>
+        <div><h2>A partnership, not a punishment</h2><p>Clear limits your kids can see and understand, not a black box.</p></div>
+      </div>
+
+      <div class="benefit-row">
+        <div class="benefit-icon c-orange"><i></i></div>
+        <div><h2>Set up in minutes</h2><p>A short guided setup explains each permission in plain language.</p></div>
+      </div>
+
+      <div class="benefit-row">
+        <div class="benefit-icon c-coral"><i></i></div>
+        <div><h2>Works across devices</h2><p>Profiles and PIN sync to your account, so a new phone takes seconds.</p></div>
+      </div>
+
+      <div class="benefit-row">
+        <div class="benefit-icon c-teal2"><i></i></div>
+        <div><h2>Focused, not bloated</h2><p>Just the screen time, app, and content controls that matter day to day.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top: 24px;">
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">FAQ</span>
-      <h1>Common questions about Paxio</h1>
+      <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.4rem); font-weight: 800; margin: 0 0 12px;">Common questions about Paxio</h2>
       <p>Quick answers about how this parental control app works.</p>
     </div>
     <div class="faq-list">
@@ -91,13 +128,13 @@
   <div class="container">
     <div class="footer-grid">
       <a class="footer-brand" href="index.html">
-        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+        <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy">
         Paxio
       </a>
       <div class="footer-links">
         <a href="index.html#features">Product</a>
-        <a href="pricing.html">Pricing</a>
         <a href="why-paxio.html">Why Paxio</a>
+        <a href="pricing.html">Pricing</a>
         <a href="blog/index.html">Blog</a>
         <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -117,6 +154,23 @@
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
   }, { threshold: 0.25 });
   revealEls.forEach(function (el) { io.observe(el); });
+
+  (function jumpNavSpy() {
+    var jumpLinks = document.querySelectorAll('#jumpNav [data-jump]');
+    if (!jumpLinks.length) return;
+    var sections = Array.prototype.map.call(jumpLinks, function (link) {
+      return document.getElementById(link.dataset.jump);
+    });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        jumpLinks.forEach(function (link) {
+          link.classList.toggle('active', link.dataset.jump === entry.target.id);
+        });
+      });
+    }, { rootMargin: '-140px 0px -70% 0px', threshold: 0 });
+    sections.forEach(function (s) { if (s) spy.observe(s); });
+  })();
 })();
 </script>
 

@@ -24,13 +24,8 @@
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
       <a href="index.html#features">Product</a>
-      <div class="nav-dropdown">
-        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Why Paxio<svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"></path></svg></button>
-        <div class="nav-dropdown-panel">
-          <a href="benefits.html">Benefits</a>
-          <a href="faq.html">FAQ</a>
-        </div>
-      </div>
+      <a href="why-paxio.html">Why Paxio</a>
+      <a href="pricing.html">Pricing</a>
       <a href="contact.html" class="active">Contact</a>
       <a class="nav-cta" href="index.html#download">Get notified</a>
     </div>
@@ -59,7 +54,7 @@
 
       <div class="contact-card">
         <div class="feature-icon icon-feedback"><span></span></div>
-        <h3>Feedback & Feature Requests</h3>
+        <h3>Feedback &amp; Feature Requests</h3>
         <p>Tell us what's working, what isn't, and what you'd like to see next.</p>
         <a class="btn btn-ghost" href="mailto:support@paxio.in?subject=Paxio%20Feedback">Share feedback</a>
       </div>
@@ -84,8 +79,8 @@
       </a>
       <div class="footer-links">
         <a href="index.html#features">Product</a>
-        <a href="benefits.html">Benefits</a>
-        <a href="faq.html">FAQ</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="why-paxio.html">Why Paxio</a>
         <a href="blog/index.html">Blog</a>
         <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -100,16 +95,11 @@
 
 <script>
 (function () {
-  document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
-    var trigger = dd.querySelector('.nav-dropdown-trigger');
-    var sync = function () { trigger.setAttribute('aria-expanded', dd.matches(':hover, :focus-within') ? 'true' : 'false'); };
-    dd.addEventListener('mouseenter', sync);
-    dd.addEventListener('mouseleave', sync);
-    dd.addEventListener('focusin', sync);
-    dd.addEventListener('focusout', sync);
-  });
 })();
 </script>
 
+<!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js?token=9ae01d7d-bce4-494e-ab23-d36429b23029"></script>
+<!-- impeccable-live-end -->
 </body>
 </html>

@@ -26,12 +26,35 @@ Marketing/legal website for the Paxio Android app (paxio.in / www.paxio.in, host
 
 ## Capabilities and Constraints
 
-- Core controls today: screen time limits (daily limit + live usage tracking), app blocking (per-app allow/block, enforced in real time), content filtering (on-device DNS-based category blocking — browsing activity never leaves the device), bedtime scheduling (recurring lock + a separate one-off timer for homework/dinner).
-- All four core controls are free, unpaywalled, for one child profile — not split across a paid tier. There is no paid tier ("Paxio Plus") yet; do not imply one is purchasable in any copy.
-- Free plan is capped at exactly 1 child profile (corrected 2026-08-03 from an earlier "up to 2" figure — always say "free for one child").
+- Core controls: screen time limits (daily limit + live usage tracking), app blocking (per-app allow/block, enforced in real time), content filtering (on-device DNS-based category blocking — browsing activity never leaves the device), bedtime scheduling (recurring lock + a separate one-off timer for homework/dinner).
 - No location tracking of the child, ever — a deliberate, permanent product decision, not a missing feature.
 - Content filtering resolves DNS locally on the device — no third-party cloud filtering service in the data path.
 - Android-only currently; no iOS version exists.
+
+### Pricing tiers (confirmed real and implemented, 2026-08-08)
+
+A paid tier now exists in the app. This corrects the earlier "no paid tier yet" note — Paxio Pro is real, gated, and priced.
+
+**Paxio Free (forever):**
+- 1 child profile
+- Daily screen time limit
+- App blocking — up to 5 apps
+- Content filter — unblock up to 3 categories (rest stay filtered by default)
+- Parent PIN protection
+- Weekly reports — 3 stats (screen time, over-limit days, blocked app attempts), 30-day history
+
+**Paxio Pro — ₹199/mo or ₹1,499/yr (37% off annual):**
+- Up to 3 child profiles
+- Unlimited app blocking + per-app time limits
+- Content filter — unblock any categories
+- Bedtime & schedule locks
+- Remote internet control (pause internet instantly, or for a set duration)
+- Weekly reports — 7 stats, 1-year history
+- Priority support
+
+**No self-serve upgrade yet.** There's no Play Billing integration — Pro entitlement is granted by hand during early access. The app's "Upgrade to Pro" buttons route to the site's Contact page rather than a live checkout; any on-site Pro CTA should do the same until self-serve billing ships.
+
+**Family tier is a documented future plan only** (7 profiles, multi-device, rewards) — not built, not priced for real. Do not advertise it as available.
 
 ## Brand Commitments
 
@@ -47,7 +70,7 @@ No real customer testimonials, case studies, press mentions, or third-party benc
 
 1. The phone itself isn't the enemy — irreplaceable in modern life, for kids too. The product's job is bounded, healthy, productive use, not phone removal or blanket restriction.
 2. Lead with monitoring/control capability, not privacy — privacy is a real, supporting differentiator, never the headline.
-3. Say what's true today, not what's aspirational — no paid tier exists yet, the free cap is 1 child (not 2), and the current 4 controls are today's answer to a broader, still-growing set of real risks (cyberbullying, addictive habits, unhealthy relationships), not a finished list.
+3. Say what's true today, not what's aspirational — Free is capped at 1 child/5 apps/3 unblocked categories, Pro is real but manually granted (no self-serve checkout yet), Family is future-only, and the current controls are today's answer to a broader, still-growing set of real risks (cyberbullying, addictive habits, unhealthy relationships), not a finished list.
 4. Never claim a feature that isn't real or currently active (e.g. AI-generated insights are paused/backlog, not live).
 5. Copy should read like a parent who understands the problem wrote it, not a SaaS marketing team.
 

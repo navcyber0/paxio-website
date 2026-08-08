@@ -252,15 +252,15 @@ h1 {
   font-size: 1.15rem;
   color: var(--ink-soft);
   max-width: 46ch;
-  margin: 0 0 32px;
+  margin: 0 auto 32px;
 }
 
-@media (max-width: 860px) { .hero p.lead { margin-inline: auto; } }
-
-.hero p.lead-sub { font-size: 0.95rem; color: var(--ink-soft); max-width: 50ch; margin: -18px 0 30px; opacity: 0.85; }
-@media (max-width: 860px) { .hero p.lead-sub { margin-inline: auto; margin-top: -14px; } }
+.hero p.lead-sub { font-size: 0.95rem; color: var(--ink-soft); max-width: 50ch; margin: -18px auto 30px; opacity: 0.85; }
+@media (max-width: 860px) { .hero p.lead-sub { margin-top: -14px; } }
 
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 30px; }
+
+.hero-cta-note { margin: -18px 0 0; font-size: 0.85rem; color: var(--ink-soft); opacity: 0.85; }
 
 .btn {
   display: inline-flex;
@@ -687,13 +687,94 @@ footer {
 .contact-card p { color: var(--ink-soft); margin: 0 0 20px; }
 
 .icon-email { background: var(--teal-light); display: flex; align-items: center; justify-content: center; }
-.icon-email span { width: 22px; height: 16px; border: 2px solid var(--teal-dark); border-radius: 3px; }
+.icon-email span {
+  position: relative;
+  width: 24px; height: 18px;
+  border: 2px solid var(--teal-dark);
+  border-radius: 2px;
+  background: transparent;
+}
+.icon-email span::before,
+.icon-email span::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  width: 11px; height: 2px;
+  background: var(--teal-dark);
+  border-radius: 1px;
+}
+.icon-email span::before { left: 1px; transform-origin: left center; transform: rotate(32deg); }
+.icon-email span::after { right: 1px; transform-origin: right center; transform: rotate(-32deg); }
 
 .icon-feedback { background: var(--blue-light); display: flex; align-items: center; justify-content: center; }
-.icon-feedback span { width: 16px; height: 16px; border-radius: 50%; background: var(--blue); }
+.icon-feedback span {
+  position: relative;
+  width: 24px; height: 17px;
+  background: var(--blue);
+  border-radius: 6px 6px 6px 2px;
+}
+.icon-feedback span::before {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 4px;
+  width: 6px; height: 6px;
+  background: var(--blue);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.icon-feedback span::after {
+  content: '';
+  position: absolute;
+  top: 7px; left: 5px;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  box-shadow: 6px 0 0 var(--blue-light), 12px 0 0 var(--blue-light);
+}
 
 .icon-privacy { background: var(--purple-light); display: flex; align-items: center; justify-content: center; }
-.icon-privacy span { width: 20px; height: 20px; background: var(--purple); clip-path: polygon(50% 0%, 100% 20%, 100% 55%, 50% 100%, 0% 55%, 0% 20%); }
+.icon-privacy span {
+  position: relative;
+  width: 18px; height: 13px;
+  margin-top: 7px;
+  background: var(--purple);
+  border-radius: 3px;
+}
+.icon-privacy span::before {
+  content: '';
+  position: absolute;
+  top: -8px; left: 3px;
+  width: 12px; height: 12px;
+  border: 3px solid var(--purple);
+  border-radius: 50%;
+  clip-path: inset(0 0 50% 0);
+}
+.icon-privacy span::after {
+  content: '';
+  position: absolute;
+  top: 3px; left: 7px;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--purple-light);
+}
+
+@media not (prefers-reduced-motion: reduce) {
+  .contact-card .feature-icon {
+    clip-path: circle(75% at 50% 50%);
+    transition: clip-path 550ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .contact-card:nth-child(1) .feature-icon { transition-delay: 0ms; }
+  .contact-card:nth-child(2) .feature-icon { transition-delay: 120ms; }
+  .contact-card:nth-child(3) .feature-icon { transition-delay: 240ms; }
+  @starting-style {
+    .contact-card .feature-icon { clip-path: circle(0% at 50% 50%); }
+  }
+  .contact-card .icon-email span { transition: transform 0.25s ease; }
+  .contact-card:hover .icon-email span { transform: scaleY(0.82) translateY(1px); }
+  .contact-card .icon-feedback span { transition: box-shadow 0.3s ease; }
+  .contact-card:hover .icon-feedback span { box-shadow: 0 0 0 6px color-mix(in srgb, var(--blue) 25%, transparent); }
+  .contact-card .icon-privacy span { transition: transform 0.3s ease; }
+  .contact-card:hover .icon-privacy span { transform: scale(1.12); }
+}
 
 /* ── Legal pages (Privacy / Terms) ───────────────────────────────────── */
 
@@ -795,53 +876,6 @@ footer {
 .legal ul li { margin-bottom: 8px; }
 
 
-/* ── Mega menu ──────────────────────────────────────────────────────── */
-
-.nav-dropdown { position: relative; display: flex; align-items: center; }
-.nav-dropdown-trigger {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  color: var(--ink-soft);
-  transition: color 0.15s;
-  user-select: none;
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  text-align: left;
-  appearance: none;
-}
-.nav-dropdown:hover .nav-dropdown-trigger, .nav-dropdown-trigger:focus { color: var(--ink); }
-.nav-dropdown .caret { transition: transform 0.15s; }
-.nav-dropdown:hover .caret { transform: rotate(180deg); }
-.nav-dropdown-panel {
-  position: absolute; top: 100%; left: 50%; transform: translate(-50%, 6px);
-  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
-  padding: 8px; min-width: 210px; box-shadow: var(--shadow);
-  opacity: 0; visibility: hidden; pointer-events: none;
-  transition: opacity 0.15s, transform 0.15s;
-  z-index: 20;
-}
-.nav-dropdown:hover .nav-dropdown-panel, .nav-dropdown:focus-within .nav-dropdown-panel {
-  opacity: 1; visibility: visible; pointer-events: auto; transform: translate(-50%, 0);
-}
-.nav-dropdown-panel a { display: block; padding: 10px 12px; border-radius: 10px; font-size: 0.92rem; color: var(--ink-soft); }
-.nav-dropdown-panel a:hover { background: var(--teal-light); color: var(--teal-ink); }
-
-@media (max-width: 760px) {
-  .nav-dropdown { flex-direction: column; align-items: flex-start; width: 100%; }
-  .nav-dropdown-trigger { padding: 16px 24px; border-top: 1px solid var(--border); width: 100%; box-sizing: border-box; }
-  .nav-dropdown .caret { display: none; }
-  .nav-dropdown-panel {
-    position: static; transform: none; opacity: 1; visibility: visible; pointer-events: auto;
-    box-shadow: none; border: none; border-radius: 0; padding: 0 0 8px 12px; min-width: 0; background: transparent;
-  }
-  .nav-dropdown-panel a { padding: 10px 24px; }
-}
-
 /* ── Homepage in-page jump nav (reuses .screen-tab pill) ──────────────── */
 
 .product-jump-nav {
@@ -861,3 +895,111 @@ footer {
 
 .benefits-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 @media (max-width: 800px) { .benefits-strip { grid-template-columns: 1fr; } }
+
+/* ── Pricing ─────────────────────────────────────────────────────────── */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 860px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+@media (max-width: 760px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+.pricing-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-card.is-pro { border-color: var(--teal); box-shadow: var(--shadow); }
+
+.pricing-card .plan-badge { align-self: flex-start; margin-bottom: 14px; }
+
+.pricing-card h2 { margin: 0 0 4px; font-size: 1.3rem; font-weight: 800; }
+
+.pricing-card .plan-price { display: flex; align-items: baseline; gap: 6px; margin: 10px 0 2px; }
+.pricing-card .plan-price .amount { font-family: var(--mono); font-weight: 700; font-size: 2rem; color: var(--ink); }
+.pricing-card .plan-price .period { color: var(--ink-soft); font-size: 0.9rem; }
+
+.pricing-card .plan-subprice { color: var(--ink-soft); font-size: 0.85rem; margin: 0 0 24px; min-height: 1.2em; }
+
+.pricing-card ul { list-style: none; margin: 0 0 28px; padding: 0; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+
+.pricing-card li { position: relative; padding-left: 30px; font-size: 0.95rem; color: var(--ink); line-height: 1.4; }
+.pricing-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--teal-light);
+}
+.pricing-card li::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 6px;
+  height: 3px;
+  border-left: 2px solid var(--teal-dark);
+  border-bottom: 2px solid var(--teal-dark);
+  transform: rotate(-45deg);
+}
+
+.pricing-card .btn { width: 100%; justify-content: center; }
+
+.pricing-card.is-pro {
+  position: relative;
+  overflow: hidden;
+}
+.pricing-card.is-pro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-dark));
+}
+
+.pro-badge-corner {
+  position: absolute;
+  top: 16px;
+  right: -32px;
+  background: var(--teal-strong);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 5px 40px;
+  transform: rotate(38deg);
+  box-shadow: var(--shadow);
+}
+
+.billing-tabs {
+  display: inline-flex;
+  background: var(--teal-light);
+  border-radius: 999px;
+  padding: 3px;
+  margin: 10px 0 4px;
+}
+.billing-tabs label { padding: 6px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; color: var(--teal-ink); cursor: pointer; }
+.billing-tabs input:checked + label { background: var(--teal-strong); color: #fff; }
+
+.price-display { margin: 6px 0 24px; }
+.price-display .price-m, .price-display .price-y { display: inline-flex; align-items: baseline; gap: 6px; }
+.price-display .amount { font-family: var(--mono); font-weight: 700; font-size: 2rem; color: var(--ink); }
+.price-display .period { color: var(--ink-soft); font-size: 0.9rem; }
+.price-display .was { font-family: var(--mono); font-size: 1.1rem; color: var(--ink-soft); text-decoration: line-through; opacity: 0.7; margin-right: 2px; }
+
+.price-display .price-m { display: none; }
+.billing-tabs:has(#cycle-pro-m:checked) ~ .price-display .price-m { display: inline-flex; }
+.billing-tabs:has(#cycle-pro-m:checked) ~ .price-display .price-y { display: none; }
+
+.pricing-card.is-pro:has(#cycle-pro-m:checked) .pro-badge-corner { display: none; }
