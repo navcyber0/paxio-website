@@ -42,12 +42,13 @@
   <a class="back" href="index.html">&larr; Back</a>
   <span class="tag">Privacy</span>
   <h1>Paxio Privacy Policy</h1>
-  <p class="updated">Last updated: August 2026</p>
+  <p class="updated">Last updated: 7 August 2026</p>
 
   <p>Paxio ("we," "us," "the app") is a parental control app that helps a parent manage a child's
-  Android device — screen time, app blocking, and content filtering. This policy explains what
-  data Paxio collects, why, and where it goes. Paxio is installed and configured by a parent or
-  guardian; it does not create a separate account for the child.</p>
+  Android device through the parental-control features it offers, which may be added, removed, or
+  changed over time. This policy explains what data Paxio collects, why, and where it goes. Paxio
+  is installed and configured by a parent or guardian; it does not create a separate account for
+  the child.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>Data we collect</h2></div>
   <div class="legal-table-wrap">
@@ -61,25 +62,39 @@
       <tr><td>DNS requests, while filtering is on</td><td>Block sites matching selected categories</td><td>Processed on-device via local VPN; never sent anywhere. Only the resulting decision (a site was blocked, and which category) is synced, not full browsing activity</td></tr>
       <tr><td>Foreground app package name</td><td>Detect when a blocked app opens</td><td>Read in memory on-device only</td></tr>
       <tr><td>App install/uninstall events (package name only)</td><td>Power the optional "app installed/uninstalled" email alert, if a parent turns it on</td><td>Local device, and synced to Firebase Firestore (Google)</td></tr>
-      <tr><td>Crash &amp; diagnostic reports</td><td>Find and fix bugs</td><td>Firebase Crashlytics (Google)</td></tr>
+      <tr><td>Crash &amp; diagnostic reports</td><td>Find and fix bugs — includes device model, OS version, app version, and the crash stack trace; no personal information is intentionally included</td><td>Firebase Crashlytics (Google)</td></tr>
     </table>
   </div>
 
   <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>What we don't collect</h2></div>
-  <p>Paxio does not collect location data, does not read screen content, keystrokes, messages,
-  photos, or full browsing history (only whether a specific site visit was blocked, and its
-  category), and does not use advertising or third-party analytics SDKs.</p>
+  <p>The Paxio app itself does not collect location data, does not read screen content,
+  keystrokes, messages, photos, or full browsing history (only whether a specific site visit was
+  blocked, and its category), and does not bundle any advertising or third-party analytics SDK
+  inside the app.</p>
 
-  <div class="legal-h2-row"><span class="legal-icon c-teal"><i></i></span><h2>AI-generated insights (not currently active)</h2></div>
-  <p>Paxio has an AI Insights feature planned for a future paid tier — it isn't available to any
-  user today, so no automated analysis of usage data currently takes place. If and when this
-  feature launches, this policy will be updated first to describe exactly what it processes and
-  where, before it's enabled for any account.</p>
+  <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>Website analytics</h2></div>
+  <p>This website (paxio.in) — separate from the Paxio app — uses Cloudflare Web Analytics to
+  understand traffic to our marketing pages. It's a privacy-friendly analytics service: it doesn't
+  use cookies, doesn't set any persistent identifier, and doesn't track individual visitors across
+  sites. It only aggregates anonymous traffic counts. This applies to browsing paxio.in and does
+  not apply to, or collect data from, the Paxio app itself.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>Data sharing</h2></div>
   <p>We don't sell data or share it with advertisers. Data above is processed by Google/Firebase
   solely to provide sign-in, profile sync, and crash reporting, under Google's own privacy
-  terms.</p>
+  terms. Firebase/Google stores this data on servers primarily located in the United States. By
+  using Paxio, the parent consents to this cross-border transfer. Firebase's data processing
+  terms are available at <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>Third-party services</h2></div>
+  <p>Paxio uses the following third-party services to operate, each governed by their own privacy
+  terms:</p>
+  <ul>
+    <li>Firebase Authentication and Firestore (Google) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+    <li>Firebase Crashlytics (Google) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+    <li>Google Sign-In — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+  </ul>
+  <p>No other third-party SDKs, ad networks, or analytics providers process your data.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-purple"><i></i></span><h2>Data retention &amp; deletion</h2></div>
   <p>Child profile and PIN data are kept until the parent deletes the child profile or account.
@@ -89,14 +104,37 @@
   directly in the app — see <a href="delete-data.html">Delete Your Data</a> and
   <a href="delete-account.html">Delete Your Account</a> for exactly what's removed.</p>
 
+  <div class="legal-h2-row"><span class="legal-icon c-purple"><i></i></span><h2>Security</h2></div>
+  <p>Paxio protects your data using industry-standard measures:</p>
+  <ul>
+    <li>All data transmitted between the app and Firebase is encrypted in transit using TLS</li>
+    <li>Firebase encrypts data at rest</li>
+    <li>Parent PIN is stored as a salted PBKDF2 hash — never as plaintext, and never transmitted
+    to our servers in readable form</li>
+    <li>We do not have access to your PIN at any time</li>
+  </ul>
+
   <div class="legal-h2-row"><span class="legal-icon c-teal2"><i></i></span><h2>Children's privacy</h2></div>
-  <p>Paxio is installed and configured by a parent or guardian. The child does not create an
-  account, sign in, or provide information directly to Paxio.</p>
+  <p>Paxio is installed and configured by a parent or guardian aged 18 or over. The child does not
+  create an account, sign in, or provide information directly to Paxio. We do not knowingly
+  collect personal data from children — data about a child's device usage is collected on behalf
+  of, and accessible only to, their parent or guardian.</p>
+  <p>If you believe a child under 13 has created a parent account without parental consent,
+  contact us at <a href="mailto:support@paxio.in">support@paxio.in</a> and we will delete the
+  account within 7 days.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>Permissions Paxio requests</h2></div>
-  <p>Accessibility Service, Usage Access, Device Admin, and VPN are requested with an in-app
-  explanation before use, for app blocking, screen-time tracking, uninstall protection, and
-  content filtering respectively.</p>
+  <p>Paxio requests Android permissions only as needed to support its parental-control features,
+  and each is explained in-app before use. The specific permissions requested may change over
+  time as features are added, removed, or changed; the current permissions requested by the app
+  are also listed on its Google Play Store listing.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-teal2"><i></i></span><h2>Changes to this policy</h2></div>
+  <p>We may update this policy from time to time. For material changes — those affecting what
+  data we collect or how it's used — we will notify you via the email address on your account at
+  least 14 days before the changes take effect. For minor changes (corrections, clarifications) we
+  will update the "Last updated" date without prior notice. Continued use after the effective date
+  constitutes acceptance.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>Contact</h2></div>
   <p>Questions about this policy or your data: <a href="mailto:support@paxio.in">support@paxio.in</a>.</p>

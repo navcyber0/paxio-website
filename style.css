@@ -790,6 +790,10 @@ footer {
 .legal ol li { margin-bottom: 10px; }
 .legal ol li strong { color: var(--ink); }
 
+.legal ul { padding-left: 20px; color: #3A423E; }
+@media (prefers-color-scheme: dark) { .legal ul { color: var(--ink-soft); } }
+.legal ul li { margin-bottom: 8px; }
+
 
 /* ── Mega menu ──────────────────────────────────────────────────────── */
 
