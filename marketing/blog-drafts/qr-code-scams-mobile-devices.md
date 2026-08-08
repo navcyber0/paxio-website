@@ -28,4 +28,4 @@ A kid scanning a code someone handed them, or one in a group chat, doesn't have 
 
 Content filtering blocks known-malicious domains at the DNS level, which covers a QR code that resolves to a site already flagged as bad. It can't do anything about a code that just asks someone to type personal information into a legitimate-looking form — there's no bad domain to block there. The "read the preview before tapping" habit above is the part no device setting replaces.
 
-[Paxio](https://www.paxio.in/) handles content filtering, app blocking, screen time, and bedtime — free for one child — this one's a habit worth building alongside it.
+[Paxio](https://www.paxio.in/) handles content filtering, app blocking, screen time, and bedtime, so the DNS-level protection above runs in the background while you build the rest of the habit with your kid.
