@@ -1,6 +1,5 @@
 /* Paxio marketing site — shared styles */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+/* Inter + JetBrains Mono are loaded via <link rel="preconnect"/stylesheet"> in each page's <head>, not @import (slower, blocks CSS parsing) */
 
 :root {
   --teal: #12B886;
