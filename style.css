@@ -608,6 +608,8 @@ section { padding: 88px 0; }
 .faq-item[open] summary::after { content: '−'; }
 
 .faq-item p { margin: 0 0 18px; color: var(--ink-soft); font-size: 0.95rem; }
+.faq-item ul { margin: 0 0 18px; padding-left: 20px; color: var(--ink-soft); font-size: 0.95rem; }
+.faq-item ul li { margin-bottom: 6px; }
 
 /* ── CTA banner ──────────────────────────────────────────────────────── */
 

@@ -21,7 +21,8 @@
     { "@type": "Question", "name": "How does the bedtime and sleep timer work?", "acceptedAnswer": { "@type": "Answer", "text": "Set a recurring schedule for school nights, or start a one-off timer for homework or dinner — the device locks until it ends, with an option for the parent to override." } },
     { "@type": "Question", "name": "Can I manage more than one child?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — each child gets their own profile with its own limits, blocked apps, and filtering settings, and profiles sync across devices with your account." } },
     { "@type": "Question", "name": "Which Android permissions does Paxio need?", "acceptedAnswer": { "@type": "Answer", "text": "Accessibility Service, Usage Access, Device Admin, and VPN — each explained in-app before use, for app blocking, screen-time tracking, uninstall protection, and content filtering." } },
-    { "@type": "Question", "name": "Is Paxio available for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Paxio is built for Android today. There's no iOS version yet." } }
+    { "@type": "Question", "name": "Is Paxio available for iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Paxio is built for Android today. There's no iOS version yet." } },
+    { "@type": "Question", "name": "An app (like my banking app) shows a warning about \"accessibility services\" or a \"VPN\" being active — is Paxio doing something wrong?", "acceptedAnswer": { "@type": "Answer", "text": "No — this is expected, and it happens because of exactly what makes Paxio work, not because anything is broken. Banking apps and a few others check whether any accessibility service or VPN is active on the device, as a general anti-fraud precaution — the same check would trigger for screen readers, ad blockers, password managers, or any other legitimate app using these same Android features. It isn't specific to Paxio, and it doesn't mean your device or the other app is compromised. Most apps only show a dismissible warning, not a hard block, so you can usually continue." } }
   ]
 }
 </script>
@@ -82,6 +83,20 @@
       <details class="faq-item">
         <summary>Is Paxio available for iPhone?</summary>
         <p>Paxio is built for Android today. There's no iOS version yet.</p>
+      </details>
+      <details class="faq-item">
+        <summary>An app (like my banking app) shows a warning about "accessibility services" or a "VPN" being active — is Paxio doing something wrong?</summary>
+        <p>No — this is expected, and it happens because of exactly what makes Paxio work, not because anything is broken. Paxio uses two standard Android features to protect your child:</p>
+        <ul>
+          <li>An Accessibility Service, to detect and block restricted apps in real time</li>
+          <li>A local, on-device VPN, to filter unsafe websites (all filtering happens on the device itself — no browsing data ever leaves it or goes through Paxio's servers)</li>
+        </ul>
+        <p>Banking apps and a few other apps check whether any accessibility service or VPN is active on the device, as a general anti-fraud precaution — this is the same check that would trigger for screen readers, ad blockers, password managers, or any other legitimate app using these same Android features. It isn't specific to Paxio, and it doesn't mean your device or the other app is compromised.</p>
+        <p>What you can do:</p>
+        <ul>
+          <li>Most apps only show a dismissible warning, not a hard block — you can usually continue.</li>
+          <li>This is a known tradeoff of any app-blocking/content-filtering tool built on Android's standard mechanisms, not a Paxio-specific issue.</li>
+        </ul>
       </details>
     </div>
     <p style="text-align:center;margin-top:40px">
