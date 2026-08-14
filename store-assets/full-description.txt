@@ -4,15 +4,22 @@ SCREEN TIME
 Set a daily time limit per child, see live usage progress, and get notified as they approach their limit. Add a bedtime schedule or a one-off sleep timer for nap time or homework.
 
 APP BLOCKING
-Choose exactly which apps your child can and can't use. Blocking is enforced in real time — no need to uninstall apps you don't want them using.
+Choose exactly which apps your child can and can't use. Blocking is enforced in real time using Android's Accessibility Service, which detects the app currently open on the device — no need to uninstall apps you don't want them using.
 
 CONTENT FILTERING
-Block major known sites across multiple categories (adult content, gambling, and more), using an on-device filter that's kept regularly updated. Filtering happens locally on the device — Paxio never sends your child's browsing activity anywhere.
+Block major known sites across multiple categories (adult content, gambling, and more), using an on-device VPN filter that's kept regularly updated. Filtering decisions happen locally on the device — Paxio never sends your child's general browsing activity anywhere. When a site is blocked, only that domain, its category, and the time are saved to your account so you can see it in your weekly report.
 
 BUILT FOR PARENTS
 - PIN-protected settings so only you can make changes
-- Uninstall protection, so your child can't just remove the app
+- Uninstall protection: Paxio recognizes Android's own uninstall and device-admin screens for itself using the Accessibility Service, so removing the app requires your parent PIN
 - Profile and PIN sync to your account, so switching phones doesn't mean starting over
 
 PRIVACY FIRST
-Screen time and app-blocking data stay on the device. Content filtering never leaves the device either. See our full privacy policy for details on exactly what's collected and why.
+General screen time and browsing activity stay on the device and are never transmitted. Only the specific apps blocked and sites blocked (not general usage) sync to your account, so you can review them in your reports. See our full privacy policy for details on exactly what's collected and why.
+
+HOW PAXIO WORKS
+Paxio relies on two core Android APIs to function as a parental control app:
+• Accessibility Service — detects the app currently in the foreground, so blocking and screen-time rules can be enforced, and so Paxio can recognize its own uninstall/device-admin screens to require your parent PIN.
+• VPN Service — creates a local, on-device VPN connection used only to inspect and block DNS requests matching the content categories you've selected. No traffic is routed to any remote server.
+
+Paxio does not use these APIs for analytics, advertising, or any purpose beyond the parental-control features described above.
