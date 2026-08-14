@@ -7,7 +7,7 @@ APP BLOCKING
 Choose exactly which apps your child can and can't use. Blocking is enforced in real time — no need to uninstall apps you don't want them using.
 
 CONTENT FILTERING
-Block entire categories of websites (adult content, gambling, and more) using an on-device filter. Filtering happens locally on the device — Paxio never sends your child's browsing activity anywhere.
+Block major known sites across multiple categories (adult content, gambling, and more), using an on-device filter that's kept regularly updated. Filtering happens locally on the device — Paxio never sends your child's browsing activity anywhere.
 
 BUILT FOR PARENTS
 - PIN-protected settings so only you can make changes
