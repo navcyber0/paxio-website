@@ -1,8 +1,8 @@
 # Lead monitoring — results log
 
-Newest-first (most recent run's section at top, for quick scanning). Each entry: date found, platform, keyword, URL, one-line note. This task only observes/logs — nothing here has been posted to.
+Newest-first (most recent run's section at top, for quick scanning). Each entry: date found, platform, keyword, URL, one-line note, and a drafted response ready for your review. This task only observes, drafts, and logs — nothing here has been posted to Quora.
 
-**Status column**: `Open` = not yet responded to, `Done` = you've replied/handled it, `Ignored` = reviewed and deliberately skipped (e.g. thread too old/stale) — no need to keep checking either way. Tell Claude "mark [thread] as done" or "mark [thread] as ignored" and it'll flip the status in place — handled items stay in the log (so they're not re-surfaced as "new" if they ever reappear in a search) but you can skip them when scanning.
+**Status column**: `Pending Review` = new lead, draft ready, awaiting your decision (default for every newly found entry), `Done` = you've reviewed and posted/handled it, `Ignored` = reviewed and deliberately skipped (e.g. thread too old/stale, no honest fit) — no need to keep checking either way. Tell Claude "mark [thread] as done" or "mark [thread] as ignored" and it'll flip the status in place — handled items stay in the log (so they're not re-surfaced as "new" if they ever reappear in a search) but you can skip them when scanning. Older entries above may still show `Open` from before this column was renamed — treat `Open` and `Pending Review` as the same state.
 
 ---
 
