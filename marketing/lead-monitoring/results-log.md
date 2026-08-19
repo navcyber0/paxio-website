@@ -6,6 +6,33 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-19 — scheduled run #2 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. Of the URLs surfaced, all but 5 were already in `seen-posts.json`. 1 genuinely new, relevant lead found. 4 additional new URLs surfaced but filtered as noise (added to `seen_urls` only, not logged as leads below):
+- "How do I Set Up Cell Phone Tracking for a Child's Cell Phone" — GPS-location-only request; Paxio has no location-tracking feature (verified against `pricing.html` — Free/Pro feature lists cover screen time, app blocking, content filter, PIN, reports, bedtime locks, remote pause; no GPS/location item at all), consistent with the exclusion precedent set 2026-08-16 for GPS-only requests.
+- "How to track my child's phone for free without touching his/her phone" (androidapps.quora.com mirror) — same question already logged under a different URL (`www.quora.com/How-can-I-track-my-childs-phone-for-free-without-touching-his-her-phone`, in `seen_urls` since 2026-08-16); Quora mirrors the same question across multiple subdomain URLs, this is a duplicate not a new thread.
+- "Can I track where my child is at if they have a cell phone?" — GPS-location-only, same exclusion as above.
+- "How can I locate where my child is at if they have their cell phone with them but they aren't answering?" — GPS-location-only, same exclusion as above.
+
+**Process note — required reference file still does not exist:** `marketing/blog-drafts/social-posts/paxio-post-comments.md` (and `paxio-fresh-posts.md`) remain absent from the repo, same gap flagged in the 2026-08-19 run above. Used `published-posts-social-copy.md`'s voice again as the closest available reference, plus `pricing.html` verified directly for feature accuracy. Flagging again since it's still unresolved.
+
+| Status | URL | Note |
+|---|---|---|
+| Pending Review | https://www.quora.com/How-do-I-monitor-my-child-s-phone-1 | General "how do I monitor my child's phone" question — broad parental-control intent, no GPS/location framing, good fit for Paxio's core feature set |
+
+**Drafted response — for https://www.quora.com/How-do-I-monitor-my-child-s-phone-1:**
+
+> Depends what "monitor" means for your situation, since parental control tools actually split into a few pretty different categories, and it's worth picking the right one before you install anything:
+>
+> - **Screen time & app control** — daily/per-app time limits, blocking specific apps, restricting content categories. This is the core of most "parental control app" products.
+> - **Location tracking** — knowing where the phone physically is. A separate feature set, usually its own app (or Google's Find My Device / Family Link's location sharing).
+> - **Content/message monitoring** — reading texts, flagging risky conversations or content. More invasive, worth thinking through the privacy/trust tradeoff with an older kid especially.
+> - **Built-in OS tools** — Google Family Link (Android) or Screen Time (iPhone) cover basic time limits and app approval for free, no extra app needed.
+>
+> If it's the first category you're after, start with the free built-in option and see if it's enough — a lot of parents don't end up needing more than that. You'd reach for a dedicated app when you want more granularity than the OS gives you (per-app limits instead of one global timer, more content categories, better reporting) or when a kid's found a way around the built-in restrictions.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app. Free tier covers 1 child profile, a daily screen time limit, blocking up to 5 apps, and unblocking up to 3 content categories; Pro adds more profiles, unlimited app blocking with per-app time limits, full content filtering, bedtime/schedule locks, and remote pause. It doesn't do GPS location tracking, though — if that's specifically the "monitor" you mean, you'd want a different tool for that piece.
+
 ## 2026-08-19 — scheduled run (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 23 of 24 result URLs across all queries were already in `seen-posts.json`. 1 genuinely new, relevant lead found. 1 additional new URL surfaced but was filtered as noise (not a parental-control lead) and added to `seen_urls` only, not logged below: "Is there a family networking site?" (unrelated family-social-network question, picked up under the FamilyTime-alternative query).
