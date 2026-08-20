@@ -6,6 +6,32 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-20 — scheduled run #2 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. 1 genuinely new, relevant lead found. 6 additional new URLs surfaced but filtered as noise (added to `seen_urls` only, not logged as leads below):
+- "Can mSpy track who you text?" — definitional/capability question about mSpy, no recommendation/comparison/complaint/switching intent; doesn't meet the competitor-thread bar.
+- "What alternatives can parents provide to their children instead of giving them mobile phones with internet access?" — different question entirely (alternatives to giving a kid a phone at all, not a parental-control-app question); off-topic for this task's scope.
+- "What's the alternative of robots.txt?" / "What are some alternatives to Spyder for Python programming?" / "What is a good alternative to Python for data analysis and machine learning...?" / "What are some alternatives to Microsoft Project...?" — pure keyword collision on "alternative" under the mSpy-alternative query, all fully unrelated to parental control.
+
+**Process note — reference files still absent:** `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` still don't exist in the repo (recurring gap flagged in every run since 2026-08-19). Used `published-posts-social-copy.md`'s established voice again, plus `pricing.html` verified directly for the feature claims below.
+
+| Status | URL | Note |
+|---|---|---|
+| Pending Review | https://www.quora.com/How-do-I-stop-my-child-from-installing-Android-applications-from-the-Play-Store-How-do-I-change-the-settings-so-that-a-child-cant-install-apps | Parent asking how to stop a child installing new apps from the Play Store — real configuration question, direct fit to explain the free Google-side tools plus where a dedicated app like Paxio complements (not replaces) them |
+
+**Drafted response — for https://www.quora.com/How-do-I-stop-my-child-from-installing-Android-applications-from-the-Play-Store-How-do-I-change-the-settings-so-that-a-child-cant-install-apps:**
+
+> Two different things get conflated here — stopping *new installs* from the Play Store vs. controlling apps a child already has. For the specific question (blocking new installs), the free Google-side tools are the right first stop:
+>
+> - **Google Family Link** (free): once your kid's device is on a supervised Google account, every new app install needs your approval before it happens — there's no way around it without your Family Link login.
+> - **Play Store's own parental controls** (Play Store app → profile icon → Settings → Family → Parental controls, or on the child's supervised account): lets you cap installs by content/maturity rating. Worth also turning on "Require authentication for purchases" separately — that blocks paid or in-app-purchase installs without your PIN, even outside Family Link.
+>
+> Both are free and don't need a third-party app for this specific problem.
+>
+> Where a dedicated parental-control app earns its place is the *other* half: managing apps the child already has installed — blocking specific ones, time-limiting them, filtering content — which is a different control than preventing the install in the first place.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app. It handles the "already installed" side — Free blocks up to 5 apps plus a daily screen time limit; Pro adds unlimited app blocking with per-app time limits, full content filtering, and bedtime/schedule locks. It doesn't intercept new Play Store installs, though — for stopping installs specifically, which is what you're asking, Family Link's approval-required setting is the more direct fit.
+
 ## 2026-08-20 — scheduled run (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. 3 genuinely new, relevant leads found. Several additional new URLs surfaced but filtered as noise (added to `seen_urls` only, not logged as leads below):
