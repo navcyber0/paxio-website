@@ -6,6 +6,63 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-20 — scheduled run (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. 3 genuinely new, relevant leads found. Several additional new URLs surfaced but filtered as noise (added to `seen_urls` only, not logged as leads below):
+- "What are the best time management apps for Android?" — self-use time-management framing, no kid/parent angle; consistent with the self-use exclusion precedent set 2026-08-16.
+- "Is there an app that allows me to track how much time I've used on certain apps?" — self-use, same exclusion.
+- "How do I reduce screen time and manage screen time on Android and iOS?" — self-use, same exclusion.
+- "Are there tools or apps that can help students monitor and manage their screen time?" — student self-monitoring framing, not a parent asking about a kid's phone.
+- "My husband wants me to help him restrict his screen time so he can study. Is there a parental control app that will limit screen time on his smartphone without censoring the content he can view?" — asker wants a parental-control-style app for a spouse, not a child; off-target audience for this task's scope.
+- "Which site is best for kids?" / "What's the best kids' search engine?" — content-recommendation questions, not parental-control-app questions.
+- "Many teens are saying the Life360 app should be banned because it allows parents to track them obsessively. How do you feel about the Life 360 app? Should parents use it?" — teen-audience opinion/debate thread, not a parent seeking a solution.
+- "For a casual gamer with kids, would Xbox 360 or PS3 be a better purchase as a 'first' console for the family to play?" — unrelated (gaming console purchase), picked up as noise under the Kids360-alternative query due to "Xbox 360" string overlap.
+
+**Process note — required reference files still do not exist:** `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` remain absent from the repo (same gap flagged in both 2026-08-19 runs above). Used `published-posts-social-copy.md`'s voice again as the closest available reference, plus `pricing.html` verified directly for feature accuracy. Not re-flagging at length since it's now a well-established recurring gap — worth creating the file or correcting the task's file reference when there's a moment.
+
+| Status | URL | Note |
+|---|---|---|
+| Pending Review | https://www.quora.com/What-are-the-pros-of-the-screen-time-parental-control-app | Direct "what are the pros" question about screen-time parental control apps — general-education-stage lead, good fit to explain the category and disclose Paxio |
+| Pending Review | https://www.quora.com/Which-parental-control-app-is-the-best | Broad "which is the best" recommendation-seeking question — direct fit, no location/iOS caveats needed |
+| Pending Review | https://www.quora.com/How-do-I-fix-Qustodio-from-blocking-all-internet-access-Ever-since-I-installed-it-no-websites-will-load-It-says-that-the-connection-timed-out | User (parent or installer, phrasing is ambiguous) frustrated that Qustodio is breaking all internet access on the device — real dissatisfaction/technical-friction signal with a named competitor, good switching-intent opening |
+
+**Drafted response — for https://www.quora.com/What-are-the-pros-of-the-screen-time-parental-control-app:**
+
+> The real pros aren't really about the "control" part — parents often expect the win to be compliance, but the more consistent benefits are:
+>
+> - **Visibility you don't otherwise have.** Most parents don't actually know how much time a kid spends in which apps until they see a report. That alone changes a lot of "is this actually a problem?" guessing into an informed conversation.
+> - **A boundary that doesn't depend on willpower or nagging.** A limit that's enforced by the phone itself removes the daily argument about "five more minutes" — it's not personal, it's just how the device works.
+> - **Consistency across days you're not paying close attention.** Manual enforcement falls apart on busy days; an app-set limit doesn't.
+> - **A neutral starting point for the bigger conversation.** Numbers ("2.5 hrs/day in games") are easier to talk about with a kid than a vague feeling that they're "on their phone too much."
+>
+> The failure mode worth knowing about going in: these apps work best as a floor for the conversation, not a replacement for it. A limit with zero explanation just teaches a kid to look for the workaround (and there's usually one). The apps that get the best results are used alongside talking about *why*, not instead of it.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app. Free tier covers 1 child profile, a daily screen time limit, blocking up to 5 apps, and unblocking up to 3 content categories; Pro adds more profiles, unlimited app blocking with per-app time limits, full content filtering, bedtime/schedule locks, and remote pause. Mentioning it since it's directly the category you're asking about, not as a "buy this" — the pros above hold regardless of which app you pick.
+
+**Drafted response — for https://www.quora.com/Which-parental-control-app-is-the-best:**
+
+> Depends on what you actually need it to do — "best" varies a lot by use case:
+>
+> - **Just want basic screen time + app limits, free?** Start with Google Family Link (Android) or Screen Time (iPhone). Built-in, no subscription, covers the basics fine for a lot of families.
+> - **Want more granular control** — per-app time limits instead of one global timer, more content-filter categories, better usage reporting, bedtime/schedule locks — that's where dedicated third-party apps (Qustodio, Bark, FamilyTime, and others) earn their subscription cost over the free OS tools.
+> - **Want message/content monitoring specifically** (not just time limits) — that's a narrower, more invasive category (Bark leans this direction) — worth deciding deliberately given the privacy/trust tradeoff, especially with an older kid.
+> - **Mixed iOS/Android household** — you'll want something that actually supports both from one dashboard; not all of them do that well.
+>
+> Practical approach: try the free built-in option first. If it's not covering something specific — a kid bypassing it, needing more content categories, wanting real reporting — that gap tells you which paid category to look at next, instead of picking blind off a "best of" list.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app. Free tier covers 1 child profile, a daily screen time limit, blocking up to 5 apps, and unblocking up to 3 content categories; Pro (₹199/mo or ₹1,499/yr) adds more profiles, unlimited app blocking with per-app time limits, full content filtering, bedtime/schedule locks, and remote pause. It's Android-only and doesn't do GPS location tracking or message monitoring, so worth knowing those aren't in scope if that's part of what you need.
+
+**Drafted response — for https://www.quora.com/How-do-I-fix-Qustodio-from-blocking-all-internet-access-Ever-since-I-installed-it-no-websites-will-load-It-says-that-the-connection-timed-out:**
+
+> This is a known failure mode with Qustodio (and with most apps that filter content via a local VPN profile on Android, which is how Qustodio does its web filtering) — a few things worth checking in order:
+>
+> 1. **Conflicting VPN.** Android only allows one active VPN profile at a time. If any other VPN or ad-blocker app is installed (even inactive), it can silently break Qustodio's own VPN filter. Check Settings → Network → VPN for anything else listed.
+> 2. **Stale VPN profile.** Sometimes the local filtering profile gets into a bad state after an Android or app update. Toggling Qustodio's protection off and back on (from the parent dashboard, not just the device) often clears it.
+> 3. **DNS/certificate issue on the device.** If it's timing out rather than actively refusing, it can also be a device-level DNS problem unrelated to Qustodio specifically — worth testing with mobile data vs. Wi-Fi to isolate.
+> 4. If none of that clears it, Qustodio's own support (in-app or their site) can usually diagnose from your account — this is a common enough ticket type that they should recognize it quickly.
+>
+> Disclosure since I build one of these: I make Paxio, a different Android parental control app — mentioning it only because the underlying issue here (a local VPN-based filter breaking general internet access) is specific to how some apps implement web filtering, and it's a fair thing to ask about before picking one. Not all of them use the same approach.
+
 ## 2026-08-19 — scheduled run #2 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. Of the URLs surfaced, all but 5 were already in `seen-posts.json`. 1 genuinely new, relevant lead found. 4 additional new URLs surfaced but filtered as noise (added to `seen_urls` only, not logged as leads below):
