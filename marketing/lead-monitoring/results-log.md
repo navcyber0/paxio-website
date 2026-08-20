@@ -6,6 +6,16 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-20 — scheduled run #3 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. 0 genuinely new leads — every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs, most recently run #2 earlier today. No noise-filtering needed this run since there was nothing new to filter. `seen-posts.json` unchanged (no new URLs to add). No drafts produced (nothing to draft against).
+
+Reference file check repeated: `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` still do not exist in the repo (same gap as every prior run since 2026-08-19) — moot this run since there were no new leads to draft for, but still worth creating/correcting when there's a moment, since it will matter again the moment a new lead surfaces.
+
+| Status | URL | Note |
+|---|---|---|
+| — | — | No new leads this run |
+
 ## 2026-08-20 — scheduled run #2 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. 1 genuinely new, relevant lead found. 6 additional new URLs surfaced but filtered as noise (added to `seen_urls` only, not logged as leads below):
