@@ -6,6 +6,35 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-20 — scheduled run #4 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. **1 genuinely new, relevant lead** found. 8 additional new quora.com URLs surfaced (all under the "FamilyTime alternative" query) but were filtered as noise and added to `seen_urls` only, not logged as leads:
+- `eqbfnlgsetvzxghh.quora.com/` ("Family Time Centers") — auto-generated content-farm Space, not a real user thread.
+- "What are some alternative games to play with family members?" / "What are some alternatives to spending time with one's family on holidays?" — pure keyword collision on "family"/"alternative", unrelated to parental control.
+- "What is the best alternative for Rescue time and Quality time app?" — self-use productivity apps, no kid/parent angle (self-use exclusion precedent, 2026-08-16).
+- "What is the best free family calendar app?" / "Are there any recommended tools/apps for efficiently managing the family schedule/goals/tasks?" — family-scheduling apps, not parental control.
+- "Are there any alternatives to Popcorn Time?" — media-streaming app, fully unrelated.
+- "What are some alternatives to screen time for young children?" — asks for *activities to replace* screen time, not a parental-control-app question.
+
+Reference-file note: `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` referenced by the task still do not exist in the repo (recurring gap since 2026-08-19). Drafted against the established voice in `published-posts-social-copy.md` again, and verified every feature claim below directly against `pricing.html` (Free/Pro lists confirmed current this run).
+
+| Status | URL | Note |
+|---|---|---|
+| Pending Review | https://www.quora.com/Which-is-the-Best-Parental-control-software | Broad "which is the best parental control software" recommendation-seeking question — direct category fit; platform-agnostic phrasing, so the draft notes Paxio is Android-only |
+
+**Drafted response — for https://www.quora.com/Which-is-the-Best-Parental-control-software:**
+
+> "Best" really depends on what you're trying to solve — honestly, different apps win at different jobs:
+>
+> - **Mostly screen-time limits + app blocking on a kid's phone** — a focused, lightweight app is usually less frustrating than a big all-in-one suite. Less to configure, fewer things to break.
+> - **Deep content/web filtering across browsers and apps** — Qustodio and Net Nanny are the usual heavyweights here, at the cost of more setup and a higher price.
+> - **Social-media / message monitoring specifically** (flagging concerning content in texts and DMs) — Bark is built around that, though it's more monitoring than control.
+> - **Just the basics, for free** — Google Family Link (Android) or Apple Screen Time (iOS) are built in and cost nothing. Worth trying before you pay for anything; a lot of parents find they cover the essentials.
+>
+> Two things worth knowing going in: (1) the "best" app is the one you'll actually keep configured — the most powerful suite is useless if it's so fiddly you switch it off after a week; and (2) whatever you pick works far better paired with a real conversation about *why* than as a silent lockdown, which mostly just teaches kids to hunt for the workaround.
+>
+> Disclosure since I build one: I make Paxio, an Android parental control app, so I'm biased — I'd still point you at Family Link first if you're on Android and only need the basics, since it's free. Paxio sits in the "focused, not a giant suite" category: Free covers 1 child profile, a daily screen-time limit, blocking up to 5 apps, and content-category filtering; Pro adds up to 3 profiles, unlimited app blocking with per-app time limits, bedtime/schedule locks, and remote internet pause. It's Android only, so not the answer if you're on iPhone. The framing above holds regardless of which one you land on.
+
 ## 2026-08-20 — scheduled run #3 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. 0 genuinely new leads — every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs, most recently run #2 earlier today. No noise-filtering needed this run since there was nothing new to filter. `seen-posts.json` unchanged (no new URLs to add). No drafts produced (nothing to draft against).
