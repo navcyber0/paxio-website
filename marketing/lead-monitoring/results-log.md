@@ -6,6 +6,16 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-21 — scheduled run (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. **0 genuinely new leads.** Every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs. Only one new URL string surfaced: `https://www.quora.com/unanswered/Can-Qustodio-track-secret-mode-searches-on-Android`, an `/unanswered/`-prefixed mirror of the already-logged `https://www.quora.com/Can-Qustodio-track-secret-mode-searches-on-Android` — same question, duplicate mirror per the established mirror-URL precedent (2026-08-19), not a new thread. Added to `seen_urls` for dedup completeness only, not logged as a lead.
+
+Reference-file check repeated: `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` still do not exist in the repo (same recurring gap since 2026-08-19) — moot this run since there were no new leads to draft for. `pricing.html` re-read and confirmed current (Free: 1 profile / daily limit / block up to 5 apps / unblock up to 3 filter categories / PIN / weekly reports (3 stats, 30-day); Pro: up to 3 profiles / unlimited app blocking + per-app limits / unblock any filter category / bedtime & schedule locks / remote internet pause / weekly reports (7 stats, 1-year) / priority support — ₹199/mo or ₹1,499/yr) so it's ready for the next run that does need a draft.
+
+| Status | URL | Note |
+|---|---|---|
+| — | — | No new leads this run |
+
 ## 2026-08-20 — scheduled run #4 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. **1 genuinely new, relevant lead** found. 8 additional new quora.com URLs surfaced (all under the "FamilyTime alternative" query) but were filtered as noise and added to `seen_urls` only, not logged as leads:
