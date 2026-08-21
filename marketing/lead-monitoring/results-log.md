@@ -6,6 +6,18 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-21 — scheduled run #4 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+**Process note — orphaned commits recovered.** Before this run, discovered the container had started in a detached-HEAD state and the previous 9 scheduled-run commits (2026-08-19 through today's run #3) were never merged into `main` or pushed to `origin` — they existed only as an unreferenced local commit chain. This included the 2026-08-20 run #4 lead (`Which-is-the-Best-Parental-control-software`, status `Pending Review`) sitting invisible to you. Fast-forwarded `main` to include all 9 commits and pushed; confirmed `origin/main` now has them. Worth checking that lead if you haven't seen it yet — it predates this fix.
+
+24 of 24 queries run. **0 genuinely new leads.** Every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs. One new URL string surfaced but is noise, not a lead: `https://www.quora.com/What-are-some-alternatives-to-MS-Office-that-have-a-similar-look-and-feel`, picked up under the "mSpy alternative" query via pure keyword collision on "alternative" — fully unrelated to parental control. Added to `seen_urls` for dedup completeness only.
+
+Reference-file check repeated: `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` still do not exist in the repo (same recurring gap since 2026-08-19) — moot this run since there were no new leads to draft for. `pricing.html` re-read and confirmed current (Free: 1 profile / daily limit / block up to 5 apps / unblock up to 3 filter categories / PIN / weekly reports (3 stats, 30-day); Pro: up to 3 profiles / unlimited app blocking + per-app limits / unblock any filter category / bedtime & schedule locks / remote internet pause / weekly reports (7 stats, 1-year) / priority support — ₹199/mo or ₹1,499/yr) so it's ready for the next run that does need a draft.
+
+| Status | URL | Note |
+|---|---|---|
+| — | — | No new leads this run |
+
 ## 2026-08-21 — scheduled run #3 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. **0 genuinely new leads.** Every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs, including both earlier runs today — verified programmatically (URL-list diff against `seen-posts.json`, comparing base URLs with query-string variants like `?top_ans=...` stripped) rather than by eye, to be safe. 86 raw URL mentions collapsed to 84 unique base URLs, 0 of which were new. `seen-posts.json` unchanged.
