@@ -42,6 +42,12 @@ All lead photos are user-selected from Unsplash (free-use license, no attributio
 
 Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other posts now have real photos.
 
+## Comparison/commercial-intent track (added 2026-08-14)
+
+| Title | File | Status |
+|---|---|---|
+| Best parental control apps in 2026: what to actually look for (and how the major options compare) | `best-parental-control-apps-features-compared.md` (lead photo `parent-daughter-comparing-phone.jpg`, Vitaly Gariev/Unsplash) | Drafted 2026-08-14, pending review. Covers required-feature checklist, Paxio (benefits + honest cons: Android-only, no message/call/location monitoring by design), and Google Family Link, Qustodio, Bark, Norton Family/Net Nanny, AirDroid Parental Control — pros/cons kept to well-established, non-specific claims (no fabricated pricing/ratings) to avoid inaccurate statements about competitors. Added a disclaimer paragraph up front (competitor info is general/as-of-writing, not a paid placement, not affiliated with any app mentioned) as a defamation/legal-hygiene safeguard. Targets commercial/comparison search intent ("best parental control app"), same category as the location-tracking post. |
+
 ## Next topics to draw from (not yet drafted)
 
 - Healthy digital habits / screen-time psychology, grounded in real research
@@ -53,3 +59,5 @@ Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other 
 A blog listing page and post template now exist on the live site (`blog/index.html` + per-post pages, added 2026-08-06). Two drafts have been converted and published so far: mobile-app-permissions-kids-grant (first post) and bedtime-schedule-what-actually-happens (second post) — see their rows above for commit hashes.
 
 **Workflow update (2026-08-07):** per the user, converting a draft into the live-template page, updating `blog/index.html`, and downloading Unsplash images are all fine to do locally without asking each time, as long as everything stays inside this repo's `blog/`/`marketing/blog-drafts/` folders and images come from Unsplash (free-license only) unless another source is cleared first. The one remaining gate is `git push` to GitHub — that still needs the user's explicit go-ahead every time, reviewed via the local page first. Intended cadence: one post built+ready per day, pushed after approval.
+
+**House rule (2026-08-14): any post that discusses or compares another vendor/app by name must carry a disclaimer.** Established on the `best-parental-control-apps-features-compared.md` post — the first comparison-style piece on the blog, and the only one so far naming competitors (Google Family Link, Qustodio, Bark, Norton Family, Net Nanny, AirDroid Parental Control). The disclaimer: (1) states competitor descriptions reflect publicly stated features as of writing, not a verified audit, (2) notes Paxio isn't affiliated with/sponsored by/paid by any app mentioned, (3) tells the reader to confirm current features/pricing with the vendor directly since these change over time. Placement: bottom of the page, after a divider, following the CTA — not up top, so it doesn't interrupt the read. Labeled explicitly "Disclaimer:" so it's recognizable at a glance. Apply this same pattern to any future post that names a competing product, not just direct comparison posts.
