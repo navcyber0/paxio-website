@@ -6,6 +6,18 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-24 — scheduled run #2 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
+
+24 of 24 queries run. **0 genuinely new leads.** Every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs (including the earlier run today), verified by manually diffing every returned URL against `seen-posts.json`. 2 new URL strings surfaced but are noise, not leads — added to `seen_urls` for dedup completeness only:
+- `https://www.quora.com/What-is-a-kid-s-alternative-to-Discord` (surfaced under the "Kids360 alternative" query, pure keyword collision on "kid"/"alternative" — asking for a kid-safe chat app, unrelated to parental control apps).
+- `https://quora.com/What-are-the-best-Android-parental-control-apps` (surfaced under the "Kids360 alternative" query — non-www mirror of the already-logged `https://www.quora.com/What-are-the-best-Android-parental-control-apps`, same question, not a new thread).
+
+Repo housekeeping: session started in a detached-HEAD state again (same recurring pattern flagged 2026-08-21) — `main` was already caught up with `origin/main` at 9166ce6 this time, so re-checked out `main` tracking `origin/main` with no orphaned commits to recover. `marketing/blog-drafts/social-posts/paxio-post-comments.md` and `paxio-fresh-posts.md` still do not exist in the repo (recurring gap, first flagged 2026-08-19) — moot again this run since there were no new leads to draft for. `pricing.html` re-read and confirmed current (Free: 1 profile / daily limit / block up to 5 apps / unblock up to 3 filter categories / PIN / weekly reports (3 stats, 30-day); Pro: up to 3 profiles / unlimited app blocking + per-app limits / unblock any filter category / bedtime & schedule locks / remote internet pause / weekly reports (7 stats, 1-year) / priority support — ₹199/mo or ₹1,499/yr).
+
+| Status | URL | Note |
+|---|---|---|
+| — | — | No new leads this run |
+
 ## 2026-08-24 — scheduled run (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. **0 genuinely new leads.** Every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs — verified by manually diffing every returned URL (including query-string variants like `?top_ans=...` and subdomain mirrors like `barkvsqustodiovscircle.quora.com`, `parentingtechniques.quora.com`, `es.quora.com`) against `seen-posts.json`. `seen-posts.json` unchanged — no new URL strings surfaced at all this run, not even noise.
