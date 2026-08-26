@@ -48,10 +48,15 @@ Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other 
 |---|---|---|
 | Best parental control apps in 2026: what to actually look for (and how the major options compare) | `best-parental-control-apps-features-compared.md` (lead photo `parent-daughter-comparing-phone.jpg`, Vitaly Gariev/Unsplash) | Drafted 2026-08-14, pending review. Covers required-feature checklist, Paxio (benefits + honest cons: Android-only, no message/call/location monitoring by design), and Google Family Link, Qustodio, Bark, Norton Family/Net Nanny, AirDroid Parental Control — pros/cons kept to well-established, non-specific claims (no fabricated pricing/ratings) to avoid inaccurate statements about competitors. Added a disclaimer paragraph up front (competitor info is general/as-of-writing, not a paid placement, not affiliated with any app mentioned) as a defamation/legal-hygiene safeguard. Targets commercial/comparison search intent ("best parental control app"), same category as the location-tracking post. |
 
+## AI-safety track (added 2026-08-26)
+
+| Title | File | Status |
+|---|---|---|
+| AI chatbots and kids: what's actually risky, and what isn't | `ai-chatbots-what-kids-are-actually-doing.md` (lead photo `ai-chatbot-phone-glow-night.jpg`, Andrew Guan/Unsplash) | ~640 words (~2.5-3 min). Stat: Common Sense Media, "Census: AI Use by Tweens and Teens," June 8, 2026 (86% of kids use AI, only 37% of parents know) — primary hook, plus two supporting Common Sense Media sources (2025 companion-usage study, Nov 2025 mental-health risk assessment w/ Stanford Medicine). Drafted 2026-08-26, pending review. |
+
 ## Next topics to draw from (not yet drafted)
 
 - Healthy digital habits / screen-time psychology, grounded in real research
-- AI chatbots and kids: what's actually risky, what isn't
 - (Sensitive, lower priority per positioning) online predators/stranger-contact awareness, sexting/inappropriate-content exposure — handle with the same care as the cyberbullying post if/when picked up
 
 ## Publishing note
