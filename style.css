@@ -886,6 +886,12 @@ footer {
   text-transform: uppercase; letter-spacing: 0.04em;
 }
 
+.help-article { max-width: 900px; }
+
+.help-step { display: flex; gap: 32px; align-items: flex-start; margin: 0 0 8px; }
+.help-step ol, .help-step ul { flex: 1; margin: 0; min-width: 0; }
+.help-step .help-shot { flex: 0 0 170px; width: 170px; margin: 0; }
+
 .help-shot { max-width: 220px; margin: 20px auto 26px; }
 .help-shot-box {
   aspect-ratio: 824 / 1784;
@@ -902,7 +908,12 @@ footer {
 }
 .help-shot-box svg { width: 30px; height: 30px; opacity: 0.55; color: var(--teal-ink); }
 .help-shot-box span { font-size: 0.78rem; font-weight: 600; color: var(--teal-ink); }
-.help-shot-caption { font-size: 0.78rem; color: var(--ink-soft); text-align: center; margin-top: 8px; }
+.help-shot-caption { font-size: 0.75rem; color: var(--ink-soft); text-align: center; margin-top: 8px; }
+
+@media (max-width: 720px) {
+  .help-step { flex-direction: column-reverse; gap: 4px; }
+  .help-step .help-shot { width: 100%; flex: none; max-width: 200px; margin: 0 auto 20px; }
+}
 
 
 /* ── Homepage in-page jump nav (reuses .screen-tab pill) ──────────────── */
