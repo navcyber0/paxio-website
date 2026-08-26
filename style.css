@@ -886,17 +886,30 @@ footer {
   text-transform: uppercase; letter-spacing: 0.04em;
 }
 
-.help-article { max-width: 900px; }
+.help-article { max-width: 980px; }
 
-.help-step { display: flex; gap: 32px; align-items: flex-start; margin: 0 0 8px; }
-.help-step ol, .help-step ul { flex: 1; margin: 0; min-width: 0; }
-.help-step .help-shot { flex: 0 0 170px; width: 170px; margin: 0; }
+.help-step { display: flex; gap: 36px; align-items: center; margin: 0 0 16px; }
+.help-step > ol, .help-step > ul, .help-step > .help-step-text { flex: 1 1 58%; margin: 0; min-width: 0; }
+.help-step-text > p { margin: 0 0 8px; }
+.help-step-text > ol:not(:last-child) { margin-bottom: 20px; }
+.help-step .help-shot { flex: 1 1 40%; width: auto; max-width: 270px; margin: 0; }
 
-.help-shot { max-width: 220px; margin: 20px auto 26px; }
+.help-shot-pair { display: flex; gap: 12px; }
+.help-step .help-shot-pair { flex: 1 1 44%; max-width: 300px; margin: 0; }
+.help-step .help-shot-pair .help-shot { flex: 1; max-width: none; margin: 0; }
+
+.help-shot { max-width: 270px; margin: 20px auto 26px; }
+.help-shot img {
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 48px -16px rgba(15, 40, 33, 0.35);
+  display: block;
+}
 .help-shot-box {
   aspect-ratio: 824 / 1784;
   border: 2px dashed var(--border);
-  border-radius: 16px;
+  border-radius: 22px;
   background: var(--teal-light);
   display: flex;
   flex-direction: column;
@@ -908,11 +921,13 @@ footer {
 }
 .help-shot-box svg { width: 30px; height: 30px; opacity: 0.55; color: var(--teal-ink); }
 .help-shot-box span { font-size: 0.78rem; font-weight: 600; color: var(--teal-ink); }
-.help-shot-caption { font-size: 0.75rem; color: var(--ink-soft); text-align: center; margin-top: 8px; }
+.help-shot-caption { font-size: 0.78rem; color: var(--ink-soft); text-align: center; margin-top: 10px; }
 
-@media (max-width: 720px) {
-  .help-step { flex-direction: column-reverse; gap: 4px; }
-  .help-step .help-shot { width: 100%; flex: none; max-width: 200px; margin: 0 auto 20px; }
+@media (max-width: 760px) {
+  .help-step { flex-direction: column-reverse; gap: 16px; }
+  .help-step .help-shot { width: 100%; flex: none; max-width: 240px; margin: 0 auto; }
+  .help-step .help-shot-pair { width: 100%; flex: none; max-width: 320px; margin: 0 auto; }
+  .help-step .help-shot-pair .help-shot { max-width: none; width: auto; }
 }
 
 
