@@ -919,7 +919,14 @@ footer {
 }
 .pricing-card.is-pro { border-color: var(--teal); box-shadow: var(--shadow); }
 
-.pricing-card .plan-badge { align-self: flex-start; margin-bottom: 14px; }
+.pricing-card .plan-badge {
+  align-self: flex-start;
+  margin-bottom: 14px;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
 
 .pricing-card h2 { margin: 0 0 4px; font-size: 1.3rem; font-weight: 800; }
 
