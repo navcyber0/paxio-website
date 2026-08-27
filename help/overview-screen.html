@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Overview screen | Paxio Help</title>
+<meta name="description" content="Reading your weekly trend stats and one-tap shortcuts on Paxio's Overview screen — the parent dashboard.">
+<link rel="canonical" href="https://www.paxio.in/help/overview-screen.html">
+<link rel="icon" type="image/png" href="../store-assets/play-store-icon-512.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="The Overview screen">
+<meta property="og:description" content="Reading your weekly trend stats and one-tap shortcuts on Paxio's Overview screen — the parent dashboard.">
+<meta property="og:url" content="https://www.paxio.in/help/overview-screen.html">
+<meta property="og:type" content="article">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Overview screen",
+  "description": "Reading your weekly trend stats and one-tap shortcuts on Paxio's Overview screen.",
+  "author": { "@type": "Organization", "name": "Paxio" },
+  "publisher": { "@type": "Organization", "name": "Paxio" }
+}
+</script>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f27235d504634420b45bdbe069ff2540"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-row">
+    <a class="brand" href="../index.html">
+      <img src="../store-assets/play-store-icon-512.png" alt="Paxio logo">
+      Paxio
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <div class="nav-links">
+      <a href="../index.html#features">Product</a>
+      <a href="../why-paxio.html">Why Paxio</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.paxio" target="_blank" rel="noopener">Get Paxio</a>
+    </div>
+  </div>
+</nav>
+
+<div class="legal help-article">
+  <a class="back" href="index.html">&larr; Back to Help</a>
+  <span class="tag">Parent Dashboard</span>
+  <h1>The Overview screen</h1>
+  <p class="updated">Last updated: 27 August 2026</p>
+
+  <p>Overview is the first tab you land on, and the one glance-and-done summary for whichever child
+  is selected — greeting header, today's status, this week's trend, and a few one-tap shortcuts.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-teal"><i></i></span><h2>Reading the screen</h2></div>
+  <div class="help-step">
+    <div class="help-step-text">
+      <ol>
+        <li><strong>Pending requests</strong> — if your child has asked for more time, a bedtime pause, or to unblock an app, it appears as a banner at the top with Approve/Not now.</li>
+        <li><strong>The child card</strong> shows a usage ring (used vs. daily limit), a traffic-light status ("Within limit," "Close to limit," "Over limit"), and today's top categories.</li>
+        <li><strong>The trend row</strong> compares this week's screen time, average session, and over-limit days against last week.</li>
+        <li><strong>"Right now"</strong> has two quick toggles (Internet, Sleep timer) and two shortcuts (App blocker, Content filter) that jump straight into that control.</li>
+        <li><strong>More than one child?</strong> A dropdown next to your avatar switches which one Overview is showing.</li>
+      </ol>
+    </div>
+    <figure class="help-shot">
+      <img src="../screens/overview.png" alt="Paxio parent Overview screen showing a pending request banner, a usage ring with category mix, a weekly trend row, and Right now toggles">
+      <div class="help-shot-caption">The Overview screen.</div>
+    </figure>
+  </div>
+
+  <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>A couple of things worth knowing</h2></div>
+  <ul>
+    <li><strong>Internet and Sleep timer are Pro features</strong> to configure — a Free plan sees the same toggles, gated behind an upgrade prompt.</li>
+    <li><strong>A new child with no device enrolled yet</strong> shows a step-by-step "waiting for their phone" banner instead of a usage ring, since there's nothing to report until that device signs in.</li>
+  </ul>
+
+  <p style="text-align:center;margin-top:40px">
+    <a class="btn btn-primary" href="index.html">&larr; Back to all Help articles</a>
+  </p>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a class="footer-brand" href="../index.html">
+        <img src="../store-assets/play-store-icon-512.png" alt="Paxio logo">
+        Paxio
+      </a>
+      <div class="footer-links">
+        <a href="../index.html#features">Product</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../why-paxio.html">Why Paxio</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="index.html">Help</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Paxio. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest('.help-shot img');
+    if (!img) return;
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    var big = document.createElement('img');
+    big.src = img.src;
+    big.alt = img.alt;
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'lightbox-close';
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.textContent = '×';
+    overlay.appendChild(big);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    function close() {
+      overlay.remove();
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    }
+    function onKey(ev) { if (ev.key === 'Escape') close(); }
+    overlay.addEventListener('click', close);
+    closeBtn.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+  });
+})();
+</script>
+
+</body>
+</html>

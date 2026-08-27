@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What your child sees | Paxio Help</title>
+<meta name="description" content="A look at the single-screen view Paxio shows on a child's device — time left, streak, what's active right now, and switching back to parent mode.">
+<link rel="canonical" href="https://www.paxio.in/help/what-your-child-sees.html">
+<link rel="icon" type="image/png" href="../store-assets/play-store-icon-512.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="What your child sees">
+<meta property="og:description" content="A look at the single-screen view Paxio shows on a child's device — time left, streak, what's active right now, and switching back to parent mode.">
+<meta property="og:url" content="https://www.paxio.in/help/what-your-child-sees.html">
+<meta property="og:type" content="article">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What your child sees",
+  "description": "A look at the single-screen view Paxio shows on a child's device.",
+  "author": { "@type": "Organization", "name": "Paxio" },
+  "publisher": { "@type": "Organization", "name": "Paxio" }
+}
+</script>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f27235d504634420b45bdbe069ff2540"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-row">
+    <a class="brand" href="../index.html">
+      <img src="../store-assets/play-store-icon-512.png" alt="Paxio logo">
+      Paxio
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <div class="nav-links">
+      <a href="../index.html#features">Product</a>
+      <a href="../why-paxio.html">Why Paxio</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.paxio" target="_blank" rel="noopener">Get Paxio</a>
+    </div>
+  </div>
+</nav>
+
+<div class="legal help-article">
+  <a class="back" href="index.html">&larr; Back to Help</a>
+  <span class="tag">Child Device</span>
+  <h1>What your child sees</h1>
+  <p class="updated">Last updated: 27 August 2026</p>
+
+  <p>On a device set to <strong>"This is my child's phone,"</strong> or a shared device switched into
+  child view, Paxio shows a single, read-only dashboard instead of the full parent app — no controls
+  to change, just a clear picture of today.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-teal"><i></i></span><h2>The dashboard</h2></div>
+  <div class="help-step">
+    <div class="help-step-text">
+      <ol>
+        <li><strong>A time-left ring</strong> shows minutes remaining today, plus how much has been used and when the phone goes quiet for bedtime.</li>
+        <li><strong>A 7-day streak row</strong> marks each day under the limit — the same streak the "one more clean day earns bonus time" note on Overview refers to.</li>
+        <li><strong>"What's on right now"</strong> lists active restrictions in plain language, e.g. "Some websites are filtered — Age 8 setting."</li>
+        <li><strong>Active alerts</strong>, like a bedtime notice, appear at the top of the screen.</li>
+      </ol>
+    </div>
+    <figure class="help-shot">
+      <img src="images/child-dashboard.png" alt="Paxio's child dashboard, showing a time-left ring, a 7-day streak row, and a What's on right now card">
+      <div class="help-shot-caption">The child dashboard.</div>
+    </figure>
+  </div>
+
+  <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>Switching back to parent mode</h2></div>
+  <p>A <strong>"Switch to Parent"</strong> or <strong>"Switch back to Parent"</strong> link sits on this
+  screen (on a shared device) — tapping it always asks for the parent PIN first. This is deliberate:
+  without a PIN gate here, anyone holding the child's device could reach the full parent dashboard with
+  no authentication at all.</p>
+
+  <p style="text-align:center;margin-top:40px">
+    <a class="btn btn-primary" href="index.html">&larr; Back to all Help articles</a>
+  </p>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a class="footer-brand" href="../index.html">
+        <img src="../store-assets/play-store-icon-512.png" alt="Paxio logo">
+        Paxio
+      </a>
+      <div class="footer-links">
+        <a href="../index.html#features">Product</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../why-paxio.html">Why Paxio</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="index.html">Help</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Paxio. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest('.help-shot img');
+    if (!img) return;
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    var big = document.createElement('img');
+    big.src = img.src;
+    big.alt = img.alt;
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'lightbox-close';
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.textContent = '×';
+    overlay.appendChild(big);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    function close() {
+      overlay.remove();
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    }
+    function onKey(ev) { if (ev.key === 'Escape') close(); }
+    overlay.addEventListener('click', close);
+    closeBtn.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+  });
+})();
+</script>
+
+</body>
+</html>
