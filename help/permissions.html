@@ -3,27 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Understanding Paxio's permission requests | Paxio Help</title>
-<meta name="description" content="What each Android permission Paxio asks for is actually for — App Blocker, Usage Access, Uninstall Protection, Content Filtering, and Notifications.">
+<title>Child Device Onboarding Process | Paxio Help</title>
+<meta name="description" content="Step-by-step: granting each permission Paxio needs on a child's device — App Blocker, Usage Access, Uninstall Protection, and Content Filtering.">
 <link rel="canonical" href="https://www.paxio.in/help/permissions.html">
 <link rel="icon" type="image/png" href="../store-assets/play-store-icon-512.png">
 <link rel="stylesheet" href="../style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
-<meta property="og:title" content="Understanding Paxio's permission requests">
-<meta property="og:description" content="What each Android permission Paxio asks for is actually for — App Blocker, Usage Access, Uninstall Protection, Content Filtering, and Notifications.">
+<meta property="og:title" content="Child Device Onboarding Process">
+<meta property="og:description" content="Step-by-step: granting each permission Paxio needs on a child's device — App Blocker, Usage Access, Uninstall Protection, and Content Filtering.">
 <meta property="og:url" content="https://www.paxio.in/help/permissions.html">
 <meta property="og:type" content="article">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "Understanding Paxio's permission requests",
-  "description": "What each Android permission Paxio asks for is actually for, and how to grant them.",
+  "name": "Child Device Onboarding Process",
+  "description": "Granting each permission Paxio needs on a child's device, one at a time.",
   "step": [
     { "@type": "HowToStep", "name": "Review each permission card", "text": "Paxio explains what each permission does and why it's needed before you grant it." },
-    { "@type": "HowToStep", "name": "Grant each permission", "text": "Tap Open Settings on each card and follow the short steps shown. The screen updates live as each one is granted." },
+    { "@type": "HowToStep", "name": "Enable App Blocker", "text": "Settings -> Accessibility -> Paxio App Blocker -> toggle on -> Allow." },
+    { "@type": "HowToStep", "name": "Enable Usage Access", "text": "Find Paxio in the usage-access list and toggle Permit usage access on." },
+    { "@type": "HowToStep", "name": "Enable Uninstall Protection", "text": "Tap Activate on the device admin screen." },
+    { "@type": "HowToStep", "name": "Enable Content Filtering", "text": "Tap OK on the VPN connection request." },
     { "@type": "HowToStep", "name": "Continue once all required permissions are granted", "text": "The Continue button enables automatically once every required permission is granted." }
   ]
 }
@@ -56,7 +59,7 @@
 <div class="legal help-article">
   <a class="back" href="index.html">&larr; Back to Help</a>
   <span class="tag">Getting Started</span>
-  <h1>Understanding Paxio's permission requests</h1>
+  <h1>Child Device Onboarding Process</h1>
   <p class="updated">Last updated: 27 August 2026</p>
 
   <p>This screen appears on a device set to <strong>"This is my child's phone,"</strong> or a shared
@@ -86,11 +89,8 @@
       <li><strong>Tap "Continue"</strong> once every card is green.</li>
     </ol>
     <figure class="help-shot">
-      <div class="help-shot-box">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-        <span>Screenshot needed</span>
-      </div>
-      <div class="help-shot-caption">The permission-setup screen, showing the progress bar and a few ungranted cards.</div>
+      <img src="images/permission-screen.png" alt="Paxio Setup Required screen showing a permissions-granted progress bar and App Blocker, Usage Access, and Uninstall Protection cards">
+      <div class="help-shot-caption">The permission-setup screen.</div>
     </figure>
   </div>
 
@@ -106,11 +106,63 @@
       any other app your child uses."</p>
     </div>
     <figure class="help-shot">
-      <div class="help-shot-box">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-        <span>Screenshot needed</span>
-      </div>
+      <img src="images/permission-accessibility-disclosure.png" alt="Paxio's What the App Blocker sees disclosure dialog, explaining what the Accessibility service is used for">
       <div class="help-shot-caption">The "What the App Blocker sees" disclosure dialog.</div>
+    </figure>
+  </div>
+
+  <div class="legal-h2-row"><span class="legal-icon c-purple"><i></i></span><h2>Enabling App Blocker</h2></div>
+  <div class="help-step">
+    <ol>
+      <li><strong>Tapping "Continue to Settings"</strong> opens Android's Accessibility settings, with Paxio App Blocker listed and off.</li>
+      <li><strong>Tap it</strong>, then toggle <strong>"Use Paxio App Blocker"</strong> on.</li>
+      <li><strong>Tap "Allow"</strong> on the system dialog asking to give it full control — needed to detect the foreground app and block it.</li>
+    </ol>
+    <div class="help-shot-pair">
+      <figure class="help-shot">
+        <img src="images/permission-accessibility-toggle.png" alt="Android Accessibility settings for Paxio App Blocker, with a Use Paxio App Blocker toggle">
+        <div class="help-shot-caption">Toggle it on.</div>
+      </figure>
+      <figure class="help-shot">
+        <img src="images/permission-accessibility-allow.png" alt="Android system dialog asking to allow Paxio App Blocker full control of the device">
+        <div class="help-shot-caption">Confirm the system prompt.</div>
+      </figure>
+    </div>
+  </div>
+
+  <div class="legal-h2-row"><span class="legal-icon c-teal2"><i></i></span><h2>Enabling Usage Access</h2></div>
+  <div class="help-step">
+    <ol>
+      <li><strong>Tapping "Open Settings"</strong> opens Android's "Apps with usage access" list, already scrolled to Paxio.</li>
+      <li><strong>Toggle "Permit usage access"</strong> on, then go back to Paxio.</li>
+    </ol>
+    <figure class="help-shot">
+      <img src="images/permission-usage-access.png" alt="Android Apps with usage access screen for Paxio, with a Permit usage access toggle">
+      <div class="help-shot-caption">Permit usage access.</div>
+    </figure>
+  </div>
+
+  <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>Enabling Uninstall Protection</h2></div>
+  <div class="help-step">
+    <ol>
+      <li><strong>Tapping "Open Settings"</strong> opens Android's "Activate device admin app?" screen for Paxio.</li>
+      <li><strong>Tap "Activate this device admin app."</strong></li>
+    </ol>
+    <figure class="help-shot">
+      <img src="images/permission-device-admin.png" alt="Android Activate device admin app? dialog for Paxio, with Activate, Cancel, and Uninstall options">
+      <div class="help-shot-caption">Activate device admin.</div>
+    </figure>
+  </div>
+
+  <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>Enabling Content Filtering</h2></div>
+  <div class="help-step">
+    <ol>
+      <li><strong>Tapping "Open Settings"</strong> shows Android's own "Connection request" — Paxio setting up a local VPN to filter unsafe sites.</li>
+      <li><strong>Tap "OK."</strong> A key icon appears at the top of the screen whenever the VPN is active.</li>
+    </ol>
+    <figure class="help-shot">
+      <img src="images/permission-vpn-consent.png" alt="Android Connection request dialog for Paxio's local VPN, with Cancel and OK buttons">
+      <div class="help-shot-caption">Accept the VPN connection.</div>
     </figure>
   </div>
 
