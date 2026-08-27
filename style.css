@@ -893,6 +893,7 @@ footer {
 .help-step-text > p { margin: 0 0 8px; }
 .help-step-text > ol:not(:last-child) { margin-bottom: 20px; }
 .help-step .help-shot { flex: 1 1 40%; width: auto; max-width: 270px; margin: 0; }
+.help-step .help-shot.is-small { flex-basis: 26%; max-width: 170px; }
 
 .help-shot-pair { display: flex; gap: 12px; }
 .help-step .help-shot-pair { flex: 1 1 44%; max-width: 300px; margin: 0; }
