@@ -72,7 +72,7 @@ Hey — thanks for trying Paxio! Since you've had a few days with it, could you 
 2. Did any block/limit/filter either not trigger when it should have, or trigger when it shouldn't have?
 3. Is there a screen or setting where you weren't sure what it actually does?
 4. What's the one thing that would make you stop using this after a week?
-5. Would you pay $9.99/month for the Pro version as it stands today? If not, what's missing that would change that?
+5. Would you pay ₹499/month for the Pro version as it stands today? If not, what's missing that would change that?
 6. Anything that felt unfinished, slow, or just off, even if you can't fully explain why?
 
 No need to be diplomatic — bugs and "this is confusing" are exactly what I need right now, not reassurance. Reply here, or support@paxio.in if easier.

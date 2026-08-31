@@ -43,7 +43,7 @@ A paid tier now exists in the app. This corrects the earlier "no paid tier yet" 
 - Parent PIN protection
 - Weekly reports — 3 stats (screen time, over-limit days, blocked app attempts), 30-day history
 
-**Paxio Pro — ₹199/mo or ₹1,499/yr (37% off annual):**
+**Paxio Pro — ₹499/mo (44% off ₹899) or ₹4,999/yr (54% off ₹10,788):**
 - Up to 3 child profiles
 - Unlimited app blocking + per-app time limits
 - Content filter — unblock any categories
