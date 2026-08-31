@@ -6,6 +6,89 @@ Newest-first (most recent run's section at top, for quick scanning). Each entry:
 
 ---
 
+## 2026-08-31 — manual draft session (6 pending leads answered, at user's request)
+
+Pricing note (superseded same day): drafts below were written when `pricing.html` showed USD ($9.99/mo or $59.99/yr, 50% off). **All 6 were posted to Quora with those USD figures before the site was reverted to INR (₹499/mo, ₹4,999/yr, no discount badge) later the same day.** The 6 live Quora answers now show pricing that doesn't match the site — not corrected retroactively since editing already-posted Quora answers is a manual action for the user, not something done automatically here. Worth a manual touch-up on each if/when convenient, low urgency.
+
+Picked 6 open leads with no existing draft, direct parental-control-app fit, no GPS/location-only framing (Paxio doesn't do location tracking) and no self-use framing.
+
+| Status | URL | Note |
+|---|---|---|
+| Done | https://www.quora.com/Where-can-we-find-the-best-parental-control-app-for-our-childrens-phone | Broad "where to find" recommendation-seeking question. Posted with stale USD pricing — see note above. |
+| Done | https://www.quora.com/Can-I-block-inappropriate-apps-and-websites-on-my-child-s-phone-without-rooting-it | Direct fit for Content Filter + App Control, "without rooting" concern addressed directly. Posted with stale USD pricing — see note above. |
+| Done | https://www.quora.com/Is-there-an-adult-filter-for-Android-phones-that-filters-all-adult-content-regardless-of-browser-or-app | Direct fit for Content Filter (cross-app/browser adult-content blocking). Posted with stale USD pricing — see note above. |
+| Done | https://www.quora.com/Is-Qustodio-a-good-parental-control-app | Direct competitor evaluation question. Posted with stale USD pricing — see note above. |
+| Done | https://www.quora.com/What-is-the-difference-between-Qustodio-free-and-premium | Evaluating Qustodio tiers before committing — comparison-shopping stage. Posted with stale USD pricing — see note above. |
+| Done | https://www.quora.com/Is-there-a-company-or-individual-who-has-developed-a-software-for-parents-to-monitor-their-childrens-online-activities-on-various-devices | Explicit "parents"/"children's"/"various devices" framing, actively seeking a solution. Posted with stale USD pricing — see note above. |
+
+**Drafted response — for https://www.quora.com/Where-can-we-find-the-best-parental-control-app-for-our-childrens-phone:**
+
+> Depends a bit on what "best" means for your family, but a practical way to narrow it down:
+>
+> - **Start with what's free and built-in.** Google Family Link (Android) or Screen Time (iPhone) cover the basics — app approval, screen time limits — at no cost. A lot of families find this is genuinely enough.
+> - **Look for a dedicated app when you need more granularity** — per-app time limits instead of one global timer, content filtering by category, bedtime/schedule locks, or better usage reporting than the OS gives you.
+> - **Check what platform you actually need.** Some apps are Android-only, some iOS-only, some both — worth confirming before you get attached to one.
+> - **Read what "monitor" actually means for each app.** Some just manage screen time and apps; others read messages/content. Very different privacy tradeoffs, worth deciding deliberately rather than assuming.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app. Free covers 1 child profile, a daily screen time limit, blocking up to 5 apps, and unblocking up to 3 content categories. Pro ($9.99/mo or $59.99/yr, currently 50% off) adds up to 3 profiles, unlimited app blocking with per-app time limits, full content filtering, bedtime/schedule locks, and remote internet pause. It's Android-only and doesn't do message monitoring or GPS location tracking, so worth knowing those aren't in scope if that's part of what you need.
+
+**Drafted response — for https://www.quora.com/Can-I-block-inappropriate-apps-and-websites-on-my-child-s-phone-without-rooting-it:**
+
+> Yes — rooting isn't needed for either of these on Android, and most parents should actively avoid rooting a kid's device anyway (it disables a lot of Android's own built-in security).
+>
+> - **Blocking specific apps**: uses Android's Accessibility Service permission, not root — detects when a blocked app opens and closes/blocks it. Standard mechanism most parental control apps use.
+> - **Blocking inappropriate websites**: usually done via a local VPN profile on the device that filters DNS requests by content category — also no root required, just a one-time VPN permission grant.
+>
+> The one thing rooting *would* theoretically add is a harder-to-bypass lock (a sufficiently technical teenager can sometimes work around Accessibility-Service-based blocking), but for the vast majority of families the non-root approach is both simpler and safer.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app — no rooting required for either app blocking or content filtering. Free covers 1 profile, blocking up to 5 apps, and unblocking up to 3 content categories; Pro ($9.99/mo or $59.99/yr, currently 50% off) removes the app-blocking cap and unlocks all content categories plus per-app time limits.
+
+**Drafted response — for https://www.quora.com/Is-there-an-adult-filter-for-Android-phones-that-filters-all-adult-content-regardless-of-browser-or-app:**
+
+> Depends on how the filter works under the hood — this is the detail that actually determines "regardless of browser or app":
+>
+> - **DNS/network-level filtering** (via a local VPN profile) — filters at the network level, so it catches adult content across every browser and app that makes a request, including ones a parent didn't specifically configure. This is the type that actually satisfies "regardless of browser or app."
+> - **Browser-only filters** (like a specific browser's built-in Safe Search or a browser extension) — only works inside that one browser. A kid using a different browser or an app with its own built-in browser bypasses it entirely.
+> - **App-store-level restrictions** (Play Store maturity settings) — controls what can be *installed*, not what's reachable once an app or browser is already there.
+>
+> If cross-app coverage is the actual requirement, look specifically for "DNS filtering" or "network-level filtering" in the app's description, not just "content filter" — the wording alone doesn't tell you which type it is.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app. It uses on-device DNS-level filtering specifically so it covers every browser and app, not just one — Free unblocks up to 3 content categories, Pro ($9.99/mo or $59.99/yr, currently 50% off) unblocks all categories.
+
+**Drafted response — for https://www.quora.com/Is-Qustodio-a-good-parental-control-app:**
+
+> Qustodio is a solid, well-established option — it's been around a long time and covers a lot of ground: cross-platform (Android/iOS/desktop), content filtering, app blocking, location tracking, and detailed usage reports. If you need one dashboard covering a mixed-device household, it's a reasonable pick.
+>
+> The tradeoffs worth knowing before committing: it's on the pricier end of the category, some parents report the setup/configuration is more involved than lighter alternatives, and (per other threads here) its VPN-based content filter has occasionally been reported to interfere with general internet connectivity — usually fixable, but worth knowing going in.
+>
+> Whether it's "good" mostly comes down to whether you need its full breadth (cross-platform + location + content + reporting all in one) or just a subset — a narrower, lighter app can be less friction if you only need screen time + app blocking, for example.
+>
+> Disclosure since I build one of these: I make Paxio, a different Android parental control app — narrower than Qustodio (Android-only, no location tracking), but lighter to set up if that's what you're after. Free covers 1 profile / 5 blocked apps / 3 filter categories; Pro ($9.99/mo or $59.99/yr, currently 50% off) removes those caps and adds bedtime locks and remote internet pause.
+
+**Drafted response — for https://www.quora.com/What-is-the-difference-between-Qustodio-free-and-premium:**
+
+> Qustodio's free tier is quite limited compared to most competitors' free tiers — it covers basic screen time limits and app blocking for one child, but content filtering categories and detailed reporting are largely gated behind the paid plan (Qustodio's own pricing page has the exact current breakdown, since these tiers shift over time and I'd rather point you to the source than risk quoting a stale number).
+>
+> What premium generally unlocks: more child profiles, full content-filtering categories (vs. a reduced set free), location tracking/geofencing, call/text monitoring, and longer usage-report history.
+>
+> Worth comparing against what you actually need before assuming premium is necessary — if it's just screen time + basic app blocking for one kid, the free tier (or a different app's free tier) might already cover it.
+>
+> Disclosure since I build one of these: I make Paxio, a different Android parental control app — mentioning it as a comparison point, not a Qustodio alternative pitch. Free covers 1 child profile, daily screen time limit, blocking up to 5 apps, unblocking up to 3 content categories. Pro ($9.99/mo or $59.99/yr, currently 50% off) removes those caps and adds bedtime/schedule locks and remote internet pause — no location tracking or message monitoring on either tier, which is a real difference from Qustodio if that's part of what you need.
+
+**Drafted response — for https://www.quora.com/Is-there-a-company-or-individual-who-has-developed-a-software-for-parents-to-monitor-their-childrens-online-activities-on-various-devices:**
+
+> Yes, this is a whole category — "parental control app" or "parental monitoring software." A few things worth deciding before picking one, since "monitor" covers pretty different feature sets depending on the product:
+>
+> - **Screen time & app control** (limits, blocking, scheduling) — the most common core feature, this is what most products in the category focus on.
+> - **Content filtering** — blocking inappropriate websites/content by category, usually via DNS-level or browser-level filtering.
+> - **Location tracking** — a separate feature set, not every app includes it.
+> - **Message/content monitoring** — reading texts or flagging concerning content, the most invasive category, worth a deliberate privacy/trust conversation especially with an older kid.
+> - **Cross-device support** — if your household has a mix of Android and iOS, or multiple kids on different devices, check that explicitly since not every app covers both platforms equally well.
+>
+> Most established options (several get named a lot in threads like this) cover different combinations of the above — worth deciding which of these categories you actually need before comparing specific products.
+>
+> Disclosure since I build one of these: I make Paxio, an Android parental control app covering the first two categories (screen time/app control + content filtering), not location or message monitoring. Free covers 1 profile; Pro ($9.99/mo or $59.99/yr, currently 50% off) covers up to 3 profiles with full feature access. If you need cross-platform or location tracking specifically, that's outside what Paxio does and worth looking at a broader suite instead.
+
 ## 2026-08-24 — scheduled run #2 (24 queries: 6 general + 18 competitor-name, per current task keyword list)
 
 24 of 24 queries run. **0 genuinely new leads.** Every quora.com URL returned across all 24 queries (general + competitor) was already present in `seen_urls` from prior runs (including the earlier run today), verified by manually diffing every returned URL against `seen-posts.json`. 2 new URL strings surfaced but are noise, not leads — added to `seen_urls` for dedup completeness only:
