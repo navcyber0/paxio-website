@@ -10,6 +10,31 @@ Shared principle across all of these: answer the actual question genuinely first
 
 ---
 
+## 0. Reddit reply — direct "how is Paxio different from Family Link/Qustodio?" comparison (2026-09-01)
+
+Direct comparison question from a Reddit user on a Paxio post, who's used Family Link for a couple years and says it solves the purpose for them. This is the strongest, most literal version of the Family Link comparison — use this as the template whenever the ask is explicitly "how are you different," rather than entry #5 below (which is answering a different Quora thread about whether Family Link itself is good, a softer/more indirect fit).
+
+**Accuracy corrections made before finalizing (worth re-checking if this gets reused/adapted):**
+- Category-based blocking applies to **content filtering only** (websites/domains), NOT app blocking — app blocking in Paxio is still per-app selection, same granularity as Family Link. Don't say "block a whole category of apps."
+- Reporting/activity history is **not a real differentiator** — Family Link has its own daily/weekly/monthly activity reports (screen time, apps used, installs) already. Verified via web search 2026-09-01. Leave reporting out of comparisons, or mention only lightly (e.g. Pro's 1-year history) without implying Family Link lacks reporting entirely.
+- The "shared phone" point is accurate and worth keeping: Family Link's multi-person setup relies on Android's native multi-user profiles, which is mostly a tablet feature — most phones don't support separate OS user accounts at all. Paxio's Shared Device mode is a PIN-gated switch inside the app itself (one Android account), so it works on an ordinary shared family phone. Verified via web search 2026-09-01 (Google's own Family Link/Kids Space support docs).
+
+**Reply:**
+
+Yeah Family Link is genuinely solid for the price, no argument there. Few things that pushed us to build Paxio anyway, if it helps:
+
+Biggest one for us was location tracking — Family Link shows you exactly where your kid is at all times, and honestly we got uncomfortable with that being bundled into a "safety" app by default. Paxio doesn't touch location at all, never has.
+
+The other thing is app-by-app management gets old fast. Every time your kid installs something new you're back in Family Link approving or blocking it individually. We do content filtering by category instead — block "social media" or "gambling sites" as a type, and anything new that falls in that bucket is already covered, no babysitting the app list.
+
+Also if you've got one phone that gets passed around the family rather than each kid having their own device — Family Link really wants separate phone profiles for that, which is mostly a tablet thing, doesn't work great on a regular phone. We just built a PIN-protected "switch to kid mode" button instead so it works on whatever phone you've actually got.
+
+And free tier isn't gutted to push you to pay — one kid, daily limits, blocking a few apps, basic filtering, all free. Paid tier's ₹499/mo if you need more kids or per-app time limits (like capping Instagram at 30 min but leaving a homework app open-ended).
+
+Not saying switch if what you've got works — just sharing why we didn't just use Family Link ourselves.
+
+---
+
 ## 1. Reddit reply to r/Habits — "SCREEN TIME HELP" (unhinged self-control, husband holding the password)
 
 Very strong, non-forced fit — she's not describing a vague problem, she's already proposed the exact mechanism Paxio is built around ("put a child lock on it with a password my husband can only have") without any prompting. Confirm and validate her own idea first, then mention Paxio as a tool that does specifically that, rather than introducing the concept as if it were new.
