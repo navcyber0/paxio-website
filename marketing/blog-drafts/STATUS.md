@@ -58,6 +58,12 @@ Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other 
 |---|---|---|
 | AI chatbots and kids: what's actually risky, and what isn't | `ai-chatbots-what-kids-are-actually-doing.md` (lead photo `ai-chatbot-phone-glow-night.jpg`, Andrew Guan/Unsplash) | ~640 words (~2.5-3 min). Stat: Common Sense Media, "Census: AI Use by Tweens and Teens," June 8, 2026 (86% of kids use AI, only 37% of parents know) — primary hook, plus two supporting Common Sense Media sources (2025 companion-usage study, Nov 2025 mental-health risk assessment w/ Stanford Medicine). Drafted 2026-08-26, pending review. |
 
+## Mobile-security track, continued (added 2026-09-03)
+
+| Title | File | Status |
+|---|---|---|
+| Fake app clones: how a copycat gets millions of downloads before anyone notices | `fake-app-clones-kids-download.md` (lead photo `fake-app-icons-phone.jpg`, William Hook/Unsplash) | ~660 words (~2-3 min). Stat: ESET WeLiveSecurity, "Fake call logs, real payments: How CallPhantom tricks Android users," May 2026 — 28 fake Play Store apps, 7.3M combined downloads before removal. Also references McAfee's ongoing Minecraft/Roblox fake-mod malware research (WeedHack campaign, 2026) for the kid-relevant bait pattern, without treating it as the primary stat since that campaign is PC-focused rather than mobile. Drafted 2026-09-03, pending review. Alternates back to mobile-security after the last in-pool topic (notification-design, screen-time track, 2026-08-10) — several other-track posts (cyberbullying, AI-safety, comparison) were drafted in between but aren't part of the two-track alternation this task rotates. |
+
 ## Next topics to draw from (not yet drafted)
 
 - Healthy digital habits / screen-time psychology, grounded in real research
