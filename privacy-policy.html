@@ -40,7 +40,7 @@
   <a class="back" href="index.html">&larr; Back</a>
   <span class="tag">Privacy</span>
   <h1>Paxio Privacy Policy</h1>
-  <p class="updated">Last updated: 7 August 2026</p>
+  <p class="updated">Last updated: 6 September 2026</p>
 
   <p>Paxio ("we," "us," "the app") is a parental control app that helps a parent manage a child's
   Android device through the parental-control features it offers, which may be added, removed, or
@@ -61,14 +61,16 @@
       <tr><td>Foreground app package name</td><td>Detect when a blocked app opens</td><td>Read in memory on-device only</td></tr>
       <tr><td>App install/uninstall events (package name only)</td><td>Power the optional "app installed/uninstalled" email alert, if a parent turns it on</td><td>Local device, and synced to Firebase Firestore (Google)</td></tr>
       <tr><td>Crash &amp; diagnostic reports</td><td>Find and fix bugs — includes device model, OS version, app version, and the crash stack trace; no personal information is intentionally included</td><td>Firebase Crashlytics (Google)</td></tr>
+      <tr><td>Product usage analytics (screens viewed, features used — e.g. a control turned on, an onboarding step completed — and enforcement events like a limit or bedtime lock triggering)</td><td>Understand which features are actually used, so we can fix what's broken and improve what matters, rather than guessing</td><td>Firebase Analytics/Google Analytics and Mixpanel, tied to the parent's account ID (not name or email); never includes app content, visited URLs, or child names</td></tr>
     </table>
   </div>
 
   <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>What we don't collect</h2></div>
   <p>The Paxio app itself does not collect location data, does not read screen content,
   keystrokes, messages, photos, or full browsing history (only whether a specific site visit was
-  blocked, and its category), and does not bundle any advertising or third-party analytics SDK
-  inside the app.</p>
+  blocked, and its category). The analytics SDKs described above only receive the specific event
+  names and properties listed in this policy — not raw device data, screen recordings, or ad
+  identifiers, and they are not used for advertising.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>Website analytics</h2></div>
   <p>This website (paxio.in) — separate from the Paxio app — uses Cloudflare Web Analytics to
@@ -79,10 +81,12 @@
 
   <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>Data sharing</h2></div>
   <p>We don't sell data or share it with advertisers. Data above is processed by Google/Firebase
-  solely to provide sign-in, profile sync, and crash reporting, under Google's own privacy
-  terms. Firebase/Google stores this data on servers primarily located in the United States. By
-  using Paxio, the parent consents to this cross-border transfer. Firebase's data processing
-  terms are available at <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.</p>
+  solely to provide sign-in, profile sync, crash reporting, and product analytics, and by Mixpanel
+  solely to provide product analytics, each under their own privacy terms. Both store data on
+  servers primarily located in the United States. By using Paxio, the parent consents to this
+  cross-border transfer. Firebase's data processing terms are available at
+  <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>,
+  and Mixpanel's at <a href="https://mixpanel.com/legal/dpa/" target="_blank" rel="noopener">mixpanel.com/legal/dpa</a>.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>Third-party services</h2></div>
   <p>Paxio uses the following third-party services to operate, each governed by their own privacy
@@ -91,8 +95,10 @@
     <li>Firebase Authentication and Firestore (Google) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     <li>Firebase Crashlytics (Google) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     <li>Google Sign-In — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li>Firebase Analytics/Google Analytics — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+    <li>Mixpanel — <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener">mixpanel.com/legal/privacy-policy</a></li>
   </ul>
-  <p>No other third-party SDKs, ad networks, or analytics providers process your data.</p>
+  <p>No ad networks process your data, and analytics data is never sold or used to serve ads.</p>
 
   <div class="legal-h2-row"><span class="legal-icon c-purple"><i></i></span><h2>Data retention &amp; deletion</h2></div>
   <p>Child profile and PIN data are kept until the parent deletes the child profile or account.
