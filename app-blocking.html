@@ -51,7 +51,7 @@
               <a href="screen-time-limit.html">Screen Time Limit</a>
               <a href="bedtime-schedule.html">Bedtime Schedule</a>
               <a href="internet-pause.html">Internet Pause</a>
-              <a href="screen-time-limit.html">Streak Bonus<span class="nav-mega-badge">HOT</span></a>
+              <a href="streak-bonus.html">Streak Bonus<span class="nav-mega-badge">HOT</span></a>
             </div>
             <div class="nav-mega-col c-coral">
               <h4>Safety Controls</h4>
@@ -77,17 +77,22 @@
   </div>
 </nav>
 
+<script>
+document.addEventListener('click', function (e) {
+  document.querySelectorAll('.nav-dropdown details[open]').forEach(function (d) {
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
+</script>
+
+
 <section style="padding-bottom:0">
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">App Blocking</span>
       <h1>Choose exactly which apps your kid can use</h1>
-      <p>Every installed app, Allowed or Blocked with a single tap, with an optional time limit of its own — so a game can be capped at 30 minutes without touching the overall daily budget. Enforced in real time, nothing to uninstall.</p>
+      <p>Block apps on your kid's phone with a single tap — every installed app, Allowed or Blocked, with an optional time limit of its own so a game can be capped at 30 minutes without touching the overall daily budget. Enforced in real time, nothing to uninstall.</p>
     </div>
-    <p style="text-align:center;margin:0 0 8px">
-      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.paxio" target="_blank" rel="noopener">Try Paxio free →</a>
-      <a class="btn btn-ghost" href="controls.html">See all controls</a>
-    </p>
   </div>
 </section>
 
@@ -219,6 +224,11 @@
         <p>Yes — opening a blocked app shows a clear block screen rather than silently failing, so there's no ambiguity about what happened.</p>
       </details>
     </div>
+
+    <p style="text-align:center;margin-top:32px">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.paxio" target="_blank" rel="noopener">Try Paxio free →</a>
+      <a class="btn btn-ghost" href="controls.html">See all controls</a>
+    </p>
   </div>
 </section>
 

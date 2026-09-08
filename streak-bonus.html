@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parent Dashboard for Paxio | See Everything in One Glance</title>
-<meta name="description" content="Paxio's parent dashboard shows today's usage, a pending-request banner, and one-tap shortcuts to Internet, Sleep timer, App blocker, and Content filter — all in one screen.">
-<link rel="canonical" href="https://www.paxio.in/parent-dashboard.html">
+<title>Streak Bonus — Reward Your Kid for Staying Under Their Limit | Paxio</title>
+<meta name="description" content="Paxio's streak bonus gives kids extra screen time automatically for staying under their daily limit — a positive reward that grows with the streak, not just a restriction.">
+<link rel="canonical" href="https://www.paxio.in/streak-bonus.html">
 <link rel="icon" type="image/png" href="store-assets/play-store-icon-512.png">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
-<meta property="og:title" content="Parent Dashboard for Paxio | See Everything in One Glance">
-<meta property="og:description" content="Paxio's parent dashboard shows today's usage, a pending-request banner, and one-tap shortcuts to Internet, Sleep timer, App blocker, and Content filter — all in one screen.">
-<meta property="og:url" content="https://www.paxio.in/parent-dashboard.html">
+<meta property="og:title" content="Streak Bonus — Reward Your Kid for Staying Under Their Limit | Paxio">
+<meta property="og:description" content="Paxio's streak bonus gives kids extra screen time automatically for staying under their daily limit — a positive reward that grows with the streak, not just a restriction.">
+<meta property="og:url" content="https://www.paxio.in/streak-bonus.html">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is the parent dashboard the first thing I see when I open Paxio?", "acceptedAnswer": { "@type": "Answer", "text": "Yes \u2014 it's the default landing screen after sign-in, showing today's usage and any pending requests." } },
-    { "@type": "Question", "name": "Where do usage numbers on the dashboard come from?", "acceptedAnswer": { "@type": "Answer", "text": "They're read live from Android's own usage tracking, the same source used across the app, not a cached estimate." } },
-    { "@type": "Question", "name": "Can I change a setting directly from the dashboard?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for the four most common controls \u2014 Internet, Sleep timer, App blocker, and Content filter each have a one-tap shortcut. Everything else is one more tap away in Control." } },
-    { "@type": "Question", "name": "How do I get back to the parent dashboard from the child view on a shared device?", "acceptedAnswer": { "@type": "Answer", "text": "Switching back requires your parent PIN, so picking up the phone doesn't hand over the whole dashboard." } }
+    { "@type": "Question", "name": "How does the streak bonus work?", "acceptedAnswer": { "@type": "Answer", "text": "Every day your child stays under their daily screen time limit counts toward their streak. At 3, 7, 15, and 30 days running, they automatically earn +15, +30, +45, and +60 bonus minutes." } },
+    { "@type": "Question", "name": "Does going over the limit reset the streak?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — going over the daily limit breaks the streak, and it starts counting from zero again the next day under budget." } },
+    { "@type": "Question", "name": "Do the bonus minutes need parent approval?", "acceptedAnswer": { "@type": "Answer", "text": "No — streak-bonus minutes are added automatically once a milestone is reached, without a separate approval step. This is different from a manual extra-time request, which does go to the parent for approval." } },
+    { "@type": "Question", "name": "Can my child see their streak?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the child dashboard shows the current streak and the next milestone, so the reward feels like something they're building toward, not a surprise." } }
   ]
 }
 </script>
@@ -89,9 +89,9 @@ document.addEventListener('click', function (e) {
 <section style="padding-bottom:0">
   <div class="container reveal" data-reveal>
     <div class="section-head">
-      <span class="tag">Parent Dashboard</span>
-      <h1>Everything, in one glance</h1>
-      <p>Monitor your kid's phone usage from one screen — today's usage ring, a pending-request banner, and four one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter. It's the first screen you see, and usually the last one you need to open.</p>
+      <span class="tag">Streak Bonus</span>
+      <h1>A real reward for staying under the limit, not just a restriction</h1>
+      <p>Reward your kid for staying under their screen time limit, automatically — every day they stay under it builds a streak, and the reward grows as it holds, without a parent having to approve anything.</p>
     </div>
   </div>
 </section>
@@ -100,14 +100,12 @@ document.addEventListener('click', function (e) {
   <div class="container">
     <div class="showcase-row reveal" data-reveal>
       <div class="showcase-text">
-        <h2>Today's picture, at a glance</h2>
-        <p>Monitor your kid's phone usage from one screen — today's usage ring, a pending-request banner, and four one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter. It's the first screen you see, and usually the last one you need to open.</p>
+        <h2>Consistency, rewarded automatically</h2>
+        <p>Screen time limits usually feel like pure restriction — a wall the phone hits, with nothing on the other side of doing well. The streak bonus is Paxio's answer to that: staying under the daily limit for a run of days earns real bonus minutes, automatically, so good habits get a visible, positive payoff instead of just an absence of punishment.</p>
       </div>
       <div class="showcase-media">
-        <div class="showcase-blob b-teal"></div>
-        <figure class="help-shot">
-          <img src="help/images/parent-overview.png" alt="Paxio parent Overview screen showing a usage ring, category mix, and weekly stat tiles">
-        </figure>
+        <div class="showcase-blob b-orange"></div>
+        <!-- TODO: swap in the real streak-bonus screenshot (day-count card + milestone rewards at 3/7/15/30 days) once the file is available. The only existing asset for this feature (help/images/control-screentime-2.png) shows the OLD mechanic (every 5 days, manual approval) and must not be used here. -->
       </div>
     </div>
   </div>
@@ -121,61 +119,33 @@ document.addEventListener('click', function (e) {
     </div>
     <div class="specifics-grid">
       <div class="specifics-item">
-        <h3>What's on the dashboard</h3>
-        <p>Everything that matters today, without digging through menus.</p>
+        <h3>The milestones</h3>
+        <p>The bonus grows the longer the streak holds — each threshold unlocks automatically.</p>
         <ul>
-          <li>A usage ring showing today's screen time against the daily limit, with a category breakdown.</li>
-          <li>This week's trend compared against last week.</li>
-          <li>A pending-request banner whenever your child has an extra-time or unblock request waiting.</li>
+          <li><strong>3 days</strong> under the daily limit, running: <strong>+15 minutes</strong></li>
+          <li><strong>7 days</strong> running: <strong>+30 minutes</strong></li>
+          <li><strong>15 days</strong> running: <strong>+45 minutes</strong></li>
+          <li><strong>30 days</strong> running: <strong>+60 minutes</strong></li>
         </ul>
       </div>
 
       <div class="specifics-item">
-        <h3>One-tap shortcuts</h3>
-        <p>Common changes don't need a trip into Control.</p>
+        <h3>Automatic, not approval-based</h3>
+        <p>This is different from a manual extra-time request.</p>
         <ul>
-          <li>Internet, Sleep timer, App blocker, and Content filter each get a direct shortcut from the dashboard.</li>
-          <li>Approving or denying an extra-time request takes one tap from the pending banner.</li>
-          <li>Deeper settings for any control are always one more tap away in Control.</li>
+          <li>Bonus minutes from a streak milestone are added automatically the moment it's reached — no parent approval step.</li>
+          <li>A manual "ask for more time" request (unrelated to the streak) still goes to the parent for a one-tap approval, exactly as it does elsewhere in the app.</li>
         </ul>
       </div>
 
       <div class="specifics-item">
-        <h3>Built for daily use</h3>
-        <p>Designed to be checked in seconds, not minutes.</p>
+        <h3>What breaks the streak</h3>
+        <p>Simple and predictable, no hidden rules.</p>
         <ul>
-          <li>Usage numbers are read live from Android's own usage tracking, not a cached estimate.</li>
-          <li>No setup or configuration needed — it's the default landing screen after opening Paxio.</li>
-          <li>Switching to the child-facing view from a shared device requires the parent PIN.</li>
+          <li>Going over the daily screen time limit on any day resets the streak to zero.</li>
+          <li>The next day under budget starts a new streak counting up toward the same milestones.</li>
+          <li>The current streak and the next milestone are always visible on the child dashboard — no guessing where they stand.</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
-  <div class="container reveal" data-reveal>
-    <div class="section-head">
-      <span class="tag">Setup</span>
-      <h2>Get it running in under a minute</h2>
-    </div>
-    <div class="setup-steps">
-      <div class="setup-step">
-        <div class="step-num">1</div>
-        <h3>Open Paxio</h3>
-        <p>The parent dashboard is the default screen after sign-in.</p>
-      </div>
-
-      <div class="setup-step">
-        <div class="step-num">2</div>
-        <h3>Check today's ring and any pending requests</h3>
-        <p>A glance tells you if anything needs a decision.</p>
-      </div>
-
-      <div class="setup-step">
-        <div class="step-num">3</div>
-        <h3>Use a shortcut if something needs changing</h3>
-        <p>Tap Internet, Sleep timer, App blocker, or Content filter directly from the dashboard.</p>
       </div>
     </div>
   </div>
@@ -193,8 +163,8 @@ document.addEventListener('click', function (e) {
       <a href="content-filtering.html">Content Filtering</a>
       <a href="bedtime-schedule.html">Bedtime Schedule</a>
       <a href="internet-pause.html">Internet Pause</a>
+      <a href="parent-dashboard.html">Parent Dashboard</a>
       <a href="child-dashboard.html">Child Dashboard</a>
-      <a href="reports-screen.html">Reports Screen</a>
       <a href="controls.html">See all controls →</a>
     </div>
   </div>
@@ -204,24 +174,24 @@ document.addEventListener('click', function (e) {
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">FAQ</span>
-      <h2>Parent Dashboard — common questions</h2>
+      <h2>Streak Bonus — common questions</h2>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Is the parent dashboard the first thing I see when I open Paxio?</summary>
-        <p>Yes — it's the default landing screen after sign-in, showing today's usage and any pending requests.</p>
+        <summary>How does the streak bonus work?</summary>
+        <p>Every day your child stays under their daily screen time limit counts toward their streak. At 3, 7, 15, and 30 days running, they automatically earn +15, +30, +45, and +60 bonus minutes.</p>
       </details>
       <details class="faq-item">
-        <summary>Where do usage numbers on the dashboard come from?</summary>
-        <p>They're read live from Android's own usage tracking, the same source used across the app, not a cached estimate.</p>
+        <summary>Does going over the limit reset the streak?</summary>
+        <p>Yes — going over the daily limit breaks the streak, and it starts counting from zero again the next day under budget.</p>
       </details>
       <details class="faq-item">
-        <summary>Can I change a setting directly from the dashboard?</summary>
-        <p>Yes for the four most common controls — Internet, Sleep timer, App blocker, and Content filter each have a one-tap shortcut. Everything else is one more tap away in Control.</p>
+        <summary>Do the bonus minutes need parent approval?</summary>
+        <p>No — streak-bonus minutes are added automatically once a milestone is reached, without a separate approval step. This is different from a manual extra-time request, which does go to the parent for approval.</p>
       </details>
       <details class="faq-item">
-        <summary>How do I get back to the parent dashboard from the child view on a shared device?</summary>
-        <p>Switching back requires your parent PIN, so picking up the phone doesn't hand over the whole dashboard.</p>
+        <summary>Can my child see their streak?</summary>
+        <p>Yes — the child dashboard shows the current streak and the next milestone, so the reward feels like something they're building toward, not a surprise.</p>
       </details>
     </div>
 
@@ -275,7 +245,7 @@ document.addEventListener('click', function (e) {
     var closeBtn = document.createElement('button');
     closeBtn.className = 'lightbox-close';
     closeBtn.setAttribute('aria-label', 'Close');
-    closeBtn.textContent = '\u00d7';
+    closeBtn.textContent = '×';
     overlay.appendChild(big);
     overlay.appendChild(closeBtn);
     document.body.appendChild(overlay);

@@ -35,7 +35,7 @@
               <a href="screen-time-limit.html">Screen Time Limit</a>
               <a href="bedtime-schedule.html">Bedtime Schedule</a>
               <a href="internet-pause.html">Internet Pause</a>
-              <a href="screen-time-limit.html">Streak Bonus<span class="nav-mega-badge">HOT</span></a>
+              <a href="streak-bonus.html">Streak Bonus<span class="nav-mega-badge">HOT</span></a>
             </div>
             <div class="nav-mega-col c-coral">
               <h4>Safety Controls</h4>
@@ -59,6 +59,15 @@
     </div>
   </div>
 </nav>
+
+<script>
+document.addEventListener('click', function (e) {
+  document.querySelectorAll('.nav-dropdown details[open]').forEach(function (d) {
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
+</script>
+
 
 <div class="contact-hero">
   <span class="tag">Contact</span>
