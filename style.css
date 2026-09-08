@@ -1261,3 +1261,47 @@ footer {
 }
 
 .pricing-card.is-pro:has(#cycle-pro-m:checked) .pro-badge-corner { display: none; }
+
+
+/* ── Setup steps + bullet specifics + cross-link grid (control detail pages) ── */
+
+.setup-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+.setup-step { position: relative; padding-left: 4px; }
+.setup-step .step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--teal-strong);
+  color: #fff;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+.setup-step h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.setup-step p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+.specifics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 26px; }
+.specifics-item h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.specifics-item p { margin: 0 0 10px; color: var(--ink-soft); font-size: 0.93rem; }
+.specifics-item ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 0.9rem; }
+.specifics-item ul li { margin-bottom: 6px; }
+
+.control-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.control-links a {
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 0.15s, border-color 0.15s;
+}
+.control-links a:hover { color: var(--teal-ink); border-color: var(--teal); }
+
+.btn-link { display: inline-block; margin-top: 14px; font-weight: 600; font-size: 0.92rem; color: var(--teal-ink); }
+.btn-link:hover { color: var(--teal-strong-hover); }
