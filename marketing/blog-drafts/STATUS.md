@@ -64,6 +64,12 @@ Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other 
 |---|---|---|
 | Fake app clones: how a copycat gets millions of downloads before anyone notices | `fake-app-clones-kids-download.md` (lead photo `fake-app-icons-phone.jpg`, William Hook/Unsplash) | ~660 words (~2-3 min). Stat: ESET WeLiveSecurity, "Fake call logs, real payments: How CallPhantom tricks Android users," May 2026 — 28 fake Play Store apps, 7.3M combined downloads before removal. Also references McAfee's ongoing Minecraft/Roblox fake-mod malware research (WeedHack campaign, 2026) for the kid-relevant bait pattern, without treating it as the primary stat since that campaign is PC-focused rather than mobile. Alternates back to mobile-security after the last in-pool topic (notification-design, screen-time track, 2026-08-10) — several other-track posts (cyberbullying, AI-safety, comparison) were drafted in between but aren't part of the two-track alternation this task rotates. **Published 2026-09-03** as [`blog/fake-app-clones-kids-download.html`](../../blog/fake-app-clones-kids-download.html), reviewed by the user via chat then approved for conversion + push, commit `fb85888`. |
 
+## Pillar/checklist track (added 2026-09-07)
+
+| Title | File | Status |
+|---|---|---|
+| How to secure your child's phone: a complete best-practices checklist | `best-practices-securing-kids-phone.md` (lead photo `mother-daughter-phone-setup.jpg`, Vitaly Gariev/Unsplash — same photographer as two earlier posts, license re-verified for this photo specifically) | ~1000 words (~5-6 min), 8-point checklist covering device lock, parental-control app, bedtime, permissions, install restrictions, updates, fake-app scrutiny, and talking to the kid about it. Stat: Pew Research Center, "How Parents Manage Screen Time for Kids," Oct 8 2025 — 86% of parents have screen rules, only 19% stick to them all the time. Internal links to 4 existing posts (comparison, screen-time-vs-blocking, bedtime, permissions, fake-app-clones) for SEO. Targets "secure kids phone" / "child phone safety checklist" informational search intent — broader pillar piece meant to link out to the more specific posts rather than duplicate them. Closing line rewritten 2026-09-07 to drop the old "free for one child" phrasing per the 2026-08-08 house rule and tie back to the post's own enforcement-gap point instead. Drafted 2026-09-07, pending review.
+
 ## Next topics to draw from (not yet drafted)
 
 - Healthy digital habits / screen-time psychology, grounded in real research
