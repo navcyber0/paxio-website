@@ -30,7 +30,32 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">☰</label>
     <div class="nav-links">
-      <a href="index.html#features">Product</a>
+      <div class="nav-dropdown">
+        <details>
+          <summary>Product <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="nav-mega">
+            <div class="nav-mega-col c-teal">
+              <h4>Limits &amp; Time</h4>
+              <a href="controls.html#screen-time">Screen Time Limit</a>
+              <a href="controls.html#bedtime">Bedtime Schedule</a>
+              <a href="controls.html#internet-pause">Internet Pause</a>
+              <a href="controls.html#screen-time">Streak Bonus<span class="nav-mega-badge">HOT</span></a>
+            </div>
+            <div class="nav-mega-col c-coral">
+              <h4>Safety Controls</h4>
+              <a href="controls.html#app-blocking">App Blocking</a>
+              <a href="controls.html#content-filter">Content Filtering</a>
+            </div>
+            <div class="nav-mega-col c-blue">
+              <h4>Visibility &amp; Reports</h4>
+              <a href="controls.html#parent-dashboard">Parent Dashboard</a>
+              <a href="controls.html#child-dashboard">Child Dashboard</a>
+              <a href="controls.html#reports">Reports Screen</a>
+              <a href="controls.html#weekly-notification">Weekly Notification</a>
+            </div>
+          </div>
+        </details>
+      </div>
       <a href="why-paxio.html">Why Paxio</a>
       <a href="pricing.html">Pricing</a>
       <a href="blog/index.html">Blog</a>
@@ -44,48 +69,160 @@
   <div class="container reveal" data-reveal>
     <div class="section-head">
       <span class="tag">How it works</span>
-      <h1>Ten controls. Two dashboards. Zero guesswork.</h1>
-      <p>Five things you set, two screens — yours and theirs — a reward for good habits, and a weekly
-      recap. Tap through the real screens below.</p>
+      <h1>All the tools you need, in one app</h1>
+      <p>Paxio gives you ten controls that work together — five things you set, two dashboards, a
+      reward for good habits, and a weekly recap. Here's every one of them, with the real screen.</p>
     </div>
     <div class="hero-badges" style="justify-content:center;flex-wrap:wrap;row-gap:10px;margin:0 0 8px">
-      <span>Screen time limit</span>
-      <span>App blocking</span>
-      <span>Content filtering</span>
-      <span>Bedtime schedule</span>
-      <span>Internet pause</span>
-      <span>Parent dashboard</span>
-      <span>Child dashboard</span>
-      <span>Streak bonus</span>
-      <span>Reports screen</span>
-      <span>Weekly notification</span>
+      <a href="#parent-dashboard">Parent dashboard</a>
+      <a href="#screen-time">Screen time limit</a>
+      <a href="#app-blocking">App blocking</a>
+      <a href="#content-filter">Content filtering</a>
+      <a href="#bedtime">Bedtime schedule</a>
+      <a href="#internet-pause">Internet pause</a>
+      <a href="#child-dashboard">Child dashboard</a>
+      <a href="#reports">Reports screen</a>
     </div>
   </div>
 </section>
 
-<section id="control-screens">
-  <div class="container reveal" data-reveal>
-    <div class="screen-tour">
-      <div class="screen-tour-tabs" id="screenTabs">
-        <button class="screen-tab active" data-i="0">Parent dashboard</button>
-        <button class="screen-tab" data-i="1">Screen time</button>
-        <button class="screen-tab" data-i="2">App blocking</button>
-        <button class="screen-tab" data-i="3">Content filter</button>
-        <button class="screen-tab" data-i="4">Bedtime</button>
-        <button class="screen-tab" data-i="5">Internet pause</button>
-        <button class="screen-tab" data-i="6">Child dashboard</button>
-        <button class="screen-tab" data-i="7">Streak bonus</button>
-        <button class="screen-tab" data-i="8">Reports</button>
+<section>
+  <div class="container">
+
+    <div class="showcase-row reveal" data-reveal id="parent-dashboard">
+      <div class="showcase-text">
+        <span class="tag">Parent dashboard</span>
+        <h2>Everything, in one glance</h2>
+        <p>Today's usage ring, a pending-request banner, and four one-tap shortcuts to Internet,
+        Sleep timer, App blocker and Content filter. It's the first screen you see — and usually the
+        last one you need to open.</p>
       </div>
-      <div class="screen-tour-body">
-        <button class="screen-tour-arrow prev" id="screenPrev" aria-label="Previous screen">&#8249;</button>
-        <div class="screen-tour-frame">
-          <img id="screenTourImg" src="help/images/parent-overview.png" alt="Paxio parent Overview screen showing a usage ring, category mix, and weekly stat tiles" loading="lazy">
-        </div>
-        <button class="screen-tour-arrow next" id="screenNext" aria-label="Next screen">&#8250;</button>
+      <div class="showcase-media">
+        <div class="showcase-blob b-teal"></div>
+        <figure class="help-shot">
+          <img src="help/images/parent-overview.png" alt="Paxio parent Overview screen showing a usage ring, category mix, and weekly stat tiles">
+        </figure>
       </div>
-      <p class="screen-tour-caption" id="screenCaption">Your landing screen: today's usage ring, a pending-request banner, and one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter.</p>
     </div>
+
+    <div class="showcase-row reverse reveal" data-reveal id="screen-time">
+      <div class="showcase-text">
+        <span class="tag">Screen time limit</span>
+        <h2>A daily number that just works</h2>
+        <p>Set a cap in 15-minute steps and it enforces itself — no reminders needed. Stay under it
+        for 5 days running and your kid earns 20 bonus weekend minutes, automatically tracked, never
+        automatically spent without your approval.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-orange"></div>
+        <div class="help-shot-pair">
+          <figure class="help-shot">
+            <img src="help/images/control-screentime.png" alt="Paxio Screen Time screen showing a daily limit slider">
+          </figure>
+          <figure class="help-shot">
+            <img src="help/images/control-screentime-2.png" alt="Paxio Screen Time screen showing the streak bonus toggle">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase-row reveal" data-reveal id="app-blocking">
+      <div class="showcase-text">
+        <span class="tag">App blocking</span>
+        <h2>Choose the apps, not the arguments</h2>
+        <p>Every installed app, Allowed or Blocked at a tap, with its own optional per-app time
+        limit — so a game can be capped without touching the overall daily budget. Phone and
+        Contacts always stay reachable.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-coral"></div>
+        <figure class="help-shot">
+          <img src="help/images/control-appblocker.png" alt="Paxio App Control screen listing installed apps with Allowed/Blocked toggles">
+        </figure>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse reveal" data-reveal id="content-filter">
+      <div class="showcase-text">
+        <span class="tag">Content filtering</span>
+        <h2>The internet, minus the parts you don't want</h2>
+        <p>Age presets set every category at once, or fine-tune any of 15 individually — adult
+        content, gambling, violence and more. Filtered entirely on-device: nothing ever leaves the
+        phone or reaches a Paxio server.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-blue"></div>
+        <figure class="help-shot">
+          <img src="help/images/control-contentfilter.png" alt="Paxio Content Filter screen with age presets and content category toggles">
+        </figure>
+      </div>
+    </div>
+
+    <div class="showcase-row reveal" data-reveal id="bedtime">
+      <div class="showcase-text">
+        <span class="tag">Bedtime schedule</span>
+        <h2>Bedtime that enforces itself</h2>
+        <p>A sleep and wake time, set per day of the week. The screen dims 15 minutes out as a
+        warning, then everything but calls goes quiet until morning — a kid who hasn't hit their
+        daily limit still can't be on the phone at 1am.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-purple"></div>
+        <figure class="help-shot">
+          <img src="help/images/control-sleeptimer.png" alt="Paxio Sleep Timer screen with sleep and wake times per day of the week">
+        </figure>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse reveal" data-reveal id="internet-pause">
+      <div class="showcase-text">
+        <span class="tag">Internet pause</span>
+        <h2>One tap, offline</h2>
+        <p>A master switch plus quick presets — 30 minutes, an hour, or Dinner — for pausing the
+        internet outright, without touching any other limit. Calls and texts keep working, since
+        they run over the carrier network, not data.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-teal"></div>
+        <figure class="help-shot">
+          <img src="help/images/control-internetaccess.png" alt="Paxio Internet Access screen with an on/off toggle and quick pause presets">
+        </figure>
+      </div>
+    </div>
+
+    <div class="showcase-row reveal" data-reveal id="child-dashboard">
+      <div class="showcase-text">
+        <span class="tag">Child dashboard</span>
+        <h2>What your kid sees matters just as much</h2>
+        <p>A countdown ring for time left today and a 7-day streak row — not a list of restrictions
+        to push back against, just today's picture. Switching back to the parent view needs the
+        PIN, so picking up the phone doesn't hand over the whole dashboard.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-orange"></div>
+        <figure class="help-shot">
+          <img src="help/images/child-dashboard.png" alt="Paxio child dashboard showing a time-left ring and a 7-day streak row">
+        </figure>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse reveal" data-reveal id="reports">
+      <div class="showcase-text">
+        <span class="tag">Reports screen</span>
+        <h2>The full picture, whenever you want it</h2>
+        <p>Daily, Weekly, or Monthly views, each with a usage trend chart and seven stat tiles —
+        screen time, over-limit days, blocked-app attempts, average session length, and requests
+        sent. Plus a weekly recap emailed to you automatically, so you don't even need to open the
+        app to stay in the loop.</p>
+      </div>
+      <div class="showcase-media">
+        <div class="showcase-blob b-blue"></div>
+        <figure class="help-shot">
+          <img src="help/images/report-overview.png" alt="Paxio Reports screen, Weekly tab, showing a usage trend chart and stat tiles">
+        </figure>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -97,12 +234,6 @@
       <p>No screenshot needed for these — simple toggles, or things that happen in your inbox, not on screen.</p>
     </div>
     <div class="features-grid">
-
-      <div class="feature-card">
-        <div class="feature-icon icon-usage"><span></span><span></span><span></span></div>
-        <h3>Weekly notification</h3>
-        <p>The same numbers as the Reports screen, delivered to your inbox roughly once a week — opt-in per event type, easy to turn off or narrow down.</p>
-      </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-pin"><span></span><span></span><span></span><span></span></div>
@@ -132,6 +263,12 @@
         <div class="feature-icon icon-limits"></div>
         <h3>Suggested defaults</h3>
         <p>Onboarding proposes a starting limit, filter band, and app setup based on your child's age — accept as-is or adjust before saving.</p>
+      </div>
+
+      <div class="feature-card" id="weekly-notification">
+        <div class="feature-icon icon-usage"><span></span><span></span><span></span></div>
+        <h3>Weekly notification</h3>
+        <p>The same numbers as the Reports screen, delivered to your inbox roughly once a week — opt-in per event type, easy to turn off or narrow down.</p>
       </div>
 
     </div>
@@ -173,32 +310,32 @@
   }, { threshold: 0.25 });
   revealEls.forEach(function (el) { io.observe(el); });
 
-  var screens = [
-    { src: 'help/images/parent-overview.png', alt: 'Paxio parent Overview screen showing a usage ring, category mix, and weekly stat tiles', caption: "Your landing screen: today's usage ring, a pending-request banner, and one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter." },
-    { src: 'help/images/control-screentime.png', alt: 'Paxio Screen Time screen showing a daily limit slider from 30 minutes to 24 hours', caption: 'A daily cap in 15-minute steps. Counts every app except calls, messages, and the school folder — resets at midnight.' },
-    { src: 'help/images/control-appblocker.png', alt: 'Paxio App Control screen listing installed apps with Allowed/Blocked toggles', caption: 'Every installed app, Allowed or Blocked, with an optional per-app time limit. Phone and Contacts always stay reachable.' },
-    { src: 'help/images/control-contentfilter.png', alt: 'Paxio Content Filter screen with age presets and content category toggles', caption: 'Age presets set every category at once, or toggle any of 15 individually — filtered entirely on-device, nothing leaves the phone.' },
-    { src: 'help/images/control-sleeptimer.png', alt: 'Paxio Sleep Timer screen with sleep and wake times per day of the week', caption: 'A sleep and wake time per day. The screen dims 15 minutes out as a warning, then everything but calls sleeps until wake time.' },
-    { src: 'help/images/control-internetaccess.png', alt: 'Paxio Internet Access screen with an on/off toggle and quick pause presets', caption: 'A master switch plus quick presets — 30 minutes, 1 hour, or Dinner — for pausing internet outright. Calls and texts keep working.' },
-    { src: 'help/images/child-dashboard.png', alt: "Paxio child dashboard showing a time-left ring and a 7-day streak row", caption: "What your child sees: a countdown ring for time left today and a plain-language what's-on-right-now summary — no restriction list to argue with." },
-    { src: 'help/images/control-screentime-2.png', alt: 'Paxio Screen Time screen showing the streak bonus toggle', caption: 'Every 5 clean days earns 20 bonus weekend minutes — visible to your child, but nothing applies itself without your approval.' },
-    { src: 'help/images/report-overview.png', alt: 'Paxio Reports screen, Weekly tab, showing a usage trend chart and stat tiles', caption: 'Daily, Weekly, or Monthly — a trend chart plus seven stat tiles, from screen time to blocked-app attempts to requests sent.' }
-  ];
-  var tabs = document.querySelectorAll('#screenTabs .screen-tab');
-  var img = document.getElementById('screenTourImg');
-  var caption = document.getElementById('screenCaption');
-  if (!img) return;
-  var i = 0;
-  function show(idx) {
-    i = (idx + screens.length) % screens.length;
-    img.src = screens[i].src;
-    img.alt = screens[i].alt;
-    caption.textContent = screens[i].caption;
-    tabs.forEach(function (t, ti) { t.classList.toggle('active', ti === i); });
-  }
-  tabs.forEach(function (t) { t.addEventListener('click', function () { show(parseInt(t.dataset.i, 10)); }); });
-  document.getElementById('screenPrev').addEventListener('click', function () { show(i - 1); });
-  document.getElementById('screenNext').addEventListener('click', function () { show(i + 1); });
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest('.help-shot img');
+    if (!img) return;
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    var big = document.createElement('img');
+    big.src = img.src;
+    big.alt = img.alt;
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'lightbox-close';
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.textContent = '×';
+    overlay.appendChild(big);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    function close() {
+      overlay.remove();
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    }
+    function onKey(ev) { if (ev.key === 'Escape') close(); }
+    overlay.addEventListener('click', close);
+    closeBtn.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+  });
 })();
 </script>
 
