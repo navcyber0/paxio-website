@@ -34,14 +34,16 @@ site root (`/screen-time-limit.html` etc.), which is why redirect stubs still ex
 **Files**:
 - `index.html` — the hub/overview page ("How Paxio Works"), reachable at `paxio.in/product/`.
   Shows a condensed preview of every control with a "More on X →" link to its own dedicated page.
-- `kid-screen-time-limit.html`, `kid-bedtime-schedule.html`, `kid-internet-pause.html`,
-  `kid-streak-bonus.html`, `kid-app-blocking.html`, `kid-content-filtering.html`,
-  `kid-parent-dashboard.html`, `kid-child-dashboard.html`, `kid-reports-screen.html` — one page
+- `kids-screen-time-limit.html`, `kids-bedtime-schedule.html`, `kids-internet-pause.html`,
+  `kids-streak-bonus.html`, `kids-app-blocking.html`, `kids-content-filtering.html`,
+  `kids-parent-dashboard.html`, `kids-child-dashboard.html`, `kids-reports-screen.html` — one page
   per feature.
 
-**Naming convention**: every detail-page filename is prefixed `kid-` (added 2026-09-08 for
-search-intent alignment — people search "kid screen time app," not "screen time limit app").
-`index.html` (the hub) does NOT get the prefix — it's not a keyword-targeting page itself.
+**Naming convention**: every detail-page filename is prefixed `kids-`, not `kid-` (added
+2026-09-08, corrected same day after checking the actual keyword research in
+`marketing/seo-improvement-plan.md` — every target phrase there uses plural "kids," e.g. "bedtime
+schedule android phone kids," never singular "kid"). `index.html` (the hub) does NOT get the
+prefix — it's not a keyword-targeting page itself.
 
 **Per-page structure** (every detail page follows this exact section order):
 1. Hero (`<section style="padding-bottom:0">`) — H1 + one paragraph, leading with the natural
