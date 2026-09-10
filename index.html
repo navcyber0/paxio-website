@@ -52,6 +52,23 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Paxio",
+  "url": "https://www.paxio.in/",
+  "logo": "https://www.paxio.in/store-assets/play-store-icon-512.png",
+  "email": "support@paxio.in",
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=com.paxio",
+    "https://www.facebook.com/paxio.in",
+    "https://www.instagram.com/paxio.in/",
+    "https://www.youtube.com/@Paxio-in",
+    "https://x.com/paxioin"
+  ]
+}
+</script>
 <!-- Cloudflare Web Analytics -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f27235d504634420b45bdbe069ff2540"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -61,7 +78,7 @@
 <nav class="nav">
   <div class="nav-row">
     <a class="brand" href="index.html">
-      <img src="store-assets/play-store-icon-512.png" alt="Paxio logo">
+      <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" width="512" height="512">
       Paxio
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -220,7 +237,7 @@ document.addEventListener('click', function (e) {
     <div class="flex-grid">
       <div class="flex-shot">
         <div class="flex-shot-frame">
-          <img src="screens/device-mode.png" alt="Paxio setup screen asking who uses this phone, with Parent, Child and Shared options" loading="lazy">
+          <img src="screens/device-mode.webp" alt="Paxio setup screen asking who uses this phone, with Parent, Child and Shared options" fetchpriority="high" width="824" height="1784">
         </div>
       </div>
       <div class="flex-modes">
@@ -291,7 +308,7 @@ document.addEventListener('click', function (e) {
       <div class="screen-tour-body">
         <button class="screen-tour-arrow prev" id="screenPrev" aria-label="Previous screen">&#8249;</button>
         <div class="screen-tour-frame">
-          <img id="screenTourImg" src="screens/overview.png" alt="Paxio parent Overview screen showing screen-time trend stats and quick shortcuts" loading="lazy">
+          <img id="screenTourImg" src="screens/overview.webp" alt="Paxio parent Overview screen showing screen-time trend stats and quick shortcuts" loading="lazy" width="824" height="1784">
         </div>
         <button class="screen-tour-arrow next" id="screenNext" aria-label="Next screen">&#8250;</button>
       </div>
@@ -340,7 +357,7 @@ document.addEventListener('click', function (e) {
     <div class="footer-grid">
       <div class="footer-brand-col">
         <a class="footer-brand" href="index.html">
-          <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy">
+          <img src="store-assets/play-store-icon-512.png" alt="Paxio logo" loading="lazy" width="512" height="512">
           Paxio
         </a>
         <p class="footer-tagline">A parental control app for Android, built as a partnership with your kids — never spyware.</p>
@@ -389,7 +406,7 @@ document.addEventListener('click', function (e) {
     <div class="footer-bottom">
       <span>&copy; 2026 Paxio. All rights reserved.</span>
       <a href="https://saascity.io" target="_blank" rel="noopener">
-        <img src="https://saascity.io/badges/featured-dark.svg" alt="Featured on SaaSCity" width="150" height="54" />
+        <img src="https://saascity.io/badges/featured-dark.svg" alt="Featured on SaaSCity" width="150" height="54"  loading="lazy" />
       </a>
     </div>
   </div>
@@ -458,10 +475,10 @@ document.addEventListener('click', function (e) {
 
   (function screenTour() {
     var screens = [
-      { src: 'screens/overview.png', alt: 'Paxio parent Overview screen showing screen-time trend stats and quick shortcuts', caption: 'Trend stats for screen time, average session, and over-limit days, plus one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter.' },
-      { src: 'screens/control.png', alt: 'Paxio Controls screen listing every active control', caption: 'Screen timer, app blocker, sleep timer, content filtering and internet access, all in one list with live status.' },
-      { src: 'screens/reports.png', alt: 'Paxio Reports screen showing a full week of usage stats', caption: 'The full picture: days inside the limit, latest phone use, blocked attempts, pickups, average session, and requests sent.' },
-      { src: 'screens/settings.png', alt: 'Paxio Settings screen with account, PIN and device options', caption: 'Account, PIN, dark theme and email notifications, kept simple and grouped by how often they\'re used.' }
+      { src: 'screens/overview.webp', alt: 'Paxio parent Overview screen showing screen-time trend stats and quick shortcuts', caption: 'Trend stats for screen time, average session, and over-limit days, plus one-tap shortcuts to Internet, Sleep timer, App blocker and Content filter.' },
+      { src: 'screens/control.webp', alt: 'Paxio Controls screen listing every active control', caption: 'Screen timer, app blocker, sleep timer, content filtering and internet access, all in one list with live status.' },
+      { src: 'screens/reports.webp', alt: 'Paxio Reports screen showing a full week of usage stats', caption: 'The full picture: days inside the limit, latest phone use, blocked attempts, pickups, average session, and requests sent.' },
+      { src: 'screens/settings.webp', alt: 'Paxio Settings screen with account, PIN and device options', caption: 'Account, PIN, dark theme and email notifications, kept simple and grouped by how often they\'re used.' }
     ];
     var tabs = document.querySelectorAll('#screenTabs .screen-tab');
     var img = document.getElementById('screenTourImg');

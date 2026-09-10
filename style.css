@@ -271,7 +271,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
-  background: right -30px center / 420px auto no-repeat url('screens/overview.png');
+  background: right -30px center / 420px auto no-repeat url('screens/overview.webp');
   opacity: 0.26;
   filter: blur(1px) saturate(0.9);
   -webkit-mask-image: radial-gradient(ellipse 50% 65% at 92% 48%, #000 40%, transparent 88%);
