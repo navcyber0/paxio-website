@@ -144,6 +144,20 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .nav-cta:hover { background: var(--teal-strong-hover); color: #fff !important; }
 
+.nav-highlight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--teal-light);
+  color: var(--teal-ink) !important;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+.nav-highlight:hover { background: var(--teal-mid); color: var(--teal-ink) !important; }
+.nav-highlight svg { width: 15px; height: 15px; flex-shrink: 0; }
+
 /* ── Product mega-menu (native <details>, no JS) ─────────────────────── */
 
 .nav-dropdown { position: relative; }
@@ -234,6 +248,7 @@ img { max-width: 100%; height: auto; display: block; }
   }
   .nav-links a { padding: 16px 24px; border-top: 1px solid var(--border); }
   .nav-links .nav-cta { margin: 16px 24px; text-align: center; }
+  .nav-links .nav-highlight { margin: 4px 24px 12px; padding: 10px 16px; border-top: none; justify-content: center; }
   .nav-toggle:checked ~ .nav-links { max-height: 900px; overflow-y: auto; }
   .nav-toggle-label { display: flex; }
 
