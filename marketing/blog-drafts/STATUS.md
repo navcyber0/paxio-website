@@ -80,6 +80,50 @@ Only the not-yet-drafted #5 still needs a lead photo, once it exists. All other 
 
 - (Sensitive, lower priority per positioning) online predators/stranger-contact awareness, sexting/inappropriate-content exposure — handle with the same care as the cyberbullying post if/when picked up
 
+## Backlog: 30 candidate topics (added 2026-09-16)
+
+Planning-stage only — titles + angle, no research/stat/photo done yet (that happens at draft time, per the standard format). Checked against every title above to avoid duplicating an already-covered angle. Split 15/15 across the two tracks the scheduled task alternates; pull from whichever track is due next, in roughly the order listed within each track (earlier ones are more differentiated/higher-confidence angles). Not a rigid queue — skip one if a fresher, better-fitting angle turns up when a task actually runs.
+
+### Mobile-security track backlog
+
+| # | Title | Angle |
+|---|---|---|
+| 1 | Smishing: the fake delivery/prize texts that target teens by phone number, not email | Distinct from the existing QR/package post — SMS-native scam, no QR code involved |
+| 2 | SIM swap attacks — how a stolen phone number can take over a kid's accounts | Account-takeover angle, not malware or scam-link |
+| 3 | AI voice-cloning scams — the "it's me, I need money" call, now doable from a 10-second clip | Mobile-specific because it arrives as a phone call, not a message |
+| 4 | Mod menus and cracked-game APKs — the malware hiding inside "unlock everything" downloads | Sideloaded-outside-the-app-store angle, distinct from the fake-app-clones post (which is about official-store lookalikes) |
+| 5 | Cyberflashing over AirDrop/Bluetooth — the unsolicited-image risk unique to being near strangers with a phone | Proximity-based, not app- or link-based |
+| 6 | Fake tech-support pop-ups on mobile browsers — how the scam plays out differently (and works better) on a phone | Mobile browser UX specifically, not desktop |
+| 7 | When a kid shares their own location — Snap Map/friend-location features, and what that actually exposes | Kid-initiated sharing, distinct from the existing "parental apps that don't track location" post (which is about parent-side tracking) |
+| 8 | Public Wi-Fi at school and the mall — what's actually at risk on a kid's phone there | Network-level risk, not app-level |
+| 9 | Second-hand phone handoffs — the security checklist before an old phone becomes a kid's phone | Onboarding/setup moment, not an ongoing risk |
+| 10 | How app store ratings get gamed — why "4.8 stars, editor's choice" isn't a safety signal | Ties to the fake-app-clones post but focused on the ratings-manipulation mechanism specifically |
+| 11 | Carrier-level parental controls vs. on-device apps — what a phone plan's "family mode" actually does and doesn't do | Comparison-style, adjacent to the existing app-comparison post but a different category (carrier vs. app) |
+| 12 | Fake "verify your account" texts impersonating Roblox/Discord/gaming platforms | Kid-relevant phishing target, distinct from the generic smishing post above |
+| 13 | Browser extensions and custom keyboard apps — the permission risk parents don't think to check | Permissions angle beyond the existing camera/mic/contacts/location post |
+| 14 | Bluetooth trackers (AirTag-style) — the being-tracked-without-consent risk, from a kid-safety angle | Being tracked, not tracking — inverse of the location-tracking post |
+| 15 | Why a kid's phone number alone is worth protecting — SMS one-time-password interception explained simply | Ties several of the above together as a "why this all matters" wrap-up angle; good candidate for later in the batch, not first |
+
+### Screen-time/psychology track backlog
+
+| # | Title | Angle |
+|---|---|---|
+| 1 | Autoplay and the "one more video" loop — the specific design mechanic | Distinct from the notification-design post (badges/variable reward), this is continuous-play design specifically |
+| 2 | The forbidden-fruit effect — when a strict limit backfires, and what research says works instead | Direct, useful counterpoint to a purely restriction-first pitch |
+| 3 | Phones in the bedroom vs. a general time limit — which one the research actually backs | Research-comparison angle; can link to (not duplicate) the existing bedtime-schedule feature post |
+| 4 | Weekday vs. weekend screen time — why the gap exists and what it's actually measuring | Fresh data-pattern angle, not yet covered |
+| 5 | Renegotiating screen time as a kid gets older — the 10-to-13 transition conversation | Developmental-stage angle, distinct from the existing age-milestones post (which is about AAP guidance by age, not the renegotiation conversation) |
+| 6 | Two households, one rule — keeping screen time consistent across separated parents | Household-logistics angle, not yet covered anywhere on the blog |
+| 7 | What "doomscrolling" actually does to a still-developing attention span | Distinct mechanism from the notification-checking-frequency post already published |
+| 8 | Co-viewing vs. solo screen time — does watching together change the outcome | Parent-involvement angle |
+| 9 | FOMO and session-length pressure in live multiplayer games | Distinct from the existing gaming-safety post (which covers chat risk and spending, not time-pressure design) |
+| 10 | Summer and school-break screen time spikes — why the school-year rule doesn't just carry over | Seasonal/calendar angle |
+| 11 | Chromebooks and homework — how much of "screen time" is actually schoolwork now | Directly useful for the "not all screen time is equal" positioning |
+| 12 | Social comparison in short-form video — the specific psychological mechanism | Distinct from notification design and from doomscrolling above — this is about comparison, not attention or checking-frequency |
+| 13 | Screen time recommendations by country — how differently they're set, and what that tells you | International-comparison angle, useful "not moral panic" framing since it shows disagreement even among experts |
+| 14 | Family meals and phone-free rituals — what the research actually says changes behavior | Practical-habit angle |
+| 15 | The screen-time/mental-health link — what a large meta-analysis actually found, correlation vs. causation | Direct "grounded in real research, not moral panic" piece — pairs well with the already-published Finnish cognitive-outcomes post without repeating it |
+
 ## Publishing note
 
 A blog listing page and post template now exist on the live site (`blog/index.html` + per-post pages, added 2026-08-06). Two drafts have been converted and published so far: mobile-app-permissions-kids-grant (first post) and bedtime-schedule-what-actually-happens (second post) — see their rows above for commit hashes.
