@@ -212,7 +212,7 @@ document.addEventListener('click', function (e) {
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.25 });
+  }, { threshold: 0 });
   revealEls.forEach(function (el) { io.observe(el); });
 
   function fmtMin(m) {

@@ -218,6 +218,7 @@
       </a>
 
     </div>
+    <div class="blog-pagination" id="blogPagination"></div>
   </div>
 </section>
 
@@ -298,8 +299,38 @@
   var revealEls = document.querySelectorAll('[data-reveal]');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
-  }, { threshold: 0.25 });
+  }, { threshold: 0 });
   revealEls.forEach(function (el) { io.observe(el); });
+})();
+
+(function () {
+  var PAGE_SIZE = 8;
+  var grid = document.querySelector('.blog-grid');
+  var pagination = document.getElementById('blogPagination');
+  if (!grid || !pagination) return;
+  var cards = Array.from(grid.querySelectorAll('.blog-card'));
+  var totalPages = Math.ceil(cards.length / PAGE_SIZE);
+  if (totalPages <= 1) return;
+
+  function showPage(page, scroll) {
+    cards.forEach(function (card, i) {
+      card.style.display = (i >= (page - 1) * PAGE_SIZE && i < page * PAGE_SIZE) ? '' : 'none';
+    });
+    pagination.querySelectorAll('button').forEach(function (b) {
+      b.classList.toggle('active', parseInt(b.dataset.page, 10) === page);
+    });
+    if (scroll) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  var html = '';
+  for (var p = 1; p <= totalPages; p++) {
+    html += '<button type="button" class="screen-tab' + (p === 1 ? ' active' : '') + '" data-page="' + p + '">' + p + '</button>';
+  }
+  pagination.innerHTML = html;
+  pagination.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () { showPage(parseInt(b.dataset.page, 10), true); });
+  });
+  showPage(1, false);
 })();
 </script>
 
