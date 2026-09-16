@@ -33,4 +33,4 @@ Photos and video that look real but are AI-generated or significantly altered ar
 
 Content filtering and screen time manage exposure — which sites are reachable, how much time on feed-based apps — not the truthfulness of what's inside an allowed app. Genuinely outside what device-level controls can do.
 
-[Paxio](https://www.paxio.in/) handles the exposure side — content filtering, app blocking, screen time, free for one child — the literacy habits above happen through conversation, not configuration.
+[Content filtering](../product/kids-content-filtering.html), [app blocking](../product/kids-app-blocking.html), and [screen time limits](../product/kids-screen-time-limit.html) handle the exposure side in the background — the literacy habits above still happen through conversation, not configuration.
