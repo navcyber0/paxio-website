@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On-Device Content Filtering Explained (vs. Cloud Filtering)</title>
+<meta name="description" content="'Content filtering' can mean two very different things depending on where the filtering actually happens. The real difference, and why it matters for what leaves your kid's phone.">
+<link rel="canonical" href="https://www.paxio.in/blog/on-device-content-filtering-explained.html">
+<link rel="icon" type="image/png" href="../store-assets/play-store-icon-512.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<meta name="keywords" content="on-device content filtering, DNS filtering explained, cloud filtering vs on-device, parental control privacy, how content filtering works">
+<meta property="og:title" content="On-Device Content Filtering Explained (vs. Cloud Filtering)">
+<meta property="og:description" content="'Content filtering' can mean two very different things depending on where the filtering actually happens. The real difference, and why it matters for what leaves your kid's phone.">
+<meta property="og:image" content="https://www.paxio.in/blog/images/on-device-filtering-lock.jpg">
+<meta property="og:url" content="https://www.paxio.in/blog/on-device-content-filtering-explained.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.paxio.in/blog/images/on-device-filtering-lock.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How on-device content filtering works (and why it's different from cloud filtering)",
+  "description": "'Content filtering' can mean two very different things depending on where the filtering actually happens. The real difference, and why it matters for what leaves your kid's phone.",
+  "image": "https://www.paxio.in/blog/images/on-device-filtering-lock.jpg",
+  "datePublished": "2026-09-17",
+  "author": { "@type": "Organization", "name": "Paxio" },
+  "publisher": { "@type": "Organization", "name": "Paxio" }
+}
+</script>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f27235d504634420b45bdbe069ff2540"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-row">
+    <a class="brand" href="../index.html">
+      <img src="../store-assets/play-store-icon-512.png" alt="Paxio logo">
+      Paxio
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <details>
+          <summary>Product <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="nav-mega">
+            <div class="nav-mega-col c-teal">
+              <h4>Limits &amp; Time</h4>
+              <a href="../product/kids-screen-time-limit.html">Screen Time Limit</a>
+              <a href="../product/kids-bedtime-schedule.html">Bedtime Schedule</a>
+              <a href="../product/kids-internet-pause.html">Internet Pause</a>
+              <a href="../product/kids-screen-time-limit.html">Streak Bonus<span class="nav-mega-badge">HOT</span></a>
+            </div>
+            <div class="nav-mega-col c-coral">
+              <h4>Safety Controls</h4>
+              <a href="../product/kids-app-blocking.html">App Blocking</a>
+              <a href="../product/kids-content-filtering.html">Content Filtering</a>
+            </div>
+            <div class="nav-mega-col c-blue">
+              <h4>Visibility &amp; Reports</h4>
+              <a href="../product/kids-parent-dashboard.html">Parent Dashboard</a>
+              <a href="../product/kids-child-dashboard.html">Child Dashboard</a>
+              <a href="../product/kids-reports-screen.html">Reports Screen</a>
+              <a href="../product/index.html#weekly-notification">Weekly Notification</a>
+            </div>
+          </div>
+        </details>
+      </div>
+      <a href="../why-paxio.html">Why Paxio</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="index.html" class="active">Blog</a>
+      <a href="../contact.html">Contact</a>
+      <a class="nav-highlight" href="https://appcheck.paxio.in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>Check kids app detail</a>
+      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.paxio" target="_blank" rel="noopener">Get Paxio</a>
+    </div>
+  </div>
+</nav>
+
+<div class="legal">
+  <a class="back" href="index.html">&larr; Back to Blog</a>
+  <span class="tag">Privacy</span>
+  <h1>How on-device content filtering works (and why it's different from cloud filtering)</h1>
+  <div class="blog-meta">
+    <span>Paxio</span><span class="dot">&middot;</span><span>September 17, 2026</span><span class="dot">&middot;</span><span>~2 min read</span>
+  </div>
+
+  <img class="blog-hero-img" src="images/on-device-filtering-lock.jpg" alt="A padlock, representing the security and privacy question at the heart of on-device vs. cloud filtering">
+  <span class="photo-credit">Photo by <a href="https://unsplash.com/@flyd2069" target="_blank" rel="noopener">FlyD</a> on <a href="https://unsplash.com/photos/zAhAUSdRLJ8" target="_blank" rel="noopener">Unsplash</a></span>
+
+  <p>Most parental control apps say some version of "blocks inappropriate content" — it's easy to assume that's one thing. It isn't. Where the filtering decision happens, on the device or on a server it talks to, changes what data leaves the phone.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>The mechanism: DNS resolution</h2></div>
+  <p>Every time an app opens a web address, the device first resolves that address to a server location — DNS resolution. Content filtering almost always works by intercepting that step: check the domain's category, then either let it resolve or block it. True whether filtering is on-device or cloud-based — the difference is <em>where</em> that check happens.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>Cloud filtering: the check happens on someone else's server</h2></div>
+  <p>The device sends DNS requests out to a third-party filtering service, which checks and responds. This works, but every domain your kid's device tries to reach passes through an external company's servers first. Not necessarily sinister — but a running log of your family's browsing now exists on infrastructure you don't own and didn't set the retention policy for.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-teal"><i></i></span><h2>On-device filtering: the check happens on the phone</h2></div>
+  <p>A blocklist lives on the device, gets checked locally, decision made right there — nothing round-trips to an external server for the purpose of filtering. Browsing activity doesn't get routed through a third party as part of how the filter works. Not a promise layered on top — what the mechanism actually does.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-orange"><i></i></span><h2>The honest tradeoff</h2></div>
+  <p>Cloud services update centrally and can apply more sophisticated (ML-based) classification; an on-device blocklist is only as current as its last update. For most parents, "which category does this domain fall into" is a solved-enough problem that the currency tradeoff is small — the privacy tradeoff is the one that actually matters day to day.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-blue"><i></i></span><h2>What neither approach covers</h2></div>
+  <p>Content filtering blocks by domain category — it doesn't evaluate posts or messages <em>inside</em> an already-allowed app. That's a fundamentally different, much harder problem than category-level blocking.</p>
+
+  <div class="legal-h2-row"><span class="legal-icon c-coral"><i></i></span><h2>Where Paxio fits</h2></div>
+  <p>Paxio's content filtering resolves DNS locally — blocklist on the phone, category check on the phone, browsing activity never routed through a third party as part of how it works. One of Paxio's core controls, alongside <a href="../product/kids-screen-time-limit.html">screen time</a>, <a href="../product/kids-app-blocking.html">app blocking</a>, and <a href="../product/kids-bedtime-schedule.html">bedtime scheduling</a>.</p>
+
+  <p>"Does this filter on the device or in the cloud" is a fair, concrete question to ask any parental control app.</p>
+
+  <p style="text-align:center;margin-top:40px">
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.paxio" target="_blank" rel="noopener">Try Paxio free &rarr;</a>
+  </p>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a class="footer-brand" href="../index.html">
+          <img src="../store-assets/play-store-icon-512.png" alt="Paxio logo">
+          Paxio
+        </a>
+        <p class="footer-tagline">A parental control app for Android, built as a partnership with your kids — never spyware.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/paxio.in" target="_blank" rel="noopener" aria-label="Paxio on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.4c0-.87.24-1.46 1.5-1.46H16.5V4.35C16.24 4.32 15.36 4.24 14.34 4.24c-2.13 0-3.59 1.3-3.59 3.68V10.5H8.25v3H10.75V21h2.75Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/paxio.in/" target="_blank" rel="noopener" aria-label="Paxio on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://x.com/paxioin" target="_blank" rel="noopener" aria-label="Paxio on X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 10.4 19.9 3h-1.5l-5.5 6.4L8.5 3H3l6.6 9.6L3 21h1.5l5.8-6.7L15 21h5.5l-6.9-10.6Zm-2.1 2.4-.7-1L5.6 4.1h2.3l4.3 6.1.7 1 5.6 8h-2.3l-4.6-6.6Z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Paxio on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 8.5h-3V20h3V8.5ZM5 3.5A1.9 1.9 0 1 0 5 7.3a1.9 1.9 0 0 0 0-3.8ZM20.5 20h-3v-6c0-1.4-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V20h-3s.05-10.6 0-11.5h3v1.6c.4-.6 1.1-1.5 2.8-1.5 2 0 3.5 1.3 3.5 4.2V20Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Features</h4>
+        <a href="../product/kids-screen-time-limit.html">Screen Time Limit</a>
+        <a href="../product/kids-bedtime-schedule.html">Bedtime Schedule</a>
+        <a href="../product/kids-internet-pause.html">Internet Pause</a>
+        <a href="../product/kids-streak-bonus.html">Streak Bonus</a>
+        <a href="../product/kids-app-blocking.html">App Blocking</a>
+        <a href="../product/kids-content-filtering.html">Content Filtering</a>
+        <a href="../product/kids-parent-dashboard.html">Parent Dashboard</a>
+        <a href="../product/kids-child-dashboard.html">Child Dashboard</a>
+        <a href="../product/kids-reports-screen.html">Reports Screen</a>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="../product/index.html">How Paxio Works</a>
+        <a href="../product-tour.html">Product Tour</a>
+        <a href="../setup.html">Setup</a>
+        <a href="../pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Compare</h4>
+        <a href="../why-paxio.html">Why Paxio</a>
+        <a href="../benefits.html">Benefits</a>
+        <a href="../paxio-vs-family-link.html">vs Google Family Link</a>
+        <a href="../paxio-vs-qustodio.html">vs Qustodio</a>
+        <a href="../paxio-vs-kids360.html">vs Kids360</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../help/index.html">Help Center</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms-of-service.html">Terms of Service</a>
+        <a href="../delete-account.html">Delete Account</a>
+        <a href="../delete-data.html">Delete Data</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Paxio. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+})();
+</script>
+
+</body>
+</html>
