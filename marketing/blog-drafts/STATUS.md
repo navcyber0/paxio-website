@@ -36,6 +36,15 @@ Drafted posts below are pending human review until marked Published. A live `blo
 
 | Notifications aren't accidentally distracting — they're built to be | `notification-design-and-kids-attention.md` (lead photo `notification-app-icons-screen.jpg`, Brian J. Tromp/Unsplash) | 648 words incl. headers/meta (~2 min body read). Stat: Telzer & Burnell, *JAMA Network Open*, March 12, 2026 (via UNC-Chapel Hill press release) — teens spend nearly a third of the school day on phones; frequent checking (not total time) is what tracked with weaker attention/impulse control. **Published 2026-08-10** as [`blog/notification-design-and-kids-attention.html`](../../blog/notification-design-and-kids-attention.html), reviewed via local preview page first. |
 
+
+## Blog template standards (updated 2026-09-21 — do not roll back)
+
+- **Hero image:** fixed 2:1 box via CSS (`.blog-hero-img { aspect-ratio: 2 / 1; object-fit: cover }` in `style.css`), so any source photo displays at the same size. Source files stay 1600x1067.
+- **Layout:** two columns on desktop (article left, sticky sidebar right holding the "Check your kid's app" callout and "Related reading"); single column below 980px. Structure: `<div class="blog-layout"><div class="legal">…</div><aside class="blog-aside">…</aside></div>`.
+- **Length:** target 3-5 min (about 700-1,000 words) for standard posts; long guides may run longer. Read-time labels are computed as words/200, min 3.
+- **Metadata lengths:** `<title>` 50-60 chars (hard max 62), meta description 130-158 chars (hard max 160), primary keyword first, same description in og/twitter tags. Full list of standards also lives in the assistant memory file `paxio_feedback_blog_seo_standards.md`.
+- **Per post:** BlogPosting + BreadcrumbList + FAQPage JSON-LD, 3 visible FAQs, robots meta, og:site_name/locale/image size, 1200x630 OG image in `blog/images/og/`, `dateModified` (bump when a post changes).
+
 ## Image size standard (added 2026-08-31)
 
 All blog hero photos are standardized to **1600×1067px (3:2 ratio)**, JPEG quality 82. Applied retroactively to every existing post's image on 2026-08-31 — several had drifted from this (one square 1600×1600, two portrait crops near 1600×2400) and looked visibly taller/inconsistent on individual post pages, where the hero image runs full-width with no fixed-height crop (unlike the blog index grid, which already crops thumbnails to a fixed 170px height via CSS regardless of source ratio). Center-crop to 3:2 before resizing when sourcing a new photo that isn't already close to that ratio, so this doesn't have to be fixed again after the fact.
