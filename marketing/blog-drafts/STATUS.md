@@ -113,6 +113,12 @@ Sourced from a HeyTony-generated PDF of real Reddit questions about parental con
 
 Not pursued from the same PDF: text/call/browser-history "how to monitor" topics (Paxio doesn't do this — see the trust post above instead), iPhone vs Android comparison (Paxio is Android-only), college-aged-kids and emergency/SOS-feature topics (outside current product scope).
 
+## Screen-time track, continued (added 2026-09-21)
+
+| Title | File | Status |
+|---|---|---|
+| Autoplay and kids: why "one more video" is hard to stop | `autoplay-one-more-video-loop.md` (lead photo `autoplay-child-couch-tablet.jpg`, Nils Huenerfuerst/Unsplash) | ~855 words (~4 min). No stat - mechanism/behavior piece. Converted to the 2026-09-21 template standards (sidebar, FAQ + schema, 1200x630 OG image, keyword-first title/description). **Published 2026-09-21** as [`blog/autoplay-one-more-video-loop.html`](../../blog/autoplay-one-more-video-loop.html). Per-app time limits are Paxio Pro, so the post says so. |
+
 ## Next topics to draw from (not yet drafted)
 
 - (Sensitive, lower priority per positioning) online predators/stranger-contact awareness, sexting/inappropriate-content exposure — handle with the same care as the cyberbullying post if/when picked up
