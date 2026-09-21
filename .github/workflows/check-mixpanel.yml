@@ -1,0 +1,17 @@
+name: Check Mixpanel snippet
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every public page must include Mixpanel
+        run: |
+          missing=$(grep -L "mixpanel.init" ./*.html blog/*.html help/*.html product/*.html || true)
+          if [ -n "$missing" ]; then
+            echo "Missing Mixpanel snippet (see index.html for the block):"
+            echo "$missing"
+            exit 1
+          fi
