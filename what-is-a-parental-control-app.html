@@ -159,6 +159,45 @@ document.addEventListener('click', function (e) {
   </div>
 </section>
 
+<section id="faq" style="padding-top: 24px;">
+  <div class="container reveal" data-reveal>
+    <div class="section-head">
+      <span class="tag">FAQ</span>
+      <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.4rem); font-weight: 800; margin: 0 0 12px;">Common questions</h2>
+      <p>Quick answers about what a parental control app is and how it works.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is a parental control app?</summary>
+        <p>A parental control app is software a parent installs to manage what a child can do on a phone or tablet — typically limiting daily screen time, blocking specific apps, filtering website categories, and enforcing a bedtime schedule. Most run on the child's own device rather than a separate server, and sync settings to the parent's account so they can be managed remotely.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does a parental control app actually work on Android?</summary>
+        <p>On Android, this is usually built from a small set of system permissions used together: Usage Access to measure time in each app, an Accessibility Service to detect and block a restricted app when it opens, Device Admin to add friction against uninstalling the app, and a local on-device VPN to filter website categories by DNS — without sending browsing data to any server.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is a parental control app the same as spyware or monitoring software?</summary>
+        <p>No. Spyware is designed to be hidden and typically captures message content, keystrokes, or location without the device user's knowledge. A parental control app is installed openly, is visible to the child, and is scoped to controls (time limits, app blocking, content filtering) rather than reading private conversations. Some products blur this line by adding message or call monitoring — that's a separate category, not a core parental control feature.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between app blocking and content filtering?</summary>
+        <p>App blocking restricts specific installed apps by package name — for example, blocking a game or social app entirely or during certain hours. Content filtering works at the network level, blocking categories of websites (like gambling or adult content) regardless of which app or browser is used to reach them.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can a parental control app read texts, calls, or private messages?</summary>
+        <p>Not by default, and not in Paxio's case — its controls (screen time, app blocking, content filtering, bedtime) never require reading message content. Some other products in this category do offer message monitoring as an optional, separate feature; that's a meaningfully different privacy tradeoff, worth checking explicitly per product rather than assuming.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do parental control apps work on iPhone the same way as Android?</summary>
+        <p>No — iOS's Screen Time API and Family Sharing controls are more restrictive by design, so third-party apps generally use Apple's own frameworks rather than the accessibility/VPN approach common on Android, which limits what a third-party app can do compared to Android.</p>
+      </details>
+    </div>
+    <p style="text-align:center;margin-top:40px">
+      <a class="btn btn-primary" href="contact.html">Still have questions? Contact us →</a>
+    </p>
+  </div>
+</section>
+
 <footer>
   <div class="container">
     <div class="footer-grid">
