@@ -1,0 +1,42 @@
+# Paxio
+
+> Paxio is a parental control app for Android that helps a parent set daily screen time limits, block distracting apps, filter content by category, enforce bedtime schedules, and pause internet access remotely — from one dashboard. It syncs across devices via the parent's account and does not read a child's texts, calls, or private messages.
+
+Paxio is installed on a child's Android device and managed from a parent's own device or the same device in a separate profile. Free and Pro plans are available; Pro adds more child profiles, unlimited app blocking, bedtime locks, remote internet pause, and longer report history. Paxio also runs a free standalone tool, App Checker, for looking up any Google Play app's permissions, ads, and age rating before a parent lets their kid install it.
+
+## Product
+- [Homepage](https://www.paxio.in/): overview, core features, download link
+- [Features](https://www.paxio.in/features.html): full feature list
+- [Pricing](https://www.paxio.in/pricing.html): Free vs Pro plans, monthly/yearly cost
+- [Product Tour](https://www.paxio.in/product-tour.html): screen-by-screen walkthrough
+- [Why Paxio](https://www.paxio.in/why-paxio.html): philosophy — partnership with kids, not surveillance
+- [Setup & Flexibility](https://www.paxio.in/setup.html): device setup options (dedicated vs shared device)
+- [Screen Time Limit](https://www.paxio.in/product/kids-screen-time-limit.html)
+- [App Blocking](https://www.paxio.in/product/kids-app-blocking.html)
+- [Content Filtering](https://www.paxio.in/product/kids-content-filtering.html)
+- [Bedtime Schedule](https://www.paxio.in/product/kids-bedtime-schedule.html)
+- [Internet Pause](https://www.paxio.in/product/kids-internet-pause.html)
+- [Parent Dashboard](https://www.paxio.in/product/kids-parent-dashboard.html)
+- [Child Dashboard](https://www.paxio.in/product/kids-child-dashboard.html)
+- [Reports Screen](https://www.paxio.in/product/kids-reports-screen.html)
+
+## Comparisons
+- [Paxio vs Qustodio](https://www.paxio.in/paxio-vs-qustodio.html)
+- [Paxio vs Kids360](https://www.paxio.in/paxio-vs-kids360.html)
+- [Paxio vs Google Family Link](https://www.paxio.in/paxio-vs-family-link.html)
+
+## Free tools
+- [App Checker](https://appcheck.paxio.in/): look up any Google Play app's permissions, ads, age rating, and privacy policy before installing it for a kid
+
+## Support
+- [Help Center](https://www.paxio.in/help/): setup guides, onboarding, and per-screen explanations
+- [FAQ](https://www.paxio.in/faq.html)
+- [Contact](https://www.paxio.in/contact.html) — support@paxio.in
+- [Privacy Policy](https://www.paxio.in/privacy-policy.html)
+- [Terms of Service](https://www.paxio.in/terms-of-service.html)
+
+## Blog
+Articles on kids' online safety, screen time research, and how Paxio's controls work — see [Blog index](https://www.paxio.in/blog/).
+
+## Optional
+- [Android app on Google Play](https://play.google.com/store/apps/details?id=com.paxio)
