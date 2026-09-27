@@ -137,7 +137,7 @@ document.addEventListener('click', function (e) {
       <p>There's no single "parental controls API" on Android. Instead, apps in this category combine a small set of existing system permissions:</p>
       <ul>
         <li><strong>Usage Access</strong> — lets the app measure how long each app has been in the foreground, which is what powers screen time limits and reports.</li>
-        <li><strong>Accessibility Service</strong> — lets the app detect in real time when a restricted app is opened, so it can show a block screen immediately rather than after the fact.</li>
+        <li><strong>Accessibility Service</strong> — lets the app detect in real time when a restricted app is opened, so it can show a block screen immediately rather than after the fact. It's a genuinely powerful permission: as <a href="https://www.malwarebytes.com/blog/mobile/2026/03/google-cracks-down-on-android-apps-abusing-accessibility" target="_blank" rel="noopener">Malwarebytes Labs' Danny Bradbury wrote in March 2026</a>, "the accessibility API has a lot of power: any app with permissions to use it can read what's on your screen" — which is exactly why banking-trojan malware targets it, and exactly why legitimate apps that request it (parental controls included) get flagged for extra scrutiny.</li>
         <li><strong>Device Admin</strong> — adds a confirmation step before the parental control app itself can be uninstalled or have its permissions revoked.</li>
         <li><strong>A local, on-device VPN</strong> — used for DNS-based content filtering. Done properly, this only inspects which domain is being requested, not the content of the traffic, and doesn't send browsing data off the device.</li>
       </ul>
