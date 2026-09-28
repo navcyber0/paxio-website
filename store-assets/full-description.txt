@@ -1,25 +1,36 @@
-Paxio is a simple, focused parental control app that helps you set screen time limits and boundaries for your kids — without spying on them.
+Paxio is a parental control app for Android that gives you real screen time limits, app blocking, and content filtering for kids and teenagers — enforced automatically, without spying on them. No location tracking, no reading their messages: just the controls that change daily habits.
 
-SCREEN TIME
-Set a daily time limit per child, see live usage progress, and get notified as they approach their limit. Add a bedtime schedule or a one-off sleep timer for nap time or homework.
+Start free with one child profile. Some features are part of Paxio Pro — compare plans at www.paxio.in/pricing.html
 
-APP BLOCKING
-Choose exactly which apps your child can and can't use. Blocking is enforced in real time using Android's Accessibility Service, which detects the app currently open on the device — no need to uninstall apps you don't want them using.
+SCREEN TIME LIMITS
+Set a daily screen time limit per child in 15-minute steps and it enforces itself — no reminders, no manual check-ins. Your child sees a live countdown ring on their own dashboard, so the end of screen time is never a surprise, and they can request more time right from the lock screen for you to approve or deny with one tap. Phone calls always stay available.
+
+APP BLOCKER
+Choose exactly which apps your child can use on their Android phone. Blocking is enforced in real time using Android's Accessibility Service, which detects the app currently open on the device — nothing needs to be uninstalled, and a blocked app shows a clear block screen. Any single app can also get its own time limit.
 
 CONTENT FILTERING
-Block major known sites across multiple categories (adult content, gambling, and more), using an on-device VPN filter that's kept regularly updated. Filtering decisions happen locally on the device — Paxio never sends your child's general browsing activity anywhere. When a site is blocked, only that domain, its category, and the time are saved to your account so you can see it in your weekly report.
+Block websites across 15 categories — adult content, gambling, violence, social media and more — with age presets (Under 7, 8–10, Teen, Open) or category by category. Content filtering runs as a local, on-device VPN: Paxio never sends your child's general browsing activity anywhere. When a site is blocked, only that domain, its category, and the time are saved to your account so you can see it in your reports.
 
-BUILT FOR PARENTS
-- PIN-protected settings so only you can make changes
-- Uninstall protection: Paxio recognizes Android's own uninstall and device-admin screens for itself using the Accessibility Service, so removing the app requires your parent PIN
-- Profile and PIN sync to your account, so switching phones doesn't mean starting over
+BEDTIME & INTERNET PAUSE
+Set a sleep and wake time once and it repeats on the days you choose; at bedtime, everything but calls goes quiet until morning. Need the internet off right now? Pause it in one tap, or for 30 minutes, an hour, or dinner — from your own phone.
+
+WHAT YOUR CHILD SEES
+Their own dashboard, built to inform rather than confront: time left today, a plain-language summary of what's on right now, and a streak that earns bonus screen time automatically for staying under the limit. No shaming, no restrictions list to push back against — a parental control app teenagers can actually live with.
+
+REPORTS & WEEKLY EMAIL
+Daily, weekly, and monthly views with a usage trend and stat tiles — screen time, over-limit days, blocked-app attempts and more — plus a weekly recap emailed to you, so you stay in the loop without opening the app.
+
+SET UP IN MINUTES
+Sign up, create your parent PIN, choose whether your child has their own Android phone or shares yours, add a profile, and accept suggested settings based on their age. Profiles and PIN sync to your account, so a new phone doesn't mean starting over. Switching back to the parent view on a shared phone always needs your PIN.
 
 PRIVACY FIRST
-General screen time and browsing activity stay on the device and are never transmitted. Only the specific apps blocked and sites blocked (not general usage) sync to your account, so you can review them in your reports. See our full privacy policy for details on exactly what's collected and why.
+General screen time and browsing activity stay on the device and are never transmitted. Only the specific apps and sites that were blocked (not general usage) sync to your account for your reports. Paxio does not track location and does not read messages, calls, or social media. Product-usage analytics help us improve the app; see our privacy policy for exactly what's collected and why.
+
+Uninstall protection: Paxio recognizes Android's own uninstall and device-admin screens for itself, so removing the app asks for your parent PIN — a deterrent, not an unbreakable lock.
 
 HOW PAXIO WORKS
 Paxio relies on two core Android APIs to function as a parental control app:
-• Accessibility Service — detects the app currently in the foreground, so blocking and screen-time rules can be enforced, and so Paxio can recognize its own uninstall/device-admin screens to require your parent PIN.
-• VPN Service — creates a local, on-device VPN connection used only to inspect and block DNS requests matching the content categories you've selected. No traffic is routed to any remote server.
+• Accessibility Service — detects the app currently in the foreground, so app blocking and screen-time rules can be enforced, and so Paxio can recognize its own uninstall/device-admin screens to require your parent PIN.
+• VPN Service — creates a local, on-device VPN connection used only to inspect and block DNS requests matching the content filtering categories you've selected. No traffic is routed to any remote server.
 
-Paxio does not use these APIs for analytics, advertising, or any purpose beyond the parental-control features described above.
+Paxio does not use these APIs for analytics, advertising, or any purpose beyond the features described above.
