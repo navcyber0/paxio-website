@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.paxio",
+      "sha256_cert_fingerprints": [
+        "D9:0C:34:D3:2D:BE:A9:C9:DE:9C:70:1A:C1:63:73:6D:8E:B4:57:05:40:DE:A8:4B:FF:D5:B0:0E:AC:6D:10:C6"
+      ]
+    }
+  }
+]
