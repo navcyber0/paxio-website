@@ -8,6 +8,11 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.2.0] — 2026-10-01
+### Added
+- Blog post `blog/kids-screen-time-on-weekends.html` ("Kids' Screen Time on Weekends: How Much Is
+  Too Much?"), with hero + 1200x630 OG image, a card on `blog/index.html` and a `sitemap.xml` entry.
+
 ## [1.1.0] — 2026-09-30
 ### Added
 - Custom branded 404 page (`404.html`) replacing GitHub Pages' default error page — all internal
