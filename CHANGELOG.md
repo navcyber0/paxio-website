@@ -8,6 +8,10 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.2.1] — 2026-10-01
+### Removed
+- Homepage footer's "As featured on" launch-platform badges (LaunchIgniter, LiftOff, Launchstag).
+
 ## [1.2.0] — 2026-10-01
 ### Added
 - Blog post `blog/kids-screen-time-on-weekends.html` ("Kids' Screen Time on Weekends: How Much Is
