@@ -1,0 +1,32 @@
+name: Check analytics snippets
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every public page must include Mixpanel
+        run: |
+          missing=$(grep -L "mixpanel.init" ./*.html blog/*.html help/*.html product/*.html || true)
+          if [ -n "$missing" ]; then
+            echo "Missing Mixpanel snippet (see index.html for the block):"
+            echo "$missing"
+            exit 1
+          fi
+      - name: Every public page must include GA4 (gtag.js)
+        # Added 2026-10-02 after discovering the GA4 web stream (G-0T28PK25EL,
+        # www.paxio.in property) had NEVER received any data — Mixpanel was on
+        # every page per this same workflow's older check, but GA4's gtag.js
+        # was never added at all, despite the GA4 property existing in
+        # console. Search Console confirmed real organic traffic the whole
+        # time; GA4 just never saw any of it. This check exists so that gap
+        # can't silently reappear the way it did for ~a year.
+        run: |
+          missing=$(grep -L "googletagmanager.com/gtag/js" ./*.html blog/*.html help/*.html product/*.html || true)
+          if [ -n "$missing" ]; then
+            echo "Missing GA4 gtag.js snippet (see index.html for the block):"
+            echo "$missing"
+            exit 1
+          fi

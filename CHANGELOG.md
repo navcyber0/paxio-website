@@ -8,6 +8,10 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.2.2] — 2026-10-02
+### Fixed
+- **GA4 (Google Analytics) was never actually wired up to the live site — zero sessions recorded, ever, despite the `www.paxio.in` GA4 property existing in console.** Discovered while investigating app-install lead-source attribution: Search Console showed real organic traffic (clicks/impressions on `paxio.in` throughout September) that GA4 had no record of at all. Mixpanel was correctly present on every public page (enforced by `.github/workflows/check-mixpanel.yml`), but the GA4 `gtag.js` snippet was never added anywhere in the repo. Added the snippet (measurement ID `G-0T28PK25EL`) to all 82 public pages (root, `blog/`, `help/`, `product/`), same insertion point as Mixpanel (right before `</head>`). Also extended the CI workflow (renamed to `check-analytics.yml`'s job set — same file, now checks both snippets) so a new page missing either analytics tag fails the build.
+
 ## [1.2.1] — 2026-10-01
 ### Removed
 - Homepage footer's "As featured on" launch-platform badges (LaunchIgniter, LiftOff, Launchstag).
