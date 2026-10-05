@@ -8,6 +8,16 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.3.1] — 2026-10-06
+### Changed
+- Cross-linked seven existing blog posts to the new Android-security guides on appcheck.paxio.in
+  (rooting, ADB, sideloading, app signing, permissions, Accessibility Service): one contextual
+  sentence in the relevant paragraph of six posts plus a fourth "Related reading" entry in all seven
+  (`can-child-bypass-parental-controls`, `mod-apk-cracked-games-malware`, `fake-app-clones-kids-download`,
+  `mobile-app-permissions-kids-grant`, `why-paxio-doesnt-read-texts-or-calls`,
+  `how-to-block-apps-on-childs-phone`, `best-practices-securing-kids-phone`). Helps the new subdomain's
+  pages get discovered and gives readers the technical background behind each topic.
+
 ## [1.3.0] — 2026-10-05
 ### Added
 - Blog post `blog/mod-apk-cracked-games-malware.html` ("Are Mod APKs Safe? What Parents Should Know
