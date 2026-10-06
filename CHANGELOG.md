@@ -8,6 +8,15 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.4.2] — 2026-10-06
+### Changed
+- Follow-up to 1.4.1 (Search Console query gaps): new FAQ "At what age do parental controls end?" on
+  `what-age-start-parental-controls` plus a link and a Related-reading entry to
+  `transitioning-away-from-parental-controls`; new FAQ "Will I be notified if my child removes a parental
+  control app?" on `can-child-bypass-parental-controls` (answer deliberately makes no claim about Paxio's
+  own notification behaviour); both FAQs mirrored in FAQPage JSON-LD, modified dates bumped. Added a link to
+  the block-an-app guide on `product/kids-app-blocking.html`.
+
 ## [1.4.1] — 2026-10-06
 ### Changed
 - Rewrote the title and meta description (plus og/twitter/JSON-LD copies and modified dates) on five
