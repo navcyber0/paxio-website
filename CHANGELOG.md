@@ -8,6 +8,15 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.4.1] — 2026-10-06
+### Changed
+- Rewrote the title and meta description (plus og/twitter/JSON-LD copies and modified dates) on five
+  pages, based on the Search Console export for Jul-Oct 2026 (queries with impressions but no clicks):
+  `can-child-bypass-parental-controls` ("how kids bypass..."), `what-age-start-parental-controls`
+  (adds the "when do they end" angle), `what-is-a-parental-control-app` ("how it works on Android"),
+  `how-to-block-apps-on-childs-phone` (singular "an app"), `bedtime-schedule-what-actually-happens`
+  ("bedtime mode"). Headings and body text unchanged. Re-check Search Console in 3-4 weeks.
+
 ## [1.4.0] — 2026-10-06
 ### Added
 - Blog post `blog/parent-communities-digital-safety.html` ("Parent Communities for Digital Safety: Where
