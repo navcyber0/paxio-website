@@ -8,6 +8,13 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.4.0] — 2026-10-06
+### Added
+- Blog post `blog/parent-communities-digital-safety.html` ("Parent Communities for Digital Safety: Where
+  to Find Help"), a general (no-location) guide to choosing parent groups, with a generated hero + 1200x630
+  OG image, a card on `blog/index.html` and a `sitemap.xml` entry. Names three nonprofits only with
+  descriptions checked against their own published wording; carries a Paxio disclosure.
+
 ## [1.3.1] — 2026-10-06
 ### Changed
 - Cross-linked seven existing blog posts to the new Android-security guides on appcheck.paxio.in
