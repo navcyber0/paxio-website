@@ -8,6 +8,21 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.5.0] — 2026-10-06
+### Added
+- Blog post `blog/family-link-bypass-what-parents-should-know.html` (Search Console cluster "family link bypass").
+  Family Link claims checked against Google's help pages (per-device limits, system apps, Chrome profile
+  limits, stopping supervision at 13, parent approval + notification) and Bitdefender for the Jan 2026
+  policy reversal. Deliberately no step-by-step workarounds.
+- Blog post `blog/best-parental-control-app-in-india.html` (query "best parental control app in india").
+  Paxio prices from `pricing.html` (Rs 499/mo, Rs 4,999/yr); DPDP Act s.9 and May 2027 children's-data date
+  attributed to law-firm/consultancy summaries, with a "not lawyers" caveat. Carries the other-vendor disclaimer.
+- Both: generated hero + 1200x630 OG, index cards, sitemap entries.
+### Changed
+- `can-child-bypass-parental-controls`: removal FAQ now mentions Paxio's Uninstall Protection is friction, not a
+  hard block, and that Family Link notifies parent and child; Related reading links the new Family Link post.
+  No claim about Paxio's own removal notification (permission-revoke alert still unreleased).
+
 ## [1.4.2] — 2026-10-06
 ### Changed
 - Follow-up to 1.4.1 (Search Console query gaps): new FAQ "At what age do parental controls end?" on
