@@ -8,6 +8,11 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.6.0] — 2026-10-08
+### Added
+- Blog post `blog/co-parenting-screen-time-rules.html` ("Co-Parenting Screen Time Rules: Two Homes, One Phone"),
+  with hero + 1200x630 OG image, a card on `blog/index.html` and a `sitemap.xml` entry.
+
 ## [1.5.1] — 2026-10-08
 ### Changed
 - `blog/best-parental-control-app-in-india.html` reworked for AI-search citation after a competing India roundup
