@@ -37,6 +37,12 @@ Paxio is installed on a child's Android device and managed from a parent's own d
 
 ## Blog
 Articles on kids' online safety, screen time research, and how Paxio's controls work — see [Blog index](https://www.paxio.in/blog/).
+- [Best parental control app in India: what to check before you choose](https://www.paxio.in/blog/best-parental-control-app-in-india.html): comparison table, India's DPDP Act and children's data, free vs paid options in INR
+- [Best parental control apps for Android in 2026, compared](https://www.paxio.in/blog/best-parental-control-apps-features-compared.html): what to look for across apps
+- [Parental control app without location tracking](https://www.paxio.in/blog/parental-control-apps-no-location-tracking.html): what matters when you want screen time controls without tracking
+- [Monitor your kid's phone without reading their texts](https://www.paxio.in/blog/why-paxio-doesnt-read-texts-or-calls.html): why Paxio doesn't read messages or calls
+- [How kids bypass parental controls and what stops them](https://www.paxio.in/blog/can-child-bypass-parental-controls.html)
+- [Family Link bypass: how kids get around it and what helps](https://www.paxio.in/blog/family-link-bypass-what-parents-should-know.html)
 
 ## Optional
 - [Android app on Google Play](https://play.google.com/store/apps/details?id=com.paxio)

@@ -8,6 +8,19 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.5.1] — 2026-10-08
+### Changed
+- `blog/best-parental-control-app-in-india.html` reworked for AI-search citation after a competing India roundup
+  was seen in a Gemini answer: direct short answer at the top, comparison table (platform, free option, location;
+  every cell taken from our own paxio-vs-* pages), Kids360 entry filled in, Norton Family and Apple Screen Time
+  notes added, named author (Person) with byline and bio, visible "Updated" date, new FAQ on accessibility being
+  switched off by Android's unused-app cleanup (our own Vivo test).
+- **Correction:** DPDP Rules notification date was 13 November 2025 in the post; the PIB release says 14 November 2025.
+  Now cited to the PIB release (eighteen-month phased compliance, parental consent) and the Act text on meity.gov.in;
+  Section 9 and the May 2027 children's date remain attributed to law-firm summaries.
+- `llms.txt`: added the India guide and five other blog posts under Blog.
+- `sitemap.xml` lastmod for the India post set to 2026-10-08.
+
 ## [1.5.0] — 2026-10-06
 ### Added
 - Blog post `blog/family-link-bypass-what-parents-should-know.html` (Search Console cluster "family link bypass").
