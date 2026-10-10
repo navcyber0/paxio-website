@@ -8,6 +8,12 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.6.1] — 2026-10-10
+### Added
+- "Parent community" pill (people icon) in the top nav next to the App Checker pill on every page that has it,
+  linking to https://community.paxio.in. Same hold as 1.6.0: do not push until the forum domain is live (it is) and the
+  owner confirms the push.
+
 ## [1.6.0] — 2026-10-08
 ### Added
 - Blog post `blog/co-parenting-screen-time-rules.html` ("Co-Parenting Screen Time Rules: Two Homes, One Phone"),
