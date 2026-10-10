@@ -26,6 +26,13 @@ small content change, MAJOR reserved for a full redesign or restructuring. Newes
 - `llms.txt`: added the India guide and five other blog posts under Blog.
 - `sitemap.xml` lastmod for the India post set to 2026-10-08.
 
+## [1.6.0] — 2026-10-10
+### Added
+- "Community" link (https://community.paxio.in) in the footer "Resources" column of all 77 public pages that have it,
+  and a "Paxio Community" section in `privacy-policy.html` and `terms-of-service.html` for the new forum (adults only,
+  sign-in identity via Firebase Auth, public posts, deletion rights, community guidelines, no professional advice).
+  **Do not push until the forum is live at community.paxio.in** or the footer link will 404.
+
 ## [1.5.0] — 2026-10-06
 ### Added
 - Blog post `blog/family-link-bypass-what-parents-should-know.html` (Search Console cluster "family link bypass").
