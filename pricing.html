@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paxio Pricing — Compare Free and Pro Plans Side by Side</title>
-<meta name="description" content="Compare Paxio Free and Pro: screen time limits, app blocking, content filtering, bedtime locks, and weekly reports. Pro is ₹499/mo or ₹4,999/yr.">
+<meta name="description" content="Compare Paxio Free and Pro: screen time limits, app blocking, content filtering, bedtime locks and reports. Pro is $5.99/mo or $59.99/yr (₹499/mo or ₹4,999/yr).">
 <link rel="canonical" href="https://www.paxio.in/pricing.html">
+<script>try{if(localStorage.getItem('paxio_currency')==='inr')document.documentElement.setAttribute('data-currency','inr')}catch(e){}</script>
 <link rel="icon" type="image/png" href="store-assets/play-store-icon-512.png">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,9 @@
   "url": "https://www.paxio.in/pricing.html",
   "description": "Paxio parental control app for Android. Free plan with one child profile; Pro adds up to 3 child profiles, unlimited app blocking, bedtime locks and deeper reports.",
   "offers": [
+    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "1 child profile, daily screen time limit, app blocking for up to 3 apps, parent PIN, weekly reports" },
+    { "@type": "Offer", "name": "Pro (monthly)", "price": "5.99", "priceCurrency": "USD", "description": "Up to 3 child profiles, unlimited app blocking, bedtime and schedule locks, remote internet control, 1-year report history", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "5.99", "priceCurrency": "USD", "billingDuration": "P1M", "unitText": "month" } },
+    { "@type": "Offer", "name": "Pro (yearly)", "price": "59.99", "priceCurrency": "USD", "description": "Everything in Pro, billed yearly", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "59.99", "priceCurrency": "USD", "billingDuration": "P1Y", "unitText": "year" } },
     { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "INR", "description": "1 child profile, daily screen time limit, app blocking for up to 3 apps, parent PIN, weekly reports" },
     { "@type": "Offer", "name": "Pro (monthly)", "price": "499", "priceCurrency": "INR", "description": "Up to 3 child profiles, unlimited app blocking, bedtime and schedule locks, remote internet control, 1-year report history", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "INR", "billingDuration": "P1M", "unitText": "month" } },
     { "@type": "Offer", "name": "Pro (yearly)", "price": "4999", "priceCurrency": "INR", "description": "Everything in Pro, billed yearly", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "4999", "priceCurrency": "INR", "billingDuration": "P1Y", "unitText": "year" } }
@@ -133,6 +137,10 @@ document.addEventListener('click', function (e) {
       <div class="pricing-card is-pro">
         <span class="tag plan-badge">Most popular</span>
         <h2>Pro</h2>
+        <div class="currency-tabs" role="group" aria-label="Currency">
+          <button type="button" id="cur-usd" aria-pressed="true">USD $</button>
+          <button type="button" id="cur-inr" aria-pressed="false">INR ₹</button>
+        </div>
         <div class="billing-tabs">
           <input type="radio" name="cycle-pro" id="cycle-pro-m" hidden>
           <label for="cycle-pro-m">Monthly</label>
@@ -140,8 +148,8 @@ document.addEventListener('click', function (e) {
           <label for="cycle-pro-y">Yearly</label>
         </div>
         <div class="price-display">
-          <span class="price-m"><span class="was">₹899</span><span class="amount">₹499</span><span class="period">/mo</span><span class="save-tag">44% off</span></span>
-          <span class="price-y"><span class="was">₹10,788</span><span class="amount">₹4,999</span><span class="period">/yr</span><span class="save-tag">54% off</span></span>
+          <span class="price-m"><span class="cur cur-usd"><span class="was">$9.99</span><span class="amount">$5.99</span><span class="period">/mo</span><span class="save-tag">40% off</span></span><span class="cur cur-inr"><span class="was">₹899</span><span class="amount">₹499</span><span class="period">/mo</span><span class="save-tag">44% off</span></span></span>
+          <span class="price-y"><span class="cur cur-usd"><span class="was">$119.88</span><span class="amount">$59.99</span><span class="period">/yr</span><span class="save-tag">50% off</span></span><span class="cur cur-inr"><span class="was">₹10,788</span><span class="amount">₹4,999</span><span class="period">/yr</span><span class="save-tag">54% off</span></span></span>
         </div>
         <ul>
           <li>Up to 3 child profiles</li>
@@ -252,5 +260,24 @@ document.addEventListener('click', function (e) {
 })();
 </script>
 
+<script>
+(function () {
+  var root = document.documentElement, usd = document.getElementById('cur-usd'), inr = document.getElementById('cur-inr');
+  if (!usd || !inr) return;
+  function paint(c) {
+    if (c === 'inr') root.setAttribute('data-currency', 'inr'); else root.removeAttribute('data-currency');
+    usd.setAttribute('aria-pressed', String(c !== 'inr'));
+    inr.setAttribute('aria-pressed', String(c === 'inr'));
+  }
+  function choose(c) {
+    paint(c);
+    try { localStorage.setItem('paxio_currency', c); } catch (e) {}
+    if (window.mixpanel && mixpanel.track) mixpanel.track('pricing_currency_selected', { currency: c });
+  }
+  paint(root.getAttribute('data-currency') === 'inr' ? 'inr' : 'usd');
+  usd.addEventListener('click', function () { choose('usd'); });
+  inr.addEventListener('click', function () { choose('inr'); });
+})();
+</script>
 </body>
 </html>
