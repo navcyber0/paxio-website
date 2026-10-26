@@ -7,7 +7,7 @@ Paxio is installed on a child's Android device and managed from a parent's own d
 ## Product
 - [Homepage](https://www.paxio.in/): overview, core features, download link
 - [Features](https://www.paxio.in/features.html): full feature list
-- [Pricing](https://www.paxio.in/pricing.html): Free vs Pro plans, monthly/yearly cost
+- [Pricing](https://www.paxio.in/pricing.html): Free vs Pro plans. Pro is $5.99/month or $59.99/year (₹499/month or ₹4,999/year in India); the page lets visitors switch between USD and INR
 - [Product Tour](https://www.paxio.in/product-tour.html): screen-by-screen walkthrough
 - [Why Paxio](https://www.paxio.in/why-paxio.html): philosophy — partnership with kids, not surveillance
 - [Setup & Flexibility](https://www.paxio.in/setup.html): device setup options (dedicated vs shared device)

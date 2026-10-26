@@ -1288,6 +1288,16 @@ footer {
   align-self: center;
 }
 
+.price-display .cur { display: inline-flex; align-items: baseline; gap: 6px; }
+.price-display .cur-inr { display: none; }
+html[data-currency="inr"] .price-display .cur-usd { display: none; }
+html[data-currency="inr"] .price-display .cur-inr { display: inline-flex; }
+
+.currency-tabs { display: inline-flex; background: var(--teal-light); border-radius: 999px; padding: 3px; margin: 10px 8px 4px 0; }
+.currency-tabs button { border: 0; background: transparent; font: inherit; padding: 6px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; color: var(--teal-ink); cursor: pointer; }
+.currency-tabs button[aria-pressed="true"] { background: var(--teal-strong); color: #fff; }
+.currency-tabs button:focus-visible { outline: 2px solid var(--teal-strong); outline-offset: 2px; }
+
 .price-display .price-m { display: none; }
 .billing-tabs:has(#cycle-pro-m:checked) ~ .price-display .price-m { display: inline-flex; }
 .billing-tabs:has(#cycle-pro-m:checked) ~ .price-display .price-y { display: none; }

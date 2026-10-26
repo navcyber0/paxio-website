@@ -141,13 +141,18 @@ touching this again.)
 
 Free: 1 child profile, daily screen time limit, block up to 5 apps, unblock up to 3 content
 categories, parent PIN, weekly reports (3 stats, 30-day history).
-Pro: ₹499/mo or ₹4,999/yr (44%/54% off a real ₹899/₹10,788 base — these discount percentages are
-computed from an actual higher price, not decorative), up to 3 child profiles, unlimited app
-blocking + per-app time limits, all content categories, bedtime/schedule locks, remote internet
+Pro: **$5.99/mo or $59.99/yr** (40%/50% off a $9.99/$119.88 base) or **₹499/mo or ₹4,999/yr** (44%/54% off a real
+₹899/₹10,788 base). The discount percentages are computed from the higher base price, not decorative. Pro includes up to 3
+child profiles, unlimited app blocking + per-app time limits, all content categories, bedtime/schedule locks, remote internet
 pause, streak bonus, weekly reports (7 stats, 1-year history), priority support.
 
-**Currency is INR, not USD** — this site briefly ran USD pricing in early September 2026; it was
-reverted. If a stale `$` figure ever resurfaces anywhere, it's a regression, not a live change.
+**Currency rule (changed 2026-10-25):** the site shows **both USD and INR**. `pricing.html` has a USD | INR switch,
+**USD is the default** (also with JavaScript off), and the visitor's choice is remembered in `localStorage` key
+`paxio_currency`. Both currencies are always present in the HTML so crawlers see both. Comparison pages quote USD with the
+INR price labelled "in India". History: the site ran USD in early September 2026, was switched to INR-only, and is now
+dual-currency on purpose, so a `$` figure is no longer a regression. Keep the USD and INR amounts in step with the
+Razorpay plans (`paxio-billing`) and the app's `ProPricingScreen`; until the app/billing side offers USD checkout, the
+website's USD price is display-only.
 
 ## Structured data conventions
 
@@ -155,7 +160,7 @@ reverted. If a stale `$` figure ever resurfaces anywhere, it's a regression, not
   `<head>` whose Q&A text matches the visible `.faq-list` content verbatim — don't let these two
   drift apart when editing one.
 - The homepage carries `MobileApplication` + `ItemList` (site nav) JSON-LD. The
-  `MobileApplication` schema's `offers.priceCurrency` must stay `"INR"`.
+  `MobileApplication` schema lists each plan with both a USD and an INR `Offer` (as on `pricing.html`).
 - Comparison pages (`paxio-vs-*.html`) carry `FAQPage` JSON-LD only, no `BlogPosting`/`Article`
   type — they're landing pages, not blog content.
 

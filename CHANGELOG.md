@@ -31,6 +31,24 @@ small content change, MAJOR reserved for a full redesign or restructuring. Newes
 ### Changed
 - `blog/cyberbullying-what-it-looks-like.html`: added a paragraph linking to the new post for parents whose own child is the one bullying; dateModified and sitemap lastmod set to 2026-10-25.
 
+## [1.7.0] — 2026-10-25
+### Added
+- USD pricing alongside INR. `pricing.html` gets a USD | INR switch next to the Monthly | Yearly tabs: **USD is the default**
+  (also with JavaScript off), the choice is remembered in `localStorage` (`paxio_currency`), and both currencies are in the HTML
+  for crawlers. USD: Pro $5.99/mo (was $9.99, 40% off) or $59.99/yr (was $119.88, 50% off); INR unchanged (₹499 / ₹4,999).
+  A `pricing_currency_selected` Mixpanel event records the choice. Structured data (`pricing.html`, `index.html`) lists USD and
+  INR offers.
+### Changed
+- Comparison pages (`paxio-vs-family-link`, `-qustodio`, `-kids360`, `-airdroid`) quote both currencies, labelling INR as India
+  pricing. The Qustodio "generally cheaper / typically higher" claims are now explicitly scoped to India, since they were never
+  checked against USD pricing.
+- `llms.txt`, `PRODUCT.md` and `SITE_STRUCTURE.md` updated. The old "Currency is INR, not USD" rule (from the early-September
+  revert) is replaced by the dual-currency rule.
+### Notes
+- Website only: the Android app and `paxio-billing` still charge INR only. Until USD plans exist in Razorpay and the app offers
+  them, the USD price on the website is display-only. The `blog/best-parental-control-app-in-india.html` guide intentionally
+  stays INR-only.
+
 ## [1.6.1] — 2026-10-10
 ### Added
 - "Parent community" pill (people icon) in the top nav next to the App Checker pill on every page that has it,
