@@ -8,6 +8,29 @@ pattern from the main Paxio app repo, adapted to this site.
 **Versioning**: `MAJOR.MINOR.PATCH`. Bump MINOR for a new page/feature/section, PATCH for a fix or
 small content change, MAJOR reserved for a full redesign or restructuring. Newest entry at the top.
 
+## [1.8.0] — 2026-10-25
+### Added
+- Four blog posts (cyberbullying awareness, kids' cybersecurity, kids' mobile security), each with hero + 1200x630 OG,
+  index card, sitemap entry and `llms.txt` line. Topics chosen from the Search Console export (mobile-security and
+  India queries already earning impressions) and checked against existing posts to avoid overlap:
+  - `child-is-cyberbullying-others-what-to-do` (Stopbullying.gov guidance)
+  - `sextortion-kids-what-parents-should-know` (NCMEC sextortion page; reporting steps kept general, dated figures removed)
+  - `teach-kids-strong-passwords-two-step-verification` (NIST SP 800-63B-4: 15-char single-factor minimum, no composition
+    rules, no forced rotation; Google support: 2-Step Verification required for remote lock/erase)
+  - `prepare-before-childs-phone-goes-missing` (checklist: screen lock, Google Find Hub and 2-Step Verification requirements
+    per Google support, IMEI and bill, no-blame family plan; points to the official Sanchar Saathi site instead of reproducing
+    its steps)
+- Byline: Naveenkumar Arulmani, Founder of Paxio (BlogPosting author is a Person), same as the India guide.
+- Lead photos (instead of generated graphics), stored in `marketing/blog-drafts/images/`: father-and-boy conversation (August de Richelieu, Pexels),
+  father-and-son on a bed (Julia M Cameron, Pexels), mother and daughter with a phone (existing Unsplash draft photo), boy on a park bench
+  (Foto Art Events, Pexels). All Pexels items are marked Free; hero is 1600x1067, OG is a 1200x630 crop, with a per-post crop focus so
+  the 2:1 page crop does not cut off heads.
+- Editorial rule from the owner: awareness content only. A step-by-step guide to reporting cyberbullying in India was built and
+  removed before publishing, and the lost-phone post was rewritten from a portal walkthrough into a prepare-ahead checklist,
+  because procedures, portals and helpline details change.
+### Changed
+- `blog/cyberbullying-what-it-looks-like.html`: added a paragraph linking to the new post for parents whose own child is the one bullying; dateModified and sitemap lastmod set to 2026-10-25.
+
 ## [1.6.1] — 2026-10-10
 ### Added
 - "Parent community" pill (people icon) in the top nav next to the App Checker pill on every page that has it,

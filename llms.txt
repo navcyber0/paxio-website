@@ -43,6 +43,10 @@ Articles on kids' online safety, screen time research, and how Paxio's controls 
 - [Monitor your kid's phone without reading their texts](https://www.paxio.in/blog/why-paxio-doesnt-read-texts-or-calls.html): why Paxio doesn't read messages or calls
 - [How kids bypass parental controls and what stops them](https://www.paxio.in/blog/can-child-bypass-parental-controls.html)
 - [Family Link bypass: how kids get around it and what helps](https://www.paxio.in/blog/family-link-bypass-what-parents-should-know.html)
+- [What to Do If Your Child Is Cyberbullying Someone Else](https://www.paxio.in/blog/child-is-cyberbullying-others-what-to-do.html): what parents can do when their own child is the one bullying
+- [Sextortion and Kids: What Parents Should Know and Do](https://www.paxio.in/blog/sextortion-kids-what-parents-should-know.html): what sextortion is and what to do, based on NCMEC guidance
+- [How to Teach Kids Strong Passwords and 2-Step Login](https://www.paxio.in/blog/teach-kids-strong-passwords-two-step-verification.html): passphrases, unique passwords and 2-Step Verification, based on NIST guidance
+- [Prepare Before Your Child's Phone Goes Missing: A Checklist](https://www.paxio.in/blog/prepare-before-childs-phone-goes-missing.html): checklist to set up before a phone is lost: lock, Find Hub, 2-Step Verification, IMEI and a no-blame family plan
 
 ## Optional
 - [Android app on Google Play](https://play.google.com/store/apps/details?id=com.paxio)
